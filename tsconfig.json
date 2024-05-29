@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "checkJs": true
   },
   "include": [
     "next-env.d.ts",
