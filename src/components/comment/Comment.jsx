@@ -3,7 +3,7 @@ import GuestFavorite from '@/components/GuestFavorite/GuestFavorite'
 import ReviewMeta from '@/components/ReviewMeta/ReviewMeta'
 import Review from '@/components/Review/Review'
 import ReviewInform from '@/components/ReviewInform/ReviewInform'
-import GenerateReviewMetaData from '@/utils/GenerateReviewMetaData'
+import GenerateReviewMetaData from '@/utils/generateReviewMetaData'
 import { useState, useEffect } from 'react'
 
 const Comment = () => {
