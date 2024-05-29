@@ -1,12 +1,11 @@
-import ReviewMetaContent from './ReviewMetaContent'
-import ReviewOverall from './ReviewOverall'
-import CleanlinessIcon from '../../assets/Cleanliness.svg'
-import AccuracyIcon from '../../assets/Accuracy.svg'
-import CheckInIcon from '../../assets/CheckIn.svg'
-import CommunicationIcon from '../../assets/Communication.svg'
-import LocationIcon from '../../assets/Location.svg'
-import ValueIcon from '../../assets/Value.svg'
-import React, { useState, useEffect } from 'react'
+import ReviewMetaContent from '@/components/ReviewMeta/ReviewMetaContent'
+import ReviewOverall from '@/components/ReviewMeta/ReviewOverall'
+import CleanlinessIcon from '/public/images/Cleanliness.svg'
+import AccuracyIcon from '/public/images/Accuracy.svg'
+import CheckInIcon from '/public/images/CheckIn.svg'
+import CommunicationIcon from '/public/images/Communication.svg'
+import LocationIcon from '/public/images/Location.svg'
+import ValueIcon from '/public/images/Value.svg'
 
 const ReviewMeta = ({ reviewMetaData }) => {
   if (!reviewMetaData || reviewMetaData.length === 0) {

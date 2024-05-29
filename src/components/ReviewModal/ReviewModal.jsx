@@ -1,17 +1,17 @@
-import DetailModal from './DetailModal.jsx'
-import GuestFavorite from '../GuestFavorite/GuestFavorite.jsx'
-import ReviewModalSearch from './ReviewModalSearch.jsx'
-import ReviewOverall from '../ReviewMeta/ReviewOverall.jsx'
-import ReviewModalContent from './ReviewModalContent.jsx'
-import ReviewHeader from '../Review/ReviewHeader.jsx'
-import ReviewContent from '../Review/ReviewContent.jsx'
+import DetailModal from '@/components/ReviewModal/DetailModal.jsx'
+import ReviewModalContent from '@/components/ReviewModal/ReviewModalContent.jsx'
+import ReviewModalSearch from '@/components/ReviewModal/ReviewModalSearch.jsx'
+import GuestFavorite from '@/components/GuestFavorite/GuestFavorite.jsx'
+import ReviewOverall from '@/components/ReviewMeta/ReviewOverall.jsx'
+import ReviewHeader from '@/components/Review/ReviewHeader.jsx'
+import ReviewContent from '@/components/Review/ReviewContent.jsx'
 
-import CleanlinessIcon from '../../assets/Cleanliness.svg'
-import AccuracyIcon from '../../assets/Accuracy.svg'
-import CheckInIcon from '../../assets/CheckIn.svg'
-import CommunicationIcon from '../../assets/Communication.svg'
-import LocationIcon from '../../assets/Location.svg'
-import ValueIcon from '../../assets/Value.svg'
+import CleanlinessIcon from '/public/images/Cleanliness.svg'
+import AccuracyIcon from '/public/images/Accuracy.svg'
+import CheckInIcon from '/public/images/CheckIn.svg'
+import CommunicationIcon from '/public/images/Communication.svg'
+import LocationIcon from '/public/images/Location.svg'
+import ValueIcon from '/public/images/Value.svg'
 
 const ReviewMeta = [
   { category: '청결도', icon: CleanlinessIcon },
@@ -34,7 +34,7 @@ const ReviewModal = ({ reviewMetaData, reviewData, isOpen, closeModal }) => {
   if (!isOpen) return null
 
   return (
-    <DetailModal className=''>
+    <DetailModal>
       <div className='flex flex-col rounded-3xl justify-center text-sm bg-white w-[72vw] h-full px-auto overflow-hidden'>
         <div className='flex justify-between px-5 py-8'>
           <button onClick={closeModal}>
