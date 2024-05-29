@@ -1,11 +1,12 @@
+'use client'
+
 import { useState } from 'react'
 
-import CategoryItem from './CategoryItem'
-import FilterButton from './FilterButton'
-
-import categoryData from '../../../public/json/categoryList.json'
-import FilterComponent from './FilterComponent'
-import ArrowButton from '../common/ArrowButton'
+import CategoryItem from '@/components/MainCategory/CategoryItem'
+import FilterButton from '@/components/MainCategory/FilterButton'
+import FilterComponent from '@/components/MainCategory/FilterComponent'
+import ArrowButton from '@/components/common/ArrowButton'
+import categoryData from '/public/categoryList.json'
 
 function Category() {
   const categoryList = categoryData.categoryList

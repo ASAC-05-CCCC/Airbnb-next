@@ -1,4 +1,4 @@
-import FilterEachComponent from '../FilterEachComponent'
+import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
 
 function GuestPreferenceComponent() {
   return (

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import FilterEachComponent from '../FilterEachComponent'
-import PlaceSelectButton from './PlaceSelectButton'
+import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
+import PlaceSelectButton from '@/components/MainCategory/FilterComponent/PlaceType/PlaceSelectButton'
 
 function PlaceTypeComponent() {
   const [type, setType] = useState('모든 유형')

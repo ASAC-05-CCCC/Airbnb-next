@@ -1,5 +1,5 @@
-import FilterEachComponent from '../FilterEachComponent'
-import PriceInputBox from './PriceInputBox'
+import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
+import PriceInputBox from '@/components/MainCategory/FilterComponent/PriceScope/PriceInputBox'
 
 function PriceScopeComponent() {
   return (
