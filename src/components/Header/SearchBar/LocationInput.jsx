@@ -1,6 +1,5 @@
-import SearchModal from '../common/SearchModal'
-import CountryPicker from './CountryPicker'
-import KoreaLocationPicker from './KoreaLocationPicker'
+import CountryPicker from '@/components/Header/SearchBar/CountryPicker'
+import KoreaLocationPicker from '@/components/Header/SearchBar/KoreaLocationPicker'
 
 const LocationInput = () => {
   return (
