@@ -1,0 +1,42 @@
+[
+  {
+    "user_id": "alice3240",
+    "post_id": "12990058",
+    "index": 1,
+    "HostProfile": {
+      "name": "현아",
+      "superHost": true,
+      "review": 20,
+      "rating": 5,
+      "career": 9
+    },
+    "HostIntro": [
+      {
+        "category": "Language",
+        "text": "구사 언어 : 한국어"
+      },
+      {
+        "category": "Service",
+        "text": "머무르시는 동안 게스트분들과의 의사소통이 원활하도록 노력하고 있습니다"
+      },
+      {
+        "category": "Unique",
+        "text": "숙소의 특별한 점: 산과 냇가로 둘러쌓인 자연친화적인 곳. 자쿠지숙소.사계절 미온수 수영장."
+      },
+      {
+        "category": "Breakfast",
+        "text": "우유와 씨리얼, 천연 발표종으로 만든 체다치즈빵을 제공합니다 :-)"
+      }
+    ],
+    "HostContent": [
+      {
+        "title": "현아 님은 슈퍼호스트입니다.",
+        "body": "슈퍼호스트는 풍부한 경험과 높은 평점을자랑하며 게스트가 숙소에서 편안히 머무를 수 있도록 최선을 다하는 호스트 입니다."
+      },
+      {
+        "title": "호스트 상세 정보",
+        "body": "응답률 :100%\n1시간 이내에 응답"
+      }
+    ]
+  }
+]

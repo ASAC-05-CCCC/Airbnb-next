@@ -1,5 +1,5 @@
-import NotificationHeader from './NotificationHeader.jsx'
-import NotificationContents from './NotificationContents.jsx'
+import NotificationHeader from '@/components/Notification/NotificationHeader.jsx'
+import NotificationContents from '@/components/Notification/NotificationContents.jsx'
 
 const NotificationData = [
   {
@@ -46,11 +46,13 @@ const NotificationData = [
 const Notification = () => {
   return (
     <div className='flex justify-center py-12'>
-      <div>
+      <div className='grow px-10'>
         <NotificationHeader />
         <div className='grid grid-cols-1 flex-wrap mx-2 lg:grid-cols-3'>
-          {NotificationData.map(({ title, body, footer }) => {
-            return <NotificationContents title={title} body={body} footer={footer} />
+          {NotificationData.map(({ title, body, footer }, index) => {
+            return (
+              <NotificationContents title={title} body={body} footer={footer} key={title + index} />
+            )
           })}
         </div>
       </div>

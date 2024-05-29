@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 function ReviewMetaContent({ category, value, icon }) {
   const valueFloat = value.toFixed(1)
   return (
@@ -7,7 +9,7 @@ function ReviewMetaContent({ category, value, icon }) {
           <div>{category}</div>
           <div>{valueFloat}</div>
         </div>
-        <img src={icon} className='w-6 h-6' alt={category} />
+        <Image src={icon} className='w-6 h-6' alt={category} />
       </div>
     </div>
   )

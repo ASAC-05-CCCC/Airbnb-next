@@ -1,4 +1,5 @@
-import SuperHost from '../../assets/SuperHost.svg'
+import SuperHost from '/public/images/SuperHost.svg'
+import Image from 'next/image'
 
 const Label = ({ label, value }) => {
   const valueData = () => {
@@ -33,7 +34,7 @@ const HostProfile = ({ name, superHost, review, rating, career }) => {
         <h2 className='text-center text-3xl font-bold w-[150px]'>{name}</h2>
         {superHost && (
           <span className='flex items-center text-sm mt-2'>
-            <img src={SuperHost} className='w-6 h-6' />
+            <Image src={SuperHost} width={24} height={24} alt='superhost' />
             <span className=' text-sm ml-1'>슈퍼호스트</span>
           </span>
         )}

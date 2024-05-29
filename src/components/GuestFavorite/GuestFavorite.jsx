@@ -1,5 +1,5 @@
-import GuestFavoriteHeader from './GuestFavoriteHeader'
-import GuestFavoriteContent from './GuestFavoriteContent'
+import GuestFavoriteHeader from '@/components/GuestFavorite/GuestFavoriteHeader'
+import GuestFavoriteContent from '@/components/GuestFavorite/GuestFavoriteContent'
 
 const GuestFavorite = () => {
   return (

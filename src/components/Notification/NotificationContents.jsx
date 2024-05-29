@@ -4,9 +4,9 @@ const NotificationContents = ({ title, body, footer }) => {
       <div className=' mr-8'>
         <div className=' w-80 h-40'>
           <h3 className='font-bold '>{title}</h3>
-          {body.map(({ content }) => {
+          {body.map(({ content }, index) => {
             return (
-              <div className='text-left mb-2'>
+              <div className='text-left mb-2' key={content + index}>
                 <span>{content}</span>
               </div>
             )

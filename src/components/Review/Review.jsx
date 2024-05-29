@@ -1,7 +1,8 @@
-import ReviewHeader from './ReviewHeader'
-import ReviewContent from './ReviewContent'
-import ReviewMoreButton from './ReviewMoreButton'
-import ReviewModal from '../ReviewModal/ReviewModal.jsx'
+'use client'
+import ReviewHeader from '@/components/Review/ReviewHeader'
+import ReviewContent from '@/components/Review/ReviewContent'
+import ReviewMoreButton from '@/components/Review/ReviewMoreButton'
+import ReviewModal from '@/components/ReviewModal/ReviewModal'
 import { useState } from 'react'
 
 const Review = ({ reviewData, reviewMetaData }) => {
@@ -30,7 +31,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
                 <ReviewHeader image={comment.image} name={comment.name} country={comment.country} />
                 <ReviewContent
                   rating={comment.rating}
-                  timeStamp={comment.timeStamp}
+                  timeStamp={comment.timestamp}
                   message={comment.message}
                 />
               </div>

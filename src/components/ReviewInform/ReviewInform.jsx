@@ -1,5 +1,6 @@
+'use client'
 import React, { useState } from 'react'
-import StarRating from './StarRating'
+import StarRating from '@/components/ReviewInform/StarRating'
 
 const rating = {
   Cleanliness: 0,

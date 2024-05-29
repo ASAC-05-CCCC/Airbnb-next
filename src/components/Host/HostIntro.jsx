@@ -1,5 +1,6 @@
-import Language from '../../assets/Language.svg'
-import Service from '../../assets/Service.svg'
+import Language from '/public/images/Language.svg'
+import Service from '/public/images/Service.svg'
+import Image from 'next/image'
 
 const svgMap = {
   Language,
@@ -10,8 +11,7 @@ const HostIntro = ({ category, text }) => {
   const SvgIcon = svgMap[category]
   return (
     <div className='flex gap-1'>
-      {console.log(category)}
-      <img src={SvgIcon} className='w-6 h-6' alt={category} />
+      <Image src={SvgIcon} className='w-6 h-6' alt='icon' />
       <p>{text}</p>
     </div>
   )
