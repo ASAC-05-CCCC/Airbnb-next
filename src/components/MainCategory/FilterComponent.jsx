@@ -52,7 +52,7 @@ function FilterComponent({ setIsFilterModal }) {
           </button>
           <div className='text-sm	font-bold'>필터</div>
         </div>
-        <div className='absolute w-full top-[60px] bottom-[70px] overflow-y-scroll'>
+        <div className='absolute w-full top-[60px] bottom-[70px] overflow-y-scroll overflow-x-hidden'>
           <PlaceTypeComponent />
           <PriceScopeComponent />
           <BedroomComponent />
