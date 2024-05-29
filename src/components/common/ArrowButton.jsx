@@ -1,5 +1,7 @@
-import leftArrow from '../../assets/leftArrow.svg'
-import rightArrow from '../../assets/rightArrow.svg'
+import Image from 'next/image'
+
+import leftArrow from '/public/images/leftArrow.svg'
+import rightArrow from '/public/images/rightArrow.svg'
 
 function ArrowButton({
   onClickArrowButton,
@@ -11,7 +13,7 @@ function ArrowButton({
       onClick={onClickArrowButton}
     >
       <div>
-        <img src={direction === 'left' ? leftArrow : rightArrow} />
+        <Image src={direction === 'left' ? leftArrow : rightArrow} alt='arrow' />
       </div>
     </button>
   )

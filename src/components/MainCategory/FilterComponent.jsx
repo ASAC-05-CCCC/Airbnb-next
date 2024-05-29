@@ -1,17 +1,22 @@
-import { useRef, useEffect } from 'react'
+'use client'
 
-import DetailModal from '../common/DetailModal'
-import FilterClearButton from './FilterComponent/FilterClearButton'
-import FilterDoneButton from './FilterComponent/FilterDoneButton'
-import PlaceTypeComponent from './FilterComponent/PlaceType/PlaceTypeComponent'
-import PriceScopeComponent from './FilterComponent/PriceScope/PriceScopeComponent'
-import BedroomComponent from './FilterComponent/Bedroom/BedroomComponent'
-import GuestPreferenceComponent from './FilterComponent/GuestPreference/GuestPreferenceComponent'
-import StructureTypeComponent from './FilterComponent/StructureType/StructureTypeComponent'
-import FacilitiesComponent from './FilterComponent/SelectOption/Facilities/FacilitiesComponent'
-import ReservationComponent from './FilterComponent/Reservation/ReservationComponent'
-import AccessibilityComponent from './FilterComponent/SelectOption/Accessibility/AccessibilityComponent'
-import LanguageComponent from './FilterComponent/SelectOption/Language/LanguageComponent'
+import { useRef, useEffect } from 'react'
+import Image from 'next/image'
+
+import DetailModal from '@/components/common/DetailModal'
+import FilterClearButton from '@/components/MainCategory/FilterComponent/FilterClearButton'
+import FilterDoneButton from '@/components/MainCategory/FilterComponent/FilterDoneButton'
+import PlaceTypeComponent from '@/components/MainCategory/FilterComponent/PlaceType/PlaceTypeComponent'
+import PriceScopeComponent from '@/components/MainCategory/FilterComponent/PriceScope/PriceScopeComponent'
+import BedroomComponent from '@/components/MainCategory/FilterComponent/Bedroom/BedroomComponent'
+import GuestPreferenceComponent from '@/components/MainCategory/FilterComponent/GuestPreference/GuestPreferenceComponent'
+import StructureTypeComponent from '@/components/MainCategory/FilterComponent/StructureType/StructureTypeComponent'
+import FacilitiesComponent from '@/components/MainCategory/FilterComponent/SelectOption/Facilities/FacilitiesComponent'
+import ReservationComponent from '@/components/MainCategory/FilterComponent/Reservation/ReservationComponent'
+import AccessibilityComponent from '@/components/MainCategory/FilterComponent/SelectOption/Accessibility/AccessibilityComponent'
+import LanguageComponent from '@/components/MainCategory/FilterComponent/SelectOption/Language/LanguageComponent'
+
+import XIcon from '/public/images/XIcon.svg'
 
 function FilterComponent({ setIsFilterModal }) {
   const filterModalRef = useRef()
@@ -43,11 +48,11 @@ function FilterComponent({ setIsFilterModal }) {
         w-full h-[60px] rounded-t-xl border-b-[1px] border-b-slate-200'
         >
           <button onClick={onClickXButton} className='absolute left-0 p-5'>
-            <img src='/src/assets/XIcon.svg' />
+            <Image src={XIcon} alt='X' />
           </button>
           <div className='text-sm	font-bold'>필터</div>
         </div>
-        <div className='absolute w-full top-[60px] bottom-[70px] overflow-y-scroll'>
+        <div className='absolute w-full top-[60px] bottom-[70px] overflow-y-scroll overflow-x-hidden'>
           <PlaceTypeComponent />
           <PriceScopeComponent />
           <BedroomComponent />

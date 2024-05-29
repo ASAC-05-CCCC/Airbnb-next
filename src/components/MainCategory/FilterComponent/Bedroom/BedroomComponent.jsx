@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import FilterEachComponent from '../FilterEachComponent'
-import BedroomEachComponent from './BedroomEachComponent'
+import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
+import BedroomEachComponent from '@/components/MainCategory/FilterComponent/Bedroom/BedroomEachComponent'
 
 function BedroomComponent() {
   const [countBedroom, setCountBedroom] = useState('상관없음')

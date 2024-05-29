@@ -1,0 +1,294 @@
+{
+  "categoryList": [
+    {
+      "id": 1,
+      "categoryName": "컬처 아이콘",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 2,
+      "categoryName": "멋진 수영장",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 3,
+      "categoryName": "한적한 시골",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 4,
+      "categoryName": "최고의 전망",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 5,
+      "categoryName": "보트",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 6,
+      "categoryName": "그랜드 피아노",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 7,
+      "categoryName": "해변 바로 앞",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 8,
+      "categoryName": "한옥",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 9,
+      "categoryName": "기상천외한 숙소",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 10,
+      "categoryName": "국립공원",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 11,
+      "categoryName": "방",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 12,
+      "categoryName": "농장",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 13,
+      "categoryName": "캐슬",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 14,
+      "categoryName": "통나무집",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 15,
+      "categoryName": "호수 근처",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 16,
+      "categoryName": "인기 급상승",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 17,
+      "categoryName": "디자인",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 18,
+      "categoryName": "캠핑장",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 19,
+      "categoryName": "초소형 주택",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 20,
+      "categoryName": "료칸",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 21,
+      "categoryName": "속세를 벗어난 숙소",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 22,
+      "categoryName": "트리하우스",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 23,
+      "categoryName": "열대 지역",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 24,
+      "categoryName": "키즈",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 25,
+      "categoryName": "호숫가",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 26,
+      "categoryName": "저택",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 27,
+      "categoryName": "유서 깊은 주택",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 28,
+      "categoryName": "신규",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 29,
+      "categoryName": "섬",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 30,
+      "categoryName": "상징적 도시",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 31,
+      "categoryName": "B&B",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 32,
+      "categoryName": "Luxe",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 33,
+      "categoryName": "와인 농장",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 34,
+      "categoryName": "창작 공간",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 35,
+      "categoryName": "A자형 주택",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 36,
+      "categoryName": "북극",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 37,
+      "categoryName": "컨테이너하우스",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 38,
+      "categoryName": "서핑",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 39,
+      "categoryName": "돔하우스",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 40,
+      "categoryName": "스키 타고 출입",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 41,
+      "categoryName": "동굴",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 42,
+      "categoryName": "복토 주택",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 43,
+      "categoryName": "전문가급 주방",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 44,
+      "categoryName": "골프장",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 45,
+      "categoryName": "풍차",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 46,
+      "categoryName": "세상의 꼭대기",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 47,
+      "categoryName": "유르트",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 48,
+      "categoryName": "하우스보트",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 49,
+      "categoryName": "민수",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 50,
+      "categoryName": "키클라데스 주택",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 51,
+      "categoryName": "타워",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 52,
+      "categoryName": "무장애",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 53,
+      "categoryName": "헛간",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 54,
+      "categoryName": "사막",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 55,
+      "categoryName": "트룰로",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 56,
+      "categoryName": "리아드",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 57,
+      "categoryName": "마차",
+      "categoryIcon": "/images/campingIcon.svg"
+    },
+    {
+      "id": 58,
+      "categoryName": "카사 파르티쿨라",
+      "categoryIcon": "/images/campingIcon.svg"
+    }
+  ]
+}

@@ -14,7 +14,7 @@ function CountSelectButton({ number, width, setCount, count }) {
           number === count ? 'bg-slate-800 text-white' : 'bg-white text-gray-800',
         )}
       >
-        <div className='text-xs'>{number}</div>
+        <div className='text-xs white whitespace-nowrap'>{number}</div>
       </button>
     </div>
   )

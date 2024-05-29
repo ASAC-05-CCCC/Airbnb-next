@@ -1,7 +1,7 @@
-import CountSelectButton from './CountSelectButton'
+import CountSelectButton from '@/components/MainCategory/FilterComponent/Bedroom/CountSelectButton'
 
 function BedroomEachComponent({ type, setCount, count }) {
-   return (
+  return (
     <div>
       <div>{type}</div>
       <div className='flex flex-row my-5'>

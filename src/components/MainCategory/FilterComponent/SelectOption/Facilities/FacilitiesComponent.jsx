@@ -1,4 +1,4 @@
-import SelectOptionComponent from '../SelectOptionComponent'
+import SelectOptionComponent from '@/components/MainCategory/FilterComponent/SelectOption/SelectOptionComponent'
 
 function FacilitiesComponent() {
   return (
