@@ -9,6 +9,7 @@
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
+  background-color: white;
   opacity: 0; /* 화살표 안보이게 */
   transition: opacity 0.3s;
   border-radius: 50%;

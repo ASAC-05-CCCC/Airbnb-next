@@ -15,6 +15,9 @@ const config: Config = {
       colors: {
         hostColor: '#F0EFE9',
       },
+      gridTemplateColumns: {
+        fluid: 'repeat(auto-fit, minmax(303px, 1fr))',
+      },
     },
   },
   plugins: [],

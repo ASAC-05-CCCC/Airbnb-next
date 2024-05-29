@@ -1,0 +1,768 @@
+{
+  "accommodationInfo": [
+    {
+      "accommodationId": 23,
+      "accommodationName": "하버하우스-[여성3인실]우든보트를 제작하는 청년들이 지은 이야기가 있는 집",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "제주시 조천읍, 한국의 방",
+      "briefRoomInfo": ["싱글 침대 3개", "공용 욕실 3개"],
+      "guestFavorite": true,
+      "rating": "4.82",
+      "reviewCount": "113",
+      "hostName": "라보드",
+      "hostSince": 2019,
+      "pricePerDay": 34000,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/af7f7d1a-b1cc-40f8-bfb0-9b43d62ec4f9.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/31e6a743-462f-4bfa-a8c2-d931fa79234c.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/e66ad06d-ceb7-44f0-8803-e6603d8151e3.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/09afb917-6c3b-4ed8-bb09-9040009eaab0.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/a69c0e9e-83e8-4f47-a4c0-a82ef7b30eb4.jpg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "해변과 인접 - 해변",
+          "icon": "AmenityBeach"
+        },
+        {
+          "amenityName": "무선 인터넷",
+          "icon": "AmenityWifi"
+        },
+        {
+          "amenityName": "세탁기",
+          "icon": "AmenityWasher"
+        },
+        {
+          "amenityName": "에어컨",
+          "icon": "AmenityAc"
+        },
+        {
+          "amenityName": "실내 벽난로",
+          "icon": "AmenityFireplace"
+        },
+        {
+          "amenityName": "주방",
+          "icon": "AmenityKitchen"
+        },
+        {
+          "amenityName": "건물 내 무료 주차",
+          "icon": "AmenityParking"
+        },
+
+        {
+          "amenityName": "건조기",
+          "icon": "AmenityDrier"
+        },
+
+        {
+          "amenityName": "뒷마당",
+          "icon": "AmenityGarden"
+        },
+        {
+          "amenityName": "헤어드라이어",
+          "icon": "AmenityHairDryer"
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "싱글 침대",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "roomId": 2,
+          "beds": [
+            {
+              "bedType": "싱글 침대",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "roomId": 3,
+          "beds": [
+            {
+              "bedType": "싱글 침대",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "desc": "하버하우스는 보트빌더(Boat builder)들이 운영하는 게스트하우스입니다.\n제주도 동쪽 신촌포구에 위치해 있어 조용한 제주어촌 마을의 정취를 느낄 수 있습니다.\n공항에서 버스로 30분. 자동차로는 20분 소요\n*개인 객실무료 비품：수건, 샴푸, 바디워시, 린스, 옷걸이, 컵, 헤어드라이\n*시설。냉장고, 전자렌지, 토스트기, 커피머신 등。공용공간에서 편하게 쉴 수 있습니다.\n*무료 조식 매일 8:30am – 10:30am 공용공간에서 즐길 수 있습니다.\n*무료 와이파이&차& 커피。수하물 보관은 체크인 전과 체크아웃 후에 무료로 할 수\n있습니다.\n*화장실과 샤워실은 남녀 분리되어있습니다.\n\n숙소\n단독 주택을 쉐어하는 형태로 운영하고 있습니다.\n남성 3인실, 여성3인실, 더블룸, 트윈룸이 있으며, 주방은 외부공용시설에 있습니다. 여성샤워부스 2개, 여성화장실 2개, 남성은 화장실과 샤워실이 분리되어있지 않습니다.\n\n숙소\n하버하우스는 보트빌더(Boat builder)들이 운영하는 게스트하우스입니다.\n제주도 동쪽 신촌포구에 위치해 있어 조용한 제주어촌 마을의 정취를 느낄 수 있습니다."
+    },
+    {
+      "accommodationId": 24,
+      "accommodationName": "나무사이로 햇살이",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "구좌읍, 제주시, 한국의 집 전체",
+      "briefRoomInfo": ["최대 인원 4명", "침실 2개", "침대 2개", "욕실 1개"],
+      "guestFavorite": true,
+      "rating": "4.95",
+      "reviewCount": "211",
+      "hostName": "지오",
+      "hostSince": 2016,
+      "pricePerDay": 1385000,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/ff4bd504-fc1a-46e2-a6c4-3665db56d11a.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/d85a0a38-f4ef-4b6b-99eb-d046d2369bbb.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/7e8618f0-3d33-44f7-b144-3127cde745b5.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/07293619-08c7-46b6-aafc-1352f29eefb2.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/a65fb7b2-ea12-4cf0-8cf1-794fb63e9466.jpg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "주방",
+          "icon": "AmenityKitchen"
+        },
+        {
+          "amenityName": "건물 내 무료 주차",
+          "icon": "AmenityParking"
+        },
+        {
+          "amenityName": "에어컨",
+          "icon": "AmenityAc"
+        },
+        {
+          "amenityName": "헤어드라이어",
+          "icon": "AmenityHairDryer"
+        },
+        {
+          "amenityName": "아침식사",
+          "icon": "AmenityBreakfast"
+        },
+        {
+          "amenityName": "무선 인터넷",
+          "icon": "AmenityWifi"
+        },
+        {
+          "amenityName": "TV + 일반 케이블 TV",
+          "icon": "AmenityTv"
+        },
+        {
+          "amenityName": "뒷마당",
+          "icon": "AmenityGarden"
+        },
+        {
+          "amenityName": "냉장고",
+          "icon": "AmenityFireplace"
+        },
+        {
+          "amenityName": "일산화탄소 경보기",
+          "icon": "AmenityCo"
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "퀸사이즈 침대",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "roomId": 2,
+          "beds": [
+            {
+              "bedType": "퀸사이즈 침대",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "desc": "제주에서 나무가 많아 공기가 좋다는 구좌읍 송당리 마을안에 있어요.\n집 주변이 편백나무로 둘러싸여 피톤치드향을 느낄 수 있으며 어릴적 누구나 꿈꾸던 다락방이 있는 따뜻한 색감의 목조주택으로 자연주의 감성을 느낄수 있는 복층형 독채민박입니다.\n맛집으로 걸어서 3분거리에 풍림다방과 친봉산장이 있고 ,차로 15분거리에 가까운 바다로는 평대, 세화,월정,김녕, 성산일출봉이 있으며\n비자림, 메이즈랜드, 다랑쉬오름, 용눈이 오름, 아부오름, 백약이오름 등이 있습니다,"
+    },
+    {
+      "accommodationId": 25,
+      "accommodationName": "클로드에덴 : 트리하우스",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "Jipyeong-myeon, Yangpyeong-gun, 한국의 트리하우스",
+      "briefRoomInfo": ["최대 인원 2명", "침실 1개", "침대 1개", "욕실 1.5개"],
+      "guestFavorite": true,
+      "rating": "4.96",
+      "reviewCount": "93",
+      "hostName": "광회",
+      "hostSince": 2024,
+      "pricePerDay": 297000,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/1ee30d58-0658-40ad-8cff-5e34eaef7798.jpg?im_w=960",
+        "https://a0.muscache.com/im/pictures/3681b9e1-1d86-4f94-87be-f20759ded2de.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/391c9050-dc29-4f7c-b52b-9c2d2df9a0be.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/8fa1a142-ad7d-459e-8062-ecdaa3ea0565.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/2fbb0551-d537-4b50-a88a-31668df40afb.jpg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "정원 전망",
+          "icon": "AmenityGarden"
+        },
+        {
+          "amenityName": "건물 내 무료 주차",
+          "icon": "AmenityParking"
+        },
+        {
+          "amenityName": "반려동물 입실 가능",
+          "icon": "AmenityPet"
+        },
+        {
+          "amenityName": "세탁기",
+          "icon": "AmenityWasher"
+        },
+        {
+          "amenityName": "전용 온수 욕조",
+          "icon": "AmenityBath"
+        },
+        {
+          "amenityName": "주방",
+          "icon": "AmenityKitchen"
+        },
+        {
+          "amenityName": "숙소 내 실외 보안 카메라",
+          "icon": "AmenityCamera"
+        },
+        {
+          "amenityName": "에어컨",
+          "icon": "AmenityAc"
+        },
+        {
+          "amenityName": "일산화탄소 경보기",
+          "icon": "AmenityCo"
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "퀸사이즈 침대",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "desc": "아주 특별한곳 아름다운 추억과 힐링을 원하시는분 이색숙소를 찾으시는분 커플을위한 최적화된 이상형장소를 찾고 계신다면 떡갈나무 트리하우스를 진심 추천합니다.\n\n양평에서 가장아름다운 정원 양평군 공식지정정원 팜포레스트는 삼면이 백합나무숲으로 둘러 쌓여 아늑하면서도 신비로운 곳 2300여평의 정원내에 위치해 있으며 오직 단2팀을 위한 공간으로 전체를 활용하고 있습니다.\n\n트리하우스에서 내려다 보는 뷰는 정말이지 환상적이고 침실은 고급나무로만 만들어져 포근하고 달콤한 꿀잠을 선사합니다."
+    },
+    {
+      "accommodationId": 26,
+      "accommodationName": "커플 및 가족을 위한 우아하고 한적한 오두막",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "나가노, 일본의 통나무집 전체",
+      "briefRoomInfo": ["최대 인원 4명", "침실 1개", "침대 3개", "욕실 1개"],
+      "guestFavorite": false,
+      "rating": "4.92",
+      "reviewCount": "370",
+      "pricePerDay": 198567,
+      "hostName": "Matt and Maya",
+      "hostSince": 2016,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/07eda303-0a89-419e-a7b8-1b788ef4e6f0.jpg?im_w=960",
+        "https://a0.muscache.com/im/pictures/ed750929-3e90-4b43-a309-8a50439779c4.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/fd0a5f30-5a6c-41ff-9ee9-1a7c4a8e1aaf.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/9c142ac7-34d3-49ed-98d2-5c25e878e9c3.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/9765fc4f-5e91-46ae-8e59-0931ab2dadee.jpg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "산 전망",
+          "icon": "AmenityMountain"
+        },
+        {
+          "amenityName": "주방",
+          "icon": "AmenityKitchen"
+        },
+        {
+          "amenityName": "무선 인터넷",
+          "icon": "AmenityWifi"
+        },
+        {
+          "amenityName": "TV + 넷플릭스",
+          "icon": "AmenityTv"
+        },
+        {
+          "amenityName": "세탁기 무료 사용 - 숙소 내",
+          "icon": "AmenityWasher"
+        },
+        {
+          "amenityName": "건조기 무료 사용 - 숙소 내",
+          "icon": "AmenityDrier"
+        },
+        {
+          "amenityName": "건물 내 무료 주차",
+          "icon": "AmenityParking"
+        },
+        {
+          "amenityName": "숙소 내 실외 보안 카메라",
+          "icon": "AmenityCamera"
+        },
+        {
+          "amenityName": "일산화탄소 경보기",
+          "icon": "AmenityCo"
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "더블 침대",
+              "count": 1
+            },
+            {
+              "bedType": "소파 베드",
+              "count": 1
+            },
+            {
+              "bedType": "요와 이불",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "roomId": 2,
+          "beds": [
+            {
+              "bedType": "소파 베드",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "desc": "나가노 Iizuna의 해발 1,300미터 (4,265피트) 의 숲이 우거진 자연 그대로의 지역에 위치한 세련된 통나무 오두막입니다.\n이 숙소는 커플, 가족 단위 또는 소규모 단체 여행객에게 완벽한 휴양지입니다.\n장작 난로, 대형 TV, 블루레이/DVD 플레이어, 스테레오, 가죽 의자, 완비된 주방이 있습니다.\n이 지역에서 하이킹, 스키, 바비큐, 골프 또는 온천 목욕을 즐겨보세요. 숙소는 JR 호쿠리코 신칸센 총알 열차와 시나노 철도의 나가노역에서 차로 약 20분 거리입니다."
+    },
+    {
+      "accommodationId": 27,
+      "accommodationName": "노지리 호수의 멋진 전망을 감상할 수 있는 전용 사우나를 갖춘 아노이 주택",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "Shinano, Kamiminochi District, 일본의 초소형 주택",
+      "briefRoomInfo": ["최대 인원 6명", "침실 1개", "침대 5개", "욕실 1개"],
+      "guestFavorite": false,
+      "rating": "4.94",
+      "reviewCount": "321",
+      "hostName": "Go",
+      "hostSince": 2022,
+      "pricePerDay": 601055,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/b2c0f556-f726-4db8-985f-25a668369fe7.jpg?im_w=960",
+        "https://a0.muscache.com/im/pictures/9a171a31-bc08-4254-98c7-b996121aa32b.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-49556931/original/783dd9d1-28cb-4672-8136-009ee49ff096.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/d6dc46ed-36dd-4bba-99af-d4cd8793bde6.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/e50f6a2d-1b26-42a1-9c71-84ae47172c88.jpg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "호수 전망",
+          "icon": "AmenityLake"
+        },
+        {
+          "amenityName": "수변에 인접",
+          "icon": "AmenityWater"
+        },
+        {
+          "amenityName": "무선 인터넷",
+          "icon": "AmenityWifi"
+        },
+        {
+          "amenityName": "건물 내 무료 주차",
+          "icon": "AmenityParking"
+        },
+        {
+          "amenityName": "숙소 내 실외 보안 카메라",
+          "icon": "AmenityCctv"
+        },
+        {
+          "amenityName": "산 전망",
+          "icon": "AmenityMountain"
+        },
+        {
+          "amenityName": "주방",
+          "icon": "AmenityKitchen"
+        },
+        {
+          "amenityName": "업무 전용 공간",
+          "icon": "AmenityDesk"
+        },
+        {
+          "amenityName": "전용 온수 욕조",
+          "icon": "AmenitySauna"
+        },
+        {
+          "amenityName": "일산화탄소 경보기",
+          "icon": "AmenityCo"
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "퀸사이즈 침대",
+              "count": 1
+            },
+            {
+              "bedType": "싱글 침대",
+              "count": 4
+            }
+          ]
+        }
+      ],
+      "desc": "노지리 호수가 내려다보이는 멋진 전망을 자랑하는 주택입니다.\n\n약 15 ~ 20분 거리에 여러 스키 슬로프 (Myoko, Kurohime, Masao) 가 있어 겨울 스포츠를 즐기기에 안성맞춤입니다.\n\n장작을 태우는 사우나와 멋진 수변을 즐겨보세요.\n주변에 독채가 없어서 시끄러운 소음으로 음악과 영화도 감상할 수 있습니다.\n\n산속 깊숙한 곳에 자리 잡은 집이기 때문에 최선을 다하지만, 따뜻한 계절에는 곤충이 있습니다.겨울에는 눈이 많이 옵니다.가을에는 나뭇잎이 춤을 춥니다.\n또한 장작 난로의 불도 직접 조정하셔야 합니다.\n\n살기 편한 집은 아니지만 멋진 전망과 경험을 선사합니다.\n\n멋진 전망과 양념과 밥솥이 있는 카운터 주방이 완비되어 있어 요리를 즐길 수 있습니다.(바비큐 장비 없음)\n숙소\n객실은 대형 1R입니다.\n로프트 부분은 침실입니다.\n퀸사이즈 침대 1개\n싱글 사이즈 이불 4개가 있습니다.\n게스트 이용 가능 공간/시설\n도로를 따라 약 3대의 주차 공간이 있습니다.\n기타 주의사항\n호숫가에서 자연을 즐길 수 있는 집입니다.\n\n조치가 취해졌지만, 따뜻한 계절에는 곤충을 발견할 수 있습니다.\n가을에는 가을, 겨울에는 눈이 내립니다.\n\n최선을 다해 통제하고 대책을 강구하겠습니다만, 경우에 따라서는 예방이 되지 않을 수도 있으니 양해하여 이용하시기 바랍니다.\n\n장작을 태우는 스토브와 벽난로도 마련되어 있습니다.\n이용을 원하실 경우, 불은 소중히 다뤄주세요.\n장갑 등은 구비되어 있으니 화상을 입지 않도록 본인 부담으로 즐기시기 바랍니다.\n등록번호\n여관업법 허가번호 | 長野県長野保健所 | 長野県長野保健所指令03長保第24-19号\n"
+    },
+    {
+      "accommodationId": 28,
+      "accommodationName": "서나와 할아버지 통나무집 - 산님",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "Hwachon-myeon, Hongcheon, 한국의 통나무집 전체",
+      "briefRoomInfo": ["최대 인원 4명", "침실 1개", "침대 1개", "욕실 1.5개"],
+      "guestFavorite": true,
+      "rating": "4.88",
+      "reviewCount": "299",
+      "hostName": "서나 아빠",
+      "hostSince": 2022,
+      "pricePerDay": 136888,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/32e8b4a0-83ff-4dba-8253-5340d8d05215.jpg?im_w=960",
+        "https://a0.muscache.com/im/pictures/a9caa9b8-3029-4f0b-b6f8-0ed33e8006b4.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/45053040-1549-49e5-a1a8-f89629b36401.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/09c2ac0e-6fea-4bb0-8724-1544f5bbe75c.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/97a6907d-478e-43fa-b49e-52cd8580bccc.jpg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "산 전망",
+          "icon": "AmenityMountain"
+        },
+        {
+          "amenityName": "초고속 와이파이 – 72Mbps",
+          "icon": "AmenityWifi"
+        },
+        {
+          "amenityName": "건물 내 무료 주차 – 30대 주차 가능",
+          "icon": "AmenityParking"
+        },
+        {
+          "amenityName": "55인치 HDTV + 넷플릭스, 프리미엄 케이블 TV",
+          "icon": "AmenityTv"
+        },
+        {
+          "amenityName": "건조기 무료 사용 - 건물 내",
+          "icon": "AmenityWasher"
+        },
+        {
+          "amenityName": "주방",
+          "icon": "AmenityKitchen"
+        },
+        {
+          "amenityName": "업무 전용 공간",
+          "icon": "AmenityDesk"
+        },
+        {
+          "amenityName": "반려동물 입실 가능",
+          "icon": "AmenityPet"
+        },
+        {
+          "amenityName": "세탁기 무료 사용 – 건물 내",
+          "icon": "AmenityWasher"
+        },
+        {
+          "amenityName": "에어컨 - 분리형 무배관 시스템",
+          "icon": "AmenityAc"
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "퀸사이즈 침대",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "desc": "서나와 할아버지 통나무집_산님에 오신 걸 환영합니다.\n\n산님은 머무시는 분들의 몸과 마음이 편안히 숨, 쉼 하시길 바라는 마음으로 지어서 가꿔가고 있어요.\n\n산님으로 들어서시면,\n울창한 벚나무랑 짝을 이룬 넉넉한 데크와 핀란드산 편백 통나무 향으로 가득한 실내가 반겨드릴 거에요.\n\n산님의 매력덩이인 벚나무는 봄에는 꽃구름으로, 여름에는 시원하게 반짝이는 그늘로, 가을에는 팔랑팔랑 떨어지는 금빛 나뭇잎으로, 겨울에는 하얀 눈을 얹은 나뭇가지로 산님을 감싸준답니다.\n\n산님은 다락방이 있는 16평 독채예요.\n산님의 침실, 마루, 데크에 편안히 자리잡으시면 공작산과 그 위 하늘에서 펼쳐지는 구름과 바람의 춤을 즐기실 수 있을 거에요.\n새랑 풀벌레의 조잘거림과 가만히 귀 기울이면 들리는 길 건너 냇물 소리도 맘을 편하게 해드릴 거구요.\n\n네분까지 머무실 수 있는 산님은 배변 훈련이 잘된 모든 반려동물과의 동반 투숙을 환영합니다!\n\n숙소\n산님은 서나네가 해외에 있을 때 서나 할아버님께서 지으신 집이에요. 서나 아빠는 가끔 귀국했을 때 손거듬했어요.\n서나네가 귀국한 뒤로는 서나 아빠가 집 안 밖을 새로 고쳐가고 있답니다.\n2023년 봄에는 서나 아빠가 화장실과 침실 수납장, 아일랜드 테이블과 실내 일부를 새로 고쳤어요. 데크도 더 넓게 새로 만들었어요.\n\n산님은 자연스러움을 좋아해서 집 안에 아무런 칠을 하지 않았어요. 그래서 편백나무의 향을 고스란히 즐기실 수 있어요.\n\n가구와 집기류도 차츰 더 자연과 함께하는 방향으로 고쳐나갈 거에요. 가끔 오셔서 산님이 바뀌어 가는 모습을 함께 즐기시기 바래요^^\n\n산님 실내가 아무런 칠을 하지 않은 나무 벽이어서 냄새가 많이 나는 음식을 해 드시거나 향이 강한 화장품, 향수를 쓰시면 냄새가 나무에 달라붙어 잘 없어지지 않아요.\n산님의 나무향이 마음에 드신다면 다음 손님도 나무향을 즐기시는데 방해되지 않도록 실내에서 고기를 굽거나 냄새가 많이 나는 조리는 피해 주시기 바래요. 향이 강한 화장품과 향수도요^^\n\n불가피한 상황으로 냄새나 향이 남을 것 같으면 퇴실 전에 창문을 열어 충분히 환기해주시기를 부탁드려요!\n\n반려동물과 함께 오시면 예약하실 때 반려동물 마리 수를 선택해주세요. 결재하실 때 해당 비용이 함께 결재되며 배변으로 인한 오염이나 기물 파손이 발생하지 않으면 추가되는 비용은 없어요.\n산님은 차도에서 직선거리로 약 30~40여미터 정도 떨어져 있어요. 차가 자주 다니지는 않지만 차도와 숙소 사이가 터진 전망이라 차 소리가 들릴 수 있어요. 반려동물과 함께 오시는 분들은 차도와의 거리를 참고하셔서 예약하시기 바래요.\n\n산님 거실의 주 조명은 이승원 작가의 작품이에요.\n이승원 작가는 한국인으로 처음 독일 금속공예 관련 상을 받으신 한국 금속공예계의 원로 작가세요. 저서로는 \"작업 속의 미학_금속공예에서 얻은 비움과 채움\"이 있어요^^\n\n바쁜 일상이나 복작거리는 휴양지를 벗어나 내안으로 조용히 가라앉는 시간을 가지고 싶거나 좋은 사람들과 도란도란 시간을 보내고 싶은 분들에게 산님을 추천합니다!\n\n산님에 머무시면서 나들이 다녀오실 만한 곳들은,\n1. 공작산: 차로 10분 내외\n2. 수타사: 차로 25분 내외\n3. 용소계곡: 차로 25분 내외\n4. 홍천온천 / 홍천 무궁화 수목원: 차로 25분 내외\n5. 알파카월드: 차로 30분 내외\n6. 비발디파크: 차로 45분 내외\n7. 춘천 / 월드온천24: 차로 50분 내외\n8. 자작나무숲: 차로 1시간\n9. 치악산 / 설악산 국립공원: 차로 1시간 내외\n10. 대포항 / 척산온천 / 양양해수욕장 등: 차로 1시간 내외.\n등 이에요^^\n\n산님에 머무시는 동안 즐기실 만한 추천 먹거리는,\n서나와 할머니 된장, 행운爱사과(사과, 사과파이, 사과 주스), 별하도원(복숭아, 복숭아청, 복숭아잼), 고향 밥상(시골한식), 리버 972(이탈리안 레스토랑), 원조 생곡막국수 본점, 뚜레장어, 길매식당(잣두부), 식당별하(버섯요리), 원조 왔다 다슬기 해장국, 푸주옥 홍천점(도가니탕, 설렁탕, 냉면), 홍천한우사랑말(홍천 한우), 하나로마트, 피콕빌리지(카페), 커피홀릭(카페), 진심커피(카페), 러스틱라이프(정원 카페)등이에요^^\n게스트 이용 가능 공간/시설\n산님은 16평 정도되는 넉넉한 데크에서 낮잠, 이야기 나누기, 책보기 등 여유를 즐기실 수 있어요.\n\n서나와 할아버지 통나무집은 천여평 정도의 비탈에 햇님, 달님, 별님, 산님과 서나 아빠 엄마가 지내는 벽돌집, 서나 할아버님과 할머님이 지내시는 벽돌집이 흩어져 자리잡고 있어요.\n그 사이사이에 자금자금한 텃밭이 있고요. 약을 안치고 키운 제철 야채가 올라올 때 함께 나누어 드시면 되어요.\n또 단지 곳곳에서 5월 딸기, 6월 오디와 블루베리, 7월 자두 등이 차례로 달리니 오셨을 때 보이는 과일들을 따 드시기 바래요^^\n\n산님의 내부는,\n-침대와 화장실이 딸린 안방\n- 주방과 일체형 거실\n- 변기와 세면대가 있는 작은 화장실(거실)\n- 다락방\n으로 구성되어 있어요.\n\n갖추어 놓은 것들은,\n- TV, 와이파이, 에어컨, 작은 밥솥, 전자레인지, 드라이기, 커피포트\n- 수건, 샴푸, 린스, 바디워시, 치약, 비누, 옷걸이, 휴지\n- 기본 조미료(소금, 설탕, 소금)와 식용유\n- 수저 세트, 집게, 가위, 국자, 뒤집개, 과도와 식도\n- 포도주잔, 스파클링 포도주잔, 머그잔, 소주잔, 밥그릇, 국그릇, 접시, 후라이팬, 작은 냄비, 중형 냄비, 주방 세제, 수세미등이에요.\n\n추가 비용이 있는 즐길 거리는,\n- 숯불 준비: 3만원. 숯불구이 그릴, 숯, 숯불 피우기 포함.\n- 불멍 준비: 3만원. 불멍 화로, 장작, 불 피우기 포함.\n입니다!\n\n* 2022년 6월 전에는 개인 화구를 쓰시거나 직접 불을 피우실 수도 있었어요. 하지만 이러다 보니 데크와 그릴이 망가질 때가 많아 불과 관련한 사항은 꼭 숯불이나 불멍 서비스를 신청해 주시기 바래요!\n\n* 숯불이나 불멍을 원하시는 분들은 늦어도 입실 전날 18시까지 하시려는 시간을 예약해 주시기 바래요^^\n참고로 숯불 시작 시간은 해지기 30분 전 무렵, 불멍은 해지고 한시간 뒤부터 시작을 추천드려요. 원하는 시간에 하시려면 최대한 일찍 시간을 정하셔야 해요. 다른 분들과 동시에 준비해드릴 수가 없거든요^^;\n\n예약하시면 비용 입금 계좌를 알려드려요. 예약하신 분 이름과 다른 분이 입금하시면 꼭 입금자 성함을 알려주세요.\n기타 주의사항\n서나와 할아버지 통나무집은 햇님, 달님, 별님, 산님 네채가 천여평의 산비탈에 흩어져 자리잡고 있어요. 오전 11시 부터 오후4시까지 숙소 정비를 하기 때문에 일부 건물의 정비가 끝나도 다른 건물 정비 때문에 단지 안도 어수선할 수 있고 응대도 원활하지 않을 수 있어 불가피한 경우가 아니면 이른 입실과 늦은 퇴실은 사양하고 있답니다.\n저희도 어렵게 만나 뵌 분들과 좀 더 긴 시간 함께 하고 싶지만 이 공간의 나무향과 정갈함을 기대하고 오시는 다음 손님들께도 좋은 기억을 가져가실 수 있게 하기 위해 정한 입, 퇴실 시간이니 꼭 지켜 주시면 고맙겠어요^^\n\n서나와 할아버지 통나무집은 시골 버스를 타고 오실 수는 있지만 뚜벅이 여행 전문가나 엄청난 용기를 내기로 하신 분이 아니면 차를 몰고 오시는 걸 추천 드려요. 특히 외국에서 오시는 분들은 대중 교통만으로 오시는 게 거의 불가능해요. 오셔서도 숙소에만 계실 게 아니라면 차가 없으면 저희 집 주변의 즐길 거리를 만끽하시기 어려워요.\n\n장을 볼만한 큰 마트가 차로 20분 거리에 있어서 미리 장을 보고 오시는 걸 추천 드려요. 서울 경기권이나 춘천, 원주에서 오시는 분들은 출발지 -> 홍천한우사랑말 -> 홍천하나로마트 -> 서나와 할아버지 통나무집 으로 노선을 잡으시 길 추천 드려요.\n\n술 맛을 흠뻑 즐기시는 분들을 위해 포도주 잔을 슈피겔라우(SPIEGELAU)로 넣어 놓았어요. 얇은 잔이라 무슨 술을 넣어 마셔도 술을 두배쯤은 맛있게 해주지만 주의를 기울여 다루시지 않으면 깨지기 쉬워요. 잔은 깨져도 괜찮지만 다치시면 안되니 조심해 다루어 주세요. 잔을 씻다 깨실 수도 있으니 익숙하지 않은 분들은 포도주잔 씻는 방법을 검색하셔서 참고하시면 도움이 될거에요.\n값이 좀 있는 잔들이라 깨지면 잔 값은 받을 게요^^;\n\n서나와 할아버지 통나무집에는 놀기 좋아하는 고양이 보리가 함께 살고 있어요. 풀어놓고 기르는 아이라 단지 안을 맘껏 돌아다니기에 언제 집에 들어와 있을지는 보리 맘이랍니다^^; 보리와의 만남을 기대하시는 분들은 보리를 꾈 수 있는 뇌물을 준비해 오시기 바래요^^\n보리는 사람을 무척 좋아해 애교를 부리거나 집안으로 따라 들어가려 할 수 있으니, 혹시 불편하신 분들께서는 저희에게 알려주세요.\n\n*분리수거는 산님 옆에 서나 아빠 엄마가 머무는 벽돌집 뒤에 있는 분리 수거 구역에 하시면 되어요.\n- 일반 쓰레기는 집안의 쓰레기 통에 모아두셨다가 분리 수거 구역에 있는 노란색 뚜껑의 큰 쓰레기 통에 부어 주세요. 방, 화장실, 주방에 있는 쓰레기통을 모두 비워 주시기 바래요.\n- 음식물 쓰레기는 싱크대 서랍에 넣어둔 음식물 쓰레기 봉투에 넣어서 분리 수거 구역의 회색 뚜껑 작은 쓰레기 통에 넣어 주세요.\n- 재활용 분리수거는 노란 뚜껑 쓰레기통 오른쪽으로 쑥 들어간 분리 수거 구역에 종류별로 큰 푸대가 있고 푸대 위에 명찰이 붙어 있어요. 꼭 종류별로 넣어주세요. 페트병 라벨을 떼지 않고 넣으시는 분들이 적지 않아요. 땅별을 위해 페트병의 라벨을 꼭 떼고 분리수거해 주세요.\n- 종이 상자는 노란 뚜껑 쓰레기통 옆에 놓아 두시면 되어요."
+    },
+    {
+      "accommodationId": 29,
+      "accommodationName": "통나무집 1 - 바툴라오 전망을 감상할 수 있는 산악 럭셔리 오두막",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "Calaca, 필리핀의 통나무집 전체",
+      "briefRoomInfo": ["최대 인원 8명", "침실 2개", "침대 3개", "욕실 2개"],
+      "guestFavorite": true,
+      "rating": "4.83",
+      "reviewCount": "176",
+      "hostName": "Camper And Cabin",
+      "hostSince": 2014,
+      "pricePerDay": 586995,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/52d8dc82-66cc-4edd-8457-2bf158067077.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/13ee20e4-8255-4e9b-9252-cf5146fc4599.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/6c49f73e-284c-4e69-8012-9870e122f086.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/aa766fff-6122-4367-be1a-5025bd1c2a10.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/d3adb718-2905-43da-9423-956520b982e2.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/f62597bd-243b-4866-8f0c-f8fe0a8d5a1e.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/b2298cc1-2df3-4d26-ac9c-15391b17e5a1.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/b5332d35-00ef-410c-8565-7af9989ddc4e.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/70d13fba-87e9-4799-8336-6130189fc07f.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/947d5d01-57f0-42df-b267-2560e5e4b7b9.jpg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "통나무집",
+          "icon": ""
+        },
+        {
+          "amenityName": "슈퍼호스트",
+          "icon": ""
+        },
+        {
+          "amenityName": "위치 평점 최고",
+          "icon": ""
+        },
+        {
+          "amenityName": "최고 평점을 받은 체크인 절차",
+          "icon": ""
+        },
+        {
+          "amenityName": "TV",
+          "icon": ""
+        },
+        {
+          "amenityName": "에어컨",
+          "icon": ""
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "더블 침대",
+              "count": 2
+            },
+            {
+              "bedType": "요와 이불",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "roomId": 2,
+          "beds": [
+            {
+              "bedType": "킹사이즈 침대",
+              "count": 1
+            },
+            {
+              "bedType": "요와 이불",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "desc": "산뜻한 타가이테이 언덕 마을과 맑은 푸른 나수그부 해변에 가까운 이 숙소는 북적거리는 도시 생활에서 벗어날 수 있습니다.\n트윈 레이크에서 7분 거리에 위치하고 있습니다. 이곳은 두 곳의 유명한 결혼식 장소인 언덕의 예배당과 변신의 칼라루에가 예배당도 함께 즐길 수 있습니다.\n이 지역 근처에서 가장 눈에 띄는 개발은 세계 최초로 살아 숨쉬는 예술 공원으로 불리는 센추리 프로퍼티스의 바툴라오 아트스케이프와 산악 웰니스 커뮤니티인 산다리 바툴라오가 있습니다.\n* 트윈레이크에서 7분\n* 나수그부 해변에서 30분\n* 언덕의 예배당에서 2분\n* 칼라루에가에서 3분\n* 구원의 산에서 1분!"
+    },
+    {
+      "accommodationId": 30,
+      "accommodationName": "언덕 위의 통나무집 프로젝트 ph",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "Antipolo, 필리핀의 통나무집 전체",
+      "briefRoomInfo": ["최대 인원 7명", "침실 2개", "침대 2개", "욕실 1.5개"],
+      "guestFavorite": true,
+      "rating": "4.86",
+      "reviewCount": "78",
+      "pricePerDay": 78845,
+      "hostName": "Sheila",
+      "hostSince": 2023,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/b21bf387-d240-463c-a073-9755e58fe769.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-871412734935173328/original/1e154097-2d0d-42f8-af5f-4fb551b90af7.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/60df8eb8-58f7-474c-9a10-be41c5367717.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-871412734935173328/original/f7f4f8e5-2eee-4be1-9441-65d0995e7d24.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/6a225a89-a2e6-49a1-8fd3-aa22a14acb54.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-871412734935173328/original/33f9c273-7833-4609-8534-c807f96356a8.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/69d82bc5-3b8b-4f6a-9229-609374daaf92.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/930e9fae-d4bb-489e-8837-f687b2daf3e5.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/930e9fae-d4bb-489e-8837-f687b2daf3e5.jpg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "통나무집",
+          "icon": "AmenityOcean"
+        },
+        {
+          "amenityName": "슈퍼호스트",
+          "icon": "AmenityKitchen"
+        },
+        {
+          "amenityName": "셀프 체크인",
+          "icon": "AmenityDesk"
+        },
+        {
+          "amenityName": "주방",
+          "icon": "AmenityTv"
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "슈퍼 싱글",
+              "count": 1
+            },
+            {
+              "bedType": "요와 이불",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "roomId": 2,
+          "beds": [
+            {
+              "bedType": "더블 침대",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "desc": "Antipolo, Calabarzon, 필리핀\n지도/웨이즈를 통해 검색 가능: RRC Divina Gracia Property, Brgy Pinugay Baras Rizal. \nMasungi Georeserve, Garden Cottages, Palo Alto Falls까지 차로 12 ~ 15분 거리입니다. 유명한 \n리잘 카페와 레스토랑에서 불과 15 ~ 20분 거리. 쿨리스 산에서 30분 거리. 7R 망고 농장 리조트에서 10분 \n거리. 빅 C 델리카페까지 차로 15분 거리. 리힘 나 바티스, 바라스까지 차로 10분 거리. 에린의 숙소 리조트까지 \n차로 10분 거리."
+    },
+    {
+      "accommodationId": 31,
+      "accommodationName": "바다까지 0초! 무료 바비큐! 바닷가를 즐겨보세요!",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "Onjuku, Isumi District, 일본의 별장 전체",
+      "briefRoomInfo": ["최대 인원 5명침실 2개욕실 1개"],
+      "guestFavorite": true,
+      "rating": "4.80",
+      "reviewCount": "98",
+      "hostName": "Kazuto",
+      "hostSince": 2022,
+      "pricePerDay": 170734,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-638687891243657194/original/594156f4-2b40-44d4-a8d2-67c4e667beec.jpeg?im_w=960",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-638687891243657194/original/7197e97b-ea0e-4d38-b84a-0db1c3674f1a.png?im_w=480",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-638687891243657194/original/42e6eace-f7cb-4884-b804-59f37fa630aa.jpeg?im_w=480",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-638687891243657194/original/7091fa94-77de-429e-9843-576cf69dbcfd.jpeg?im_w=480",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-638687891243657194/original/55f53e0f-dd00-494a-a3c5-680a06093de0.jpeg?im_w=480"
+      ],
+      "amenities": [
+        {
+          "amenityName": "통나무집",
+          "icon": ""
+        },
+        {
+          "amenityName": "슈퍼호스트",
+          "icon": ""
+        },
+        {
+          "amenityName": "위치 평점 최고",
+          "icon": ""
+        },
+        {
+          "amenityName": "셀프 체크인",
+          "icon": ""
+        },
+        {
+          "amenityName": "세탁기",
+          "icon": ""
+        },
+        {
+          "amenityName": "TV",
+          "icon": ""
+        }
+      ],
+      "roomInfo": [
+        {
+          "roomId": 1,
+          "beds": [
+            {
+              "bedType": "요와 이불",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "roomId": 2,
+          "beds": [
+            {
+              "bedType": "요와 이불",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "desc": "지역 정보 지역 정보"
+    },
+    {
+      "accommodationId": 32,
+      "accommodationName": "인스타그램에서 10% 할인해드립니다! 北軽井沢전용 빌라 ~ D-place つまごい~",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": "6월2일~7일",
+      "locationName": "大字, Tsumagoi, Agatsuma District, 일본의 집 전체",
+      "briefRoomInfo": ["최대 인원 10명", "침실 3개", "욕실 1개"],
+      "guestFavorite": true,
+      "rating": "4.41",
+      "reviewCount": "29",
+      "hostName": "D-Place",
+      "hostSince": 2023,
+      "pricePerDay": 217773,
+      "imageUrl": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-972349742729113224/original/a1094405-0419-422c-91d8-2bada9006c43.jpeg?im_w=960",
+        "https://a0.muscache.com/im/pictures/hosting/Hosting-972349742729113224/original/8290e6d3-e786-4234-8a5e-28ff0ae8af13.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-972349742729113224/original/ebe0ab06-9fee-43f2-9c9c-6c9790c98d1f.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/1563d250-7663-4295-b118-5c1b15843a31.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-972349742729113224/original/bf72af40-0b30-4fdf-bc9f-4c8389bc759b.jpeg?im_w=720"
+      ],
+      "amenities": [
+        {
+          "amenityName": "통나무집",
+          "icon": ""
+        },
+        {
+          "amenityName": "셀프 체크인",
+          "icon": ""
+        },
+        {
+          "amenityName": "TV",
+          "icon": ""
+        },
+        {
+          "amenityName": "무선 인터넷",
+          "icon": ""
+        },
+        {
+          "amenityName": "난방",
+          "icon": ""
+        }
+      ],
+      "roomInfo": [],
+      "desc": ""
+    }
+  ]
+}
