@@ -1,3 +1,5 @@
+'use client'
+
 import NavigationBar from '@/components/Header/Navigation/NavigationBar'
 import DatePickerInput from '@/components/Header/SearchBar/DatePickerInput'
 import GuestInput from '@/components/Header/SearchBar/GuestInput'
