@@ -36,7 +36,7 @@ const Host = () => {
   const [hostContentData, setHostContentData] = useState([])
 
   useEffect(() => {
-    fetch('/api/host')
+    fetch('/apis/host')
       .then(response => response.json())
       .then(data => {
         setHostData(GenerateHostData(data))

@@ -5,10 +5,14 @@ import ReviewMoreButton from '@/components/Review/ReviewMoreButton'
 import ReviewModal from '@/components/ReviewModal/ReviewModal'
 import { useState } from 'react'
 
+import SortByTimestamp from '@/utils/sortByTimestamp'
+import FormatTimestamp from '@/utils/formatTimestamp'
+
 const Review = ({ reviewData, reviewMetaData }) => {
   if (!reviewMetaData || reviewMetaData.length === 0) {
     return <></>
   }
+  const [sortReviewData, setSortReviewData] = useState(FormatTimestamp(SortByTimestamp(reviewData)))
 
   const [isModalOpen, setIsModalOpen] = useState(false)
   const openModal = () => {
@@ -23,7 +27,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
     <div>
       <hr className='my-4 border-gray-300' />
       <div className='grid grid-cols-1 lg:grid-cols-2 w-full '>
-        {reviewData.map((comment, index) => {
+        {sortReviewData.map((comment, index) => {
           if (index > 5) return null
           return (
             <div key={index} className='bg-white p-4 px-2 mr-20'>

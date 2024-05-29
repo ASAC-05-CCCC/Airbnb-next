@@ -1,3 +1,4 @@
+'use client'
 import GuestFavorite from '@/components/GuestFavorite/GuestFavorite'
 import ReviewMeta from '@/components/ReviewMeta/ReviewMeta'
 import Review from '@/components/Review/Review'
@@ -10,7 +11,7 @@ const Comment = () => {
   const [reviewMetaData, setReviewMetaData] = useState([])
 
   useEffect(() => {
-    fetch('/api/review')
+    fetch('/apis/review')
       .then(response => response.json())
       .then(data => {
         setReviewData(processReviewData(data))
