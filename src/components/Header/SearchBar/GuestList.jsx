@@ -1,5 +1,4 @@
-// import GuestItem from './GuestItem'
-import GuestItem from './GuestItem'
+import GuestItem from '@/components/Header/SearchBar/GuestItem'
 
 const GuestList = () => {
   const list = [

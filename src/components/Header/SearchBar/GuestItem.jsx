@@ -1,4 +1,4 @@
-import { useGuestContext } from '../../context/GuestCountContext'
+import { useGuestContext } from '@/context/GuestCountContext'
 
 const GuestItem = ({ name, desc, title }) => {
   const { increase, decrease, guest } = useGuestContext()

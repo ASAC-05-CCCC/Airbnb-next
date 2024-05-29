@@ -1,5 +1,5 @@
-import useModal from '../../hooks/useModal'
-import AccountModal from './AccountModal'
+import AccountModal from '@/components/Header/AccountModal'
+import useModal from '@/hooks/useModal'
 
 const Login = () => {
   const { Modal, isOpen, open, close } = useModal()
@@ -29,8 +29,8 @@ const Login = () => {
             onClick={() => (isOpen ? close() : open())}
             className='flex items-center justify-center gap-2 px-4 py-1 transition-all duration-200 ease-in border border-gray-300 rounded-3xl hover:shadow-md'
           >
-            <div className='flex items-center justify-center w-10'>
-              <img className='w-2/3' src='/src/assets/menu.svg' alt='menu' />
+            <div className='flex items-center justify-center w-10 gap-2'>
+              {/* <div className='w-full h-[2px] bg-black after:contents'></div> */}
               <img src='/src/assets/myAccountImg.svg' alt='account' />
             </div>
             <div className='relative'>
