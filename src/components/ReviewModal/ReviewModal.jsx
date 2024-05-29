@@ -12,6 +12,12 @@ import CheckInIcon from '/public/images/CheckIn.svg'
 import CommunicationIcon from '/public/images/Communication.svg'
 import LocationIcon from '/public/images/Location.svg'
 import ValueIcon from '/public/images/Value.svg'
+import XIcon from '/public/images/XIcon.svg'
+
+import Image from 'next/image'
+import SortByTimestamp from '@/utils/sortByTimestamp'
+import FormatTimestamp from '@/utils/formatTimestamp'
+import { useState } from 'react'
 
 const ReviewMeta = [
   { category: '청결도', icon: CleanlinessIcon },
@@ -23,6 +29,8 @@ const ReviewMeta = [
 ]
 
 const ReviewModal = ({ reviewMetaData, reviewData, isOpen, closeModal }) => {
+  const [sortReviewData, setSortReviewData] = useState(FormatTimestamp(SortByTimestamp(reviewData)))
+
   const mergeData = ReviewMeta.map(({ category, icon }, index) => {
     return {
       category: category,
@@ -37,14 +45,14 @@ const ReviewModal = ({ reviewMetaData, reviewData, isOpen, closeModal }) => {
     <DetailModal>
       <div className='flex flex-col rounded-3xl justify-center text-sm bg-white w-[72vw] h-full px-auto overflow-hidden'>
         <div className='flex justify-between px-5 py-8'>
-          <button onClick={closeModal}>
-            <img className='h-6 w-6 text-gray-500' />
+          <button onClick={closeModal} className=' hover:bg-gray-200 rounded-full'>
+            <Image src={XIcon} className='h-8 w-8 text-black p-2' alt='XIcon' />
           </button>
         </div>
         <div className='flex px-16 gap-8 h-full overflow-y-auto flex-grow'>
-          <div className='h-[280vh] flex gap-8'>
+          <div className=' grid grid-cols-1 gap-8 lg:grid-cols-2'>
             <div>
-              <div className='flex flex-col pr-8 sticky top-0 z-10 bg-white'>
+              <div className='flex flex-col sticky top-0 z-10 bg-white'>
                 {true && <GuestFavorite />}
                 <ReviewOverall ratings={[...reviewMetaData.ratings].reverse()} />
                 {mergeData.map(({ category, value, icon }, index) => (
@@ -56,8 +64,8 @@ const ReviewModal = ({ reviewMetaData, reviewData, isOpen, closeModal }) => {
               <div className='top-0 bg-white sticky z-10 !important'>
                 <ReviewModalSearch data={reviewData.length} />
               </div>
-              <div className='flex flex-col '>
-                {reviewData.map((comment, index) => (
+              <div className='flex flex-col'>
+                {sortReviewData.map((comment, index) => (
                   <div key={index} className=' mb-8'>
                     <ReviewHeader
                       image={comment.image}
