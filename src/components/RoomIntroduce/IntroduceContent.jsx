@@ -1,5 +1,5 @@
 import React from 'react'
-import seeMore from '../../assets/RoomIntroduceSvg/seeMore.svg'
+import Image from 'next/image'
 
 const IntroduceContent = () => {
   return (
@@ -12,7 +12,7 @@ const IntroduceContent = () => {
       </div>
       <button className='underline flex items-center mt-4 mb-8'>
         <div className='font-bold'>더 보기</div>
-        <img src= { seeMore } className='w-3 h-3'/>
+        <Image src= "/images/seeMore.svg" width={12} height={12} alt='seeMore'/>
       </button>
     </div>
   )
