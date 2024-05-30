@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import FilterIcon from '/public/images/FilterIcon.svg'
+import filterIcon from '/public/images/filterIcon.svg'
 
 function FilterButton({ setIsFilterModal }) {
   return (
@@ -12,7 +12,7 @@ function FilterButton({ setIsFilterModal }) {
       }}
     >
       <div className='p-1'>
-        <Image src={FilterIcon} alt='filter' />
+        <Image src={filterIcon} alt='filter' />
       </div>
       <div className='whitespace-nowrap p-1'>
         <div className='text-xs'>필터</div>
