@@ -39,10 +39,7 @@ function FilterComponent({ setIsFilterModal }) {
 
   return (
     <DetailModal>
-      <div
-        className='relative max-w-[730px] w-[70%] h-[90%] bg-white rounded-xl'
-        ref={filterModalRef}
-      >
+      <div className='relative w-[710px] h-[90%] bg-white rounded-xl' ref={filterModalRef}>
         <div
           className='absolute top-0 flex place-items-center place-content-center 
         w-full h-[60px] rounded-t-xl border-b-[1px] border-b-slate-200'
