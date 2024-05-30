@@ -1,5 +1,5 @@
 import React from 'react'
-import Onda from '../../assets/RoomInfoImg/ONDA.png'
+import Image from 'next/image'
 
 const RoomHost = () => {
   return (
@@ -7,7 +7,7 @@ const RoomHost = () => {
       <div className="border-t border-gray-300 pt-4">
         <div className="flex items-center space-x-3">
           <button className='mb-4'>
-            <img src={Onda} className='w-10 h-10' />
+            <Image src="/images/ONDA.png" width={40} height={40} />
           </button>
           <div>
             <p className="font-bold">호스트: Onda 님</p>

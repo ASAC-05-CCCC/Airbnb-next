@@ -1,7 +1,7 @@
 import React from 'react'
-import SimpleInfo from './SimpleInfo.jsx'
-import RoomHost from './RoomHost.jsx'
-import InfoDetail from './InfoDetail.jsx'
+import SimpleInfo from '@/components/RoomInfo/SimpleInfo.jsx'
+import RoomHost from '@/components/RoomInfo/RoomHost.jsx'
+import InfoDetail from '@/components/RoomInfo/InfoDetail.jsx'
 
 const RoomInfo = () => {
   return (

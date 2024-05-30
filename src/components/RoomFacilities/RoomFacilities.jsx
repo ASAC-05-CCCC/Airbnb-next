@@ -1,7 +1,5 @@
 import React from 'react';
-import beachNear from '../../assets/RoomFacilitiesSvg/beachNear.svg';
-import freeWifi from '../../assets/RoomFacilitiesSvg/freeWifi.svg';
-import swimming from '../../assets/RoomFacilitiesSvg/swimming.svg';
+import Image from 'next/image';
 
 const RoomFacilities = () => {
   return (
@@ -12,19 +10,19 @@ const RoomFacilities = () => {
           <div className="flex flex-wrap -mx-2">
             <div className="w-full sm:w-1/2 px-2 mb-4">
               <div className="flex items-center space-x-2">
-                <img src={beachNear} alt="Beach Near" className="w-6 h-6" />
+                <Image src="/images/beachNear.svg" alt="Beach Near" width={24} height={24} />
                 <span>해변과 인접 - 해변</span>
               </div>
             </div>
             <div className="w-full sm:w-1/2 px-2 mb-4">
               <div className="flex items-center space-x-2">
-                <img src={freeWifi} alt="Free Wifi" className="w-6 h-6" />
+                <Image src="/images/freeWifi.svg" alt="Free Wifi" width={24} height={24} />
                 <span>무선 인터넷</span>
               </div>
             </div>
             <div className="w-full sm:w-1/2 px-2 mb-4">
               <div className="flex items-center space-x-2">
-                <img src={swimming} alt="Swimming Pool" className="w-6 h-6" />
+                <Image src="/images/swimming.svg" alt="Swimming Pool" width={24} height={24} />
                 <span>수영장</span>
               </div>
             </div>

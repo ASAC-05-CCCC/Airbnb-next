@@ -1,6 +1,5 @@
 import React from 'react';
-import shareIcon from '../../assets/RoomViewSvg/share.svg';
-import saveIcon from '../../assets//RoomViewSvg/store.svg';
+import Image from 'next/image';
 
 const RoomTitle = () => {
   return (
@@ -11,11 +10,11 @@ const RoomTitle = () => {
         </h1>
         <div className="flex items-center gap-4 justify-end flex-shrink-0 sm:flex-1">
           <button className="flex items-center underline">
-            <img src={shareIcon} alt="Share" className="w-3 h-3 mr-1" />
+            <Image src="/images/share.svg" alt="Share"  width={12} height={12} margin-right={4} />
             공유하기
           </button>
           <button className="flex items-center underline">
-            <img src={saveIcon} alt="Save" className="w-3 h-3 mr-1" />
+            <Image src="/images/store.svg" alt="Save" width={12} height={12} margin-right={4} />
             저장
           </button>
         </div>
