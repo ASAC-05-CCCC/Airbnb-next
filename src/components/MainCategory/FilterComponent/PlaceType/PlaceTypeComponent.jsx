@@ -11,7 +11,7 @@ function PlaceTypeComponent() {
     <>
       <FilterEachComponent title={'숙소 유형'} description={description}>
         <div className='w-full h-[90px]'>
-          <div className='flex flex-rows h-[60%] mx-8 mt-2'>
+          <div className='flex flex-rows h-[60px] mx-8'>
             <PlaceSelectButton
               name={'모든 유형'}
               setType={setType}
