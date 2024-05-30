@@ -1,7 +1,7 @@
 function FilterDoneButton({ setIsFilterModal, countPlace }) {
   return (
     <button
-      className='flex place-items-center place-content-center hover:bg-black w-[8rem] h-12 bg-slate-800 border rounded-lg m-2'
+      className='flex place-items-center place-content-center hover:bg-black w-[8rem] h-12 bg-slate-800 border rounded-lg m-2 duration-200 active:scale-95'
       onClick={() => {
         setIsFilterModal(prev => !prev)
       }}

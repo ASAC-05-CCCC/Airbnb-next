@@ -11,7 +11,7 @@ function BedroomComponent() {
   return (
     <>
       <FilterEachComponent title={'침실과 침대'}>
-        <div className='my-4'>
+        <div>
           <BedroomEachComponent type={'침실'} setCount={setCountBedroom} count={countBedroom} />
           <BedroomEachComponent type={'침대'} setCount={setCountBed} count={countBed} />
           <BedroomEachComponent type={'욕실'} setCount={setCountBathroom} count={countBathroom} />

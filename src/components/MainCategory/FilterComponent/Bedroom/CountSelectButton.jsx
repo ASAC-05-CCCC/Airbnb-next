@@ -10,7 +10,7 @@ function CountSelectButton({ number, width, setCount, count }) {
       <button
         onClick={onEventHandler}
         className={clsx(
-          'border-[1px] border-gray-300 rounded-3xl mr-2 py-[10px] px-[24px] hover:border-black transition:active duration-200 active:py-[9px] active:px-[23px] ',
+          'border-[1px] border-gray-300 rounded-3xl mr-2 py-[10px] px-[24px] hover:border-black duration-200 active:scale-90',
           number === count ? 'bg-slate-800 text-white' : 'bg-white text-gray-800',
         )}
       >
