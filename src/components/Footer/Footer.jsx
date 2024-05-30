@@ -1,6 +1,5 @@
-'use client'
-import NextTravelTitle from '../NextTravel/NextTravelTitle'
-import FooterTitle from './FooterTitle'
+import NextTravelTitle from '@/components/Footer/NextTravelTitle'
+import FooterTitle from '@/components/Footer/FooterTitleIn'
 
 const Footer = () => {
   return (

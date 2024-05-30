@@ -1,19 +1,19 @@
-// import FacebookImage from '../../assets/FacebookImage.jpeg'
-// import TwitterImage from '../../assets/TwitterImage.jpeg'
-// import InstargramImage from '../../assets/InstargramImage.jpeg'
-// import Blog from '../../assets/Blog.jpeg'
-// import AirbnbApp from '../../assets/AirbnbApp.jpeg'
+import FacebookImage from '/public/images/FacebookImage.jpeg'
+import TwitterImage from '/public/images/TwitterImage.jpeg'
+import InstargramImage from '/public/images/InstargramImage.jpeg'
+import Blog from '/public/images/Blog.jpeg'
+import AirbnbApp from '/public/images/AirbnbApp.jpeg'
+import Image from 'next/image'
 
-const FooterTitle = () => {
+const FooterTitleHome = () => {
   return (
     <>
-      <section className='px-2 py-8 text-gray-700 bg-gray-100 sm:px-6 lg:px-8'>
-        <footer className='flex flex-col items-center justify-between pt-0 mt-0 text-gray-700 bg-gray-100 md:flex-row'>
-          {/* bg-gray-100 text-gray-700 py-8' */}
-          <div className='pl-10 mx-auto sm:px-6 lg:px-8 '>
-            <div className='grid grid-cols-1 gap-8 md:grid-cols-3'>
+      <section className='bg-gray-100 text-gray-700 py-8 px-2 sm:px-6 lg:px-8 text-sm'>
+        <footer className='max-w-8xl mx-auto'>
+          <div className='pl-10 mx-auto  sm:px-6 lg:px-8 '>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
               <div>
-                <h3 className='mb-4 font-bold'>에어비앤비 지원</h3>
+                <h3 className='font-bold mb-4'>에어비앤비 지원</h3>
                 <ul>
                   <li className='mb-2'>
                     <a href='#' className='hover:underline'>
@@ -48,7 +48,7 @@ const FooterTitle = () => {
                 </ul>
               </div>
               <div>
-                <h3 className='mb-4 font-bold'>호스팅</h3>
+                <h3 className='font-bold mb-4'>호스팅</h3>
                 <ul>
                   <li className='mb-2'>
                     <a href='#' className='hover:underline'>
@@ -83,7 +83,7 @@ const FooterTitle = () => {
                 </ul>
               </div>
               <div>
-                <h3 className='mb-4 font-bold'>에어비앤비</h3>
+                <h3 className='font-bold mb-4'>에어비앤비</h3>
                 <ul>
                   <li className='mb-2'>
                     <a href='#' className='hover:underline'>
@@ -113,39 +113,39 @@ const FooterTitle = () => {
                 </ul>
               </div>
             </div>
-            <div className='flex flex-col items-center justify-between pt-8 mt-8 border-t border-gray-300 md:flex-row'>
+            <div className='border-t border-gray-300 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center'>
               <p className='text-sm text-gray-500'>
                 &copy; 2024 Airbnb, Inc. ・ 개인정보 처리방침 ・ 이용약관 ・ 사이트맵 ・ 한국의
                 변경된 환불 정책 ・ 회사 세부정보
               </p>
-              <div className='flex mt-4 space-x-4 md:mt-0'>
+              <div className='flex space-x-4 mt-4 md:mt-0'>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
                   🌐 한국어 (KR)
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
                   ₩ KRW
                 </a>
-                {/* <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <img src={FacebookImage} className='w-6 h-6' />
+                <a href='#' className='text-gray-500 hover:text-gray-700'>
+                  <Image src={FacebookImage} className='w-6 h-6' alt='FACEBOOK' />
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <img src={TwitterImage} className='w-6 h-6' />
+                  <Image src={TwitterImage} className='w-6 h-6' alt='TWIITER' />
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <img src={InstargramImage} className='w-6 h-6' />
+                  <Image src={InstargramImage} className='w-6 h-6' alt='INSTARGRAM' />
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <img src={Blog} className='w-6 h-6' />
+                  <Image src={Blog} className='w-6 h-6' alt='BLOG' />
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <img src={AirbnbApp} className='w-6 h-6' />
-                </a> */}
+                  <Image src={AirbnbApp} className='w-6 h-6' alt='AIRBNB' />
+                </a>
               </div>
             </div>
 
-            <div className='mt-4 text-xs leading-relaxed text-gray-500'>
+            <div className='text-gray-500 text-xs mt-4 leading-relaxed'>
               <p>
-                <hr className='mb-1 border-gray-300' />
+                <span className='border-gray-300 mb-1' />
                 웹사이트 제공자: Airbnb Ireland UC, private unlimited company, 8 Hanover Quay Dublin
                 2, D02 DP23 Ireland | 이사: Dermot Clarke, Killian Pattwell, Andrea Finnegan | VAT
                 번호: IE9827384L | 사업자 등록 번호: IE 511825 | 연락처: terms@airbnb.com, 웹사이트,
@@ -162,4 +162,4 @@ const FooterTitle = () => {
   )
 }
 
-export default FooterTitle
+export default FooterTitleHome
