@@ -13,11 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang='ko'>
       <body>
-        <div className='flex flex-col items-center px-20'>
-          <div className='flex w-full justify-center item-center'>
+        <div className='flex flex-col items-center px-20 w-full'>
+          <div className='flex w-full justify-center item-center w-full'>
             <Header />
           </div>
-          <div className='flex w-full justify-center items-center overflow-auto'>
+          <div className='flex w-full justify-center items-center overflow-auto w-full'>
             <Category />
           </div>
           <section className='w-full'>{children}</section>

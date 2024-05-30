@@ -1,3 +1,5 @@
+'use client'
+
 import Host from '@/components/Host/Host'
 import Notification from '@/components/Notification/Notification'
 import RoomFacilities from '@/components/RoomFacilities/RoomFacilities'
@@ -6,10 +8,11 @@ import RoomIntroduce from '@/components/RoomIntroduce/RoomIntroduce'
 import RoomView from '@/components/RoomView/RoomView'
 import SleepSpec from '@/components/SleepSpec/SleepSpec'
 import Reservation from '@/components/reservation/Reservation'
+import Footer from '@/components/Footer/Footer'
 
-export default function RoomsHome() {
+export default function RoomsPage() {
   return (
-    <>
+    <div className='flex flex-col px-20 w-full'>
       <RoomView />
       <section className='flex w-full border-b-2'>
         <div className='flex flex-col w-full basis-2/3'>
@@ -32,6 +35,7 @@ export default function RoomsHome() {
         <Host />
         <Notification />
       </section>
-    </>
+      <Footer />
+    </div>
   )
 }
