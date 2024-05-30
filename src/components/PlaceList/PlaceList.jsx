@@ -9,7 +9,7 @@ const PlaceList = () => {
   const accommodations = placeData.accommodationInfo
 
   return (
-    <div className='place-list mx-8 mt-4 mb-16 grid grid-cols-fluid justify-center gap-5 px-8 '>
+    <div className='place-list grid grid-cols-fluid justify-center gap-5 '>
       {accommodations.map(place => (
         <div key={place.accommodationId} className='mb-6'>
           <PlaceCardImageList

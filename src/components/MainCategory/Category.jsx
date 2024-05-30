@@ -42,19 +42,22 @@ function Category() {
   }
 
   return (
-    <div className='flex flex-row place-items-center place-content-center'>
-      <div className='flex flex-row place-items-center place-content-center w-[95%]'>
-        <div className='w-10 h-10 flex place-items-center place-content-center'>
-          {isRightArrow && (
+    <div className='w-full flex flex-row place-items-center place-content-center'>
+      <div className='flex flex-row place-items-center place-content-center w-full gap-2'>
+        {isRightArrow && (
+          <div className='w-10 h-10 flex place-items-center place-content-center'>
             <ArrowButton onClickArrowButton={onClickRightArrowButton} direction={'right'} />
-          )}
-        </div>
-        <div className='flex p-5 overflow-hidden w-9/12'>
+          </div>
+        )}
+        <div className='flex w-full p-5 overflow-hidden '>
           <div
-            className='flex transition-transform duration-700 ease-in-out space-x-2'
+            className='flex gap-3 transition-transform duration-700 ease-in-out space-x-2 w-full'
             style={{ transform: `translateX(${transX}rem)` }}
           >
             {categoryList.map((item, index) => {
+              // if (index > 13) {
+              //   return null
+              // }
               return (
                 <CategoryItem
                   key={index}

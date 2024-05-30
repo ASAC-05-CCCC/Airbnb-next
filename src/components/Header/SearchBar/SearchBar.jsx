@@ -4,7 +4,7 @@ const SearchBar = ({ children, open, isOpen, close, dispatch }) => {
       <div className='relative w-full '>
         {children}
         {/* Search Bar */}
-        <div className='flex items-center w-full max-w-4xl bg-white rounded-full shadow-md cursor-pointer'>
+        <div className='flex items-center w-full max-w-4xl bg-white rounded-full shadow-lg border-gray-100 border-2 cursor-pointer'>
           {/* 여행지 검색 */}
           <div
             onClick={() => {

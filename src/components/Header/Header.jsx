@@ -5,7 +5,7 @@ import NavbarWrapper from '@/components/Header/Navigation/NavbarWrapper'
 const Header = () => {
   return (
     <>
-      <div className='w-full h-56 px-10 border-b-[1px] lg:h-40'>
+      <div className='w-full h-56 border-b-[1px] lg:h-40'>
         <header className='w-full'>
           <div className='relative flex items-center w-full h-full py-3'>
             <Logo />
