@@ -2,7 +2,7 @@ import React from 'react'
 
 const Reservation = () => {
   return (
-    <section className='w-[300px] '>
+    <section className='w-full '>
       <div className='w-full py-7 px-6 border-[1px] shadow-xl rounded-xl shadow-gray-200'>
         <div className='flex flex-col gap-4 '>
           {/* 가격 */}

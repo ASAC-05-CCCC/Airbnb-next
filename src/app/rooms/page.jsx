@@ -9,12 +9,13 @@ import RoomView from '@/components/RoomView/RoomView'
 import SleepSpec from '@/components/SleepSpec/SleepSpec'
 import Reservation from '@/components/reservation/Reservation'
 import Footer from '@/components/Footer/Footer'
+import Comment from '@/components/comment/Comment'
 
 export default function RoomsPage() {
   return (
     <div className='flex flex-col px-20 w-full'>
       <RoomView />
-      <section className='flex w-full border-b-2'>
+      <section className='flex w-full border-b-2 justify-between gap-10'>
         <div className='flex flex-col w-full basis-2/3'>
           <RoomInfo />
           <RoomIntroduce />
@@ -26,7 +27,7 @@ export default function RoomsPage() {
       </section>
 
       <section className='flex flex-col items-center w-full'>
-        {/* <Comment /> */}
+        <Comment />
         <section className='flex flex-col items-center w-full'>
           <RoomFacilities />
           {/* 달력 */}
@@ -35,7 +36,6 @@ export default function RoomsPage() {
         <Host />
         <Notification />
       </section>
-      <Footer />
     </div>
   )
 }

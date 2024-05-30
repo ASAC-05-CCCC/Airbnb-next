@@ -14,13 +14,7 @@ export default function RootLayout({ children }) {
     <html lang='ko'>
       <body>
         <div className='flex flex-col items-center transition-all lg:px-10 xl:px-20 sm:px-8 w-full'>
-          <div className='flex justify-center item-center w-full'>
-            <Header />
-          </div>
-          <div className='flex  justify-center items-center overflow-auto w-full'>
-            <Category />
-          </div>
-          <section className='w-full'>{children}</section>
+          {children}
         </div>
         <Footer />
       </body>
