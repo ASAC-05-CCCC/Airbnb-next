@@ -4,6 +4,7 @@ import ReviewHeader from '../Review/ReviewHeader'
 import ReviewModalSearch from '@/components/ReviewModal/ReviewModalSearch'
 import sortortByTimestamp from '@/utils/sortByTimestamp'
 import { sortByHighRatings, sortByLowRatings } from '@/utils/sortByRating'
+import formatTimestamp from '@/utils/formatTimestamp'
 
 const categories = {
   mostRecent: '최신순',
@@ -12,18 +13,20 @@ const categories = {
 }
 
 const ReviewModalCategory = ({ reviewData }) => {
-  const [fomatData, setFomatData] = useState(reviewData)
+  const [ReviewData, setReviewData] = useState(reviewData)
   const [selectedCategory, setSelectedCategory] = useState('mostRecent')
 
   useEffect(() => {
     if (selectedCategory === 'mostRecent') {
-      setFomatData(prve => sortortByTimestamp(prve))
+      setReviewData(prve => sortortByTimestamp(prve))
     } else if (selectedCategory === 'highestRated') {
-      setFomatData(prve => sortByHighRatings(prve))
+      setReviewData(prve => sortByHighRatings(prve))
     } else {
-      setFomatData(prve => sortByLowRatings(prve))
+      setReviewData(prve => sortByLowRatings(prve))
     }
   }, [selectedCategory])
+
+  const fomatData = formatTimestamp(ReviewData)
 
   return (
     <div>

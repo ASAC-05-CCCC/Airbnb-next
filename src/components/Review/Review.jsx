@@ -49,7 +49,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
       <ReviewModal
         isOpen={isModalOpen}
         closeModal={closeModal}
-        reviewData={sortReviewData}
+        reviewData={reviewData}
         reviewMetaData={reviewMetaData}
       />
     </div>
