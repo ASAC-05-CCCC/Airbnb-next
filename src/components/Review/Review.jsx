@@ -37,6 +37,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
                   rating={comment.rating}
                   timeStamp={comment.timestamp}
                   message={comment.message}
+                  keyword={''}
                 />
               </div>
             </div>
@@ -49,7 +50,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
       <ReviewModal
         isOpen={isModalOpen}
         closeModal={closeModal}
-        reviewData={sortReviewData}
+        reviewData={reviewData}
         reviewMetaData={reviewMetaData}
       />
     </div>

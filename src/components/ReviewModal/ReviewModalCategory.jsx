@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react'
 import ReviewContent from '../Review/ReviewContent'
 import ReviewHeader from '../Review/ReviewHeader'
 import ReviewModalSearch from '@/components/ReviewModal/ReviewModalSearch'
-import sortortByTimestamp from '@/utils/sortByTimestamp'
 import { sortByHighRatings, sortByLowRatings } from '@/utils/sortByRating'
+import formatTimestamp from '@/utils/formatTimestamp'
+import filterByKeyword from '@/utils/fiterByKeyword'
+import sortByTimestamp from '@/utils/sortByTimestamp'
 
 const categories = {
   mostRecent: '최신순',
@@ -12,18 +14,30 @@ const categories = {
 }
 
 const ReviewModalCategory = ({ reviewData }) => {
-  const [fomatData, setFomatData] = useState(reviewData)
+  const originalData = reviewData
+  const [ReviewData, setReviewData] = useState(reviewData)
   const [selectedCategory, setSelectedCategory] = useState('mostRecent')
+  const [keyword, setKeyword] = useState('')
 
   useEffect(() => {
-    if (selectedCategory === 'mostRecent') {
-      setFomatData(prve => sortortByTimestamp(prve))
-    } else if (selectedCategory === 'highestRated') {
-      setFomatData(prve => sortByHighRatings(prve))
-    } else {
-      setFomatData(prve => sortByLowRatings(prve))
+    let data = originalData
+
+    if (keyword.trim()) {
+      data = filterByKeyword(originalData, keyword)
     }
-  }, [selectedCategory])
+
+    if (selectedCategory === 'mostRecent') {
+      data = sortByTimestamp(data)
+    } else if (selectedCategory === 'highestRated') {
+      data = sortByHighRatings(data)
+    } else {
+      data = sortByLowRatings(data)
+    }
+
+    setReviewData(data)
+  }, [selectedCategory, keyword])
+
+  const fomatData = formatTimestamp(ReviewData)
 
   return (
     <div>
@@ -33,19 +47,26 @@ const ReviewModalCategory = ({ reviewData }) => {
           categories={categories}
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
+          keyword={keyword}
+          setKeyword={setKeyword}
         />
       </div>
       <div className='flex flex-col'>
-        {fomatData.map((comment, index) => (
-          <div key={index} className='mb-8'>
-            <ReviewHeader image={comment.image} name={comment.name} country={comment.country} />
-            <ReviewContent
-              rating={comment.rating}
-              timeStamp={comment.timestamp}
-              message={comment.message}
-            />
-          </div>
-        ))}
+        {fomatData ? (
+          fomatData.map((comment, index) => (
+            <div key={index} className='mb-8'>
+              <ReviewHeader image={comment.image} name={comment.name} country={comment.country} />
+              <ReviewContent
+                rating={comment.rating}
+                timeStamp={comment.timestamp}
+                message={comment.message}
+                keyword={keyword}
+              />
+            </div>
+          ))
+        ) : (
+          <div>{keyword} + 에 대한 값이 없습니다.</div>
+        )}
       </div>
     </div>
   )
