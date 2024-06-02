@@ -3,15 +3,8 @@ import SearchIcon from '/public/images/Search.svg'
 import BottomArrowIcon from '/public/images/BottomArrow.svg'
 import Image from 'next/image'
 
-const categories = {
-  mostRecent: '최신순',
-  highestRated: '높은 평점순',
-  lowestRated: '낮은 평점순',
-}
-
-const ReviewModalSearch = ({ data }) => {
+const ReviewModalSearch = ({ data, categories, selectedCategory, setSelectedCategory }) => {
   const [isCategoryOpen, setIsCategoryOpen] = useState(false)
-  const [selectedCategory, setSelectedCategory] = useState('mostRecent')
   const [isFocused, setIsFocused] = useState(false)
 
   const handleCategoryChange = categoryKey => {

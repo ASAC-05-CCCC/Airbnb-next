@@ -12,7 +12,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
   if (!reviewMetaData || reviewMetaData.length === 0) {
     return <></>
   }
-  const [sortReviewData, setSortReviewData] = useState(FormatTimestamp(SortByTimestamp(reviewData)))
+  const sortReviewData = FormatTimestamp(SortByTimestamp(reviewData))
 
   const [isModalOpen, setIsModalOpen] = useState(false)
   const openModal = () => {
@@ -49,7 +49,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
       <ReviewModal
         isOpen={isModalOpen}
         closeModal={closeModal}
-        reviewData={reviewData}
+        reviewData={sortReviewData}
         reviewMetaData={reviewMetaData}
       />
     </div>
