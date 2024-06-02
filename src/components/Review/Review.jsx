@@ -37,6 +37,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
                   rating={comment.rating}
                   timeStamp={comment.timestamp}
                   message={comment.message}
+                  keyword={''}
                 />
               </div>
             </div>
