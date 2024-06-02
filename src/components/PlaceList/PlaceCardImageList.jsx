@@ -9,9 +9,10 @@ import './NavigationCustom.css'
 import like from '/public/images/like.svg'
 import ArrowButton from '@/components/common/ArrowButton'
 import Image from 'next/image'
+import Link from 'next/link'
 
 // 장소 이미지 슬라이더 리스트 (사진 넘기는거)
-const PlaceCardImageList = ({ photos, guestFavorite }) => {
+const PlaceCardImageList = ({ id, photos, guestFavorite }) => {
   return (
     <div className='relative w-full group'>
       <Swiper
@@ -38,12 +39,15 @@ const PlaceCardImageList = ({ photos, guestFavorite }) => {
                   <GuestPreference />
                 </div>
               )}
-              <Image
-                src={photo}
-                alt={`Slide`}
-                fill
-                className='w-full h-full object-cover aspect-square bg-zinc-300 rounded-xl'
-              />
+              {/* 사진 누르면 디테일 페이지로 이동 */}
+              <Link href={`/rooms/${id}`}>
+                <Image
+                  src={photo}
+                  alt={`Slide`}
+                  fill
+                  className='w-full h-full object-cover aspect-square bg-zinc-300 rounded-xl'
+                />
+              </Link>
             </div>
           </SwiperSlide>
         ))}
