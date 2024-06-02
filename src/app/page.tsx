@@ -5,7 +5,9 @@ import Category from '@/components/MainCategory/Category'
 import PlaceList from '@/components/PlaceList/PlaceList'
 
 //searchParam을 받아서 list 업데이트
-export default function Home() {
+export default function Home({ searchParams }) {
+  const categoryId = searchParams.category
+
   return (
     <>
       <div className='flex justify-center item-center w-full'>
@@ -15,7 +17,7 @@ export default function Home() {
         <Category />
       </div>
       <section className='w-full'>
-        <PlaceList />
+        <PlaceList categoryId={categoryId} />
       </section>
     </>
   )

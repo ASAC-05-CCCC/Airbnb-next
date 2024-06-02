@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PlaceCardInfo from '@/components/PlaceList/PlaceCardInfo'
 import PlaceCardImageList from '@/components/PlaceList/PlaceCardImageList'
 
-import placeData from '/public/json/Data.json' // 임시데이터
-
 // 전체 장소 리스트
-const PlaceList = () => {
-  const accommodations = placeData.accommodationInfo
+const PlaceList = ({ categoryId }) => {
+  const [accommodations, setAccommodations] = useState([])
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/apis/rooms/?category=${categoryId}`).then(response =>
+      response.json().then(data => {
+        setAccommodations(data.data.accommodationInfo)
+      }),
+    )
+  }, [])
 
   return (
     <div className='place-list grid grid-cols-fluid justify-center gap-5 '>
