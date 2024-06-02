@@ -1,7 +1,7 @@
-import { useGuestContext } from '@/context/GuestCountContext'
+import { useSearchContext } from '@/context/SearchContext'
 
 const GuestItem = ({ name, desc, title }) => {
-  const { increase, decrease, guest } = useGuestContext()
+  const { increaseGuest, decreaseGuest, guest } = useSearchContext()
 
   return (
     <li
@@ -19,7 +19,7 @@ const GuestItem = ({ name, desc, title }) => {
       <div className='flex gap-4'>
         <button
           name={name}
-          onClick={e => decrease(e)}
+          onClick={e => decreaseGuest(e)}
           className='px-2 transition-all border border-gray-200 rounded-full hover:border-gray-600'
         >
           -
@@ -27,7 +27,7 @@ const GuestItem = ({ name, desc, title }) => {
         <span>{guest[name]}</span>
         <button
           name={name}
-          onClick={e => increase(e)}
+          onClick={e => increaseGuest(e)}
           className='px-2 transition-all border border-gray-200 rounded-full hover:border-gray-600'
         >
           +

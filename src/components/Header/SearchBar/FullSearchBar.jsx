@@ -2,7 +2,7 @@ import { useSearchContext } from '@/context/SearchContext'
 import clsx from 'clsx'
 
 function FullSearchBar() {
-  const { toggle } = useSearchContext()
+  const { toggle, handleSearchSubmit, datepicker, guest } = useSearchContext()
 
   return (
     <>
@@ -26,6 +26,7 @@ function FullSearchBar() {
                 type='text'
                 placeholder='여행지 검색'
                 className='text-gray-900 bg-transparent focus:outline-none'
+                // value={location}
               />
             </div>
           </div>
@@ -41,7 +42,7 @@ function FullSearchBar() {
         >
           <div className='w-full border-r'>
             <span className='block text-xs font-semibold '>날짜</span>
-            <button className='text-gray-500'>날짜 추가</button>
+            <button className='text-gray-500'>{datepicker.startDate || '날짜 추가'}</button>
           </div>
         </div>
 
@@ -55,13 +56,16 @@ function FullSearchBar() {
           >
             <div>
               <span className='block text-xs font-semibold '>여행자</span>
-              <button className='text-gray-500'>게스트 추가</button>
+              <button className='text-gray-500'>{`게스트 ${guest.adults}` || '게스트 추가'}</button>
             </div>
           </div>
 
           {/* 검색 버튼 */}
           <div className='flex items-center px-2 ml-2'>
-            <button className='flex items-center justify-center p-3 text-white bg-red-500 rounded-full'>
+            <button
+              onClick={handleSearchSubmit}
+              className='flex items-center justify-center p-3 text-white bg-red-500 rounded-full'
+            >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
