@@ -3,17 +3,24 @@ import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import './DatePicker.css'
 import { ko } from 'date-fns/locale'
+import { useSearchContext } from '@/context/SearchContext'
 // import './App.css' // 추가적인 Tailwind CSS 스타일링을 위한 CSS 파일
 
 const DatePickerInput = () => {
+  const { handleStartDateSelected, handleEndDateSelected } = useSearchContext()
   const [startDate, setStartDate] = useState(null)
   const [endDate, setEndDate] = useState(null)
 
   const onChange = dates => {
-    console.log(dates)
     const [start, end] = dates
     setStartDate(start)
     setEndDate(end)
+
+    if (start && !end) {
+      handleStartDateSelected(start)
+    } else if (start && end) {
+      handleEndDateSelected(end)
+    }
   }
 
   return (

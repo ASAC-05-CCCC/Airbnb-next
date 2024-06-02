@@ -2,10 +2,14 @@ import { useSearchContext } from '@/context/SearchContext'
 import Image from 'next/image'
 
 const countryData = [
-  { id: 1, name: '유연한 검색', image_url: '' },
-  { id: 2, name: '유렵', image_url: '' },
-  { id: 3, name: '일본', image_url: '' },
-  { id: 4, name: '동남 아시아', image_url: '' },
+  {
+    id: 1,
+    name: '유연한 검색',
+    image_url: '/images/CountryBtn.png',
+  },
+  { id: 2, name: '유렵', image_url: '/images/CountryBtn.png' },
+  { id: 3, name: '일본', image_url: '/images/CountryBtn.png' },
+  { id: 4, name: '동남 아시아', image_url: '/images/CountryBtn.png' },
 ]
 
 const CountryPicker = () => {
@@ -24,8 +28,11 @@ const CountryPicker = () => {
                   key={each.id}
                   className='flex flex-col gap-1 p-2 transition-all rounded-lg cursor-pointer active:border active:border-black hover:bg-gray-200'
                 >
-                  <button className='w-full'>
-                    <Image className='w-16 rounded-lg' src={each.image_url} alt='' />
+                  <button className='w-[85px] relative h-[85px]'>
+                    {/*  Image is missing required "src" property 방지 위해 */}
+                    {each.image_url && (
+                      <Image fill className='w-16 rounded-lg' src={each.image_url} alt='' />
+                    )}
                   </button>
                   <span className='text-xs'>{each.name}</span>
                 </li>

@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react'
 
-const SearchContext = createContext(() => {})
+const SearchContext = createContext({ toggle: () => {} })
 
 // 검색할 데이터를 선택한 내용을 관리하는 상태
 /**
@@ -87,9 +87,25 @@ function SearchContextProvider({ children }) {
 
   // 검색 버튼을 눌렀을 때 API 요청하는 함수
   const handleSearchSubmit = async () => {
-    const searchData = { location, datepicker, guest }
-
+    const searchData = {
+      location,
+      datepicker,
+      //guest 수의 총합
+      guest: Object.values(guest).reduce((prev, current) => {
+        return prev + current
+      }),
+    }
     console.log(searchData)
+  }
+
+  const handleStartDateSelected = start => {
+    setDatepicker(prev => ({ ...prev, startDate: start.toLocaleDateString() }))
+    console.dir(start.toLocaleDateString())
+  }
+
+  const handleEndDateSelected = end => {
+    setDatepicker(prev => ({ ...prev, endDate: end.toLocaleDateString() }))
+    console.dir(end.toLocaleDateString())
   }
 
   return (
@@ -106,6 +122,8 @@ function SearchContextProvider({ children }) {
         increaseGuest,
         decreaseGuest,
         handleSearchSubmit,
+        handleStartDateSelected,
+        handleEndDateSelected,
       }}
     >
       {children}
