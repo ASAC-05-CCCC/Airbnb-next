@@ -1,19 +1,22 @@
 'use client'
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 
 const RoomPictures = () => {
   const [roomData, setRoomData] = useState(null);
+  const pathname = usePathname();
+  const id = pathname.slice(7);
 
   useEffect(() => {
-    fetch('/json/Data.json')
-      .then((response) => response.json())
-      .then((data) => {
-        const room = data.accommodationInfo.find(room => room.accommodationId === 25);
-        setRoomData(room);
-      })
-      .catch((error) => console.error('Error fetching room data:', error));
+    fetch(`/apis/rooms/${id}`)
+    .then(response => response.json())
+    .then(data => {
+      setRoomData(data)
+      console.log(data)
+    })
+    .catch(error => console.error('Error fetching room data:', error));
   }, []);
 
   if (!roomData) {
