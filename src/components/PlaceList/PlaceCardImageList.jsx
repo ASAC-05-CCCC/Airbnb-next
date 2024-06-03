@@ -35,7 +35,7 @@ const PlaceCardImageList = ({ id, photos, guestFavorite }) => {
       >
         {photos.map((photo, index) => (
           <SwiperSlide key={index}>
-            <div className='relative w-full h-full aspect-square'>
+            <div className='w-full h-full aspect-square'>
               {/* 하트 모양 표시 */}
               <div className='absolute top-2 right-2 z-20 p-2'>
                 <Image
@@ -53,13 +53,17 @@ const PlaceCardImageList = ({ id, photos, guestFavorite }) => {
                 </div>
               )}
               {/* 사진 누르면 디테일 페이지로 이동 */}
-              <Link href={`/rooms/${id}`}>
-                <Image
-                  src={photo}
-                  alt={`Slide`}
-                  fill
-                  className='w-full h-full object-cover aspect-square bg-zinc-300 rounded-xl'
-                />
+              <Link href={`/rooms/${id}`} target='_blank'>
+                <div className='relative h-full'>
+                  <Image
+                    src={photo}
+                    alt={`Slide`}
+                    fill
+                    sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                    className='w-full h-full object-cover aspect-square bg-zinc-300 rounded-xl'
+                    priority
+                  />
+                </div>
               </Link>
             </div>
           </SwiperSlide>
