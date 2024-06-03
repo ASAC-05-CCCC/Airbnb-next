@@ -7,6 +7,7 @@ import FilterButton from '@/components/MainCategory/FilterButton'
 import FilterComponent from '@/components/MainCategory/FilterComponent'
 import ArrowButton from '@/components/common/ArrowButton'
 import categoryData from '/public/categoryList.json'
+import Link from 'next/link'
 
 function Category() {
   const categoryList = categoryData.categoryList
@@ -42,33 +43,28 @@ function Category() {
   }
 
   return (
-    <div className='w-full flex flex-row place-items-center place-content-center'>
-      <div className='flex flex-row place-items-center place-content-center w-full gap-2'>
+    <div className='flex w-full flex-row place-content-center place-items-center'>
+      <div className='flex w-full flex-row place-content-center place-items-center gap-2'>
         {isRightArrow && (
-          <div className='w-10 h-10 flex place-items-center place-content-center'>
+          <div className='flex h-10 w-10 place-content-center place-items-center'>
             <ArrowButton onClickArrowButton={onClickRightArrowButton} direction={'right'} />
           </div>
         )}
-        <div className='flex w-full p-5 overflow-hidden '>
+        <div className='flex w-full overflow-hidden p-5 '>
           <div
-            className='flex gap-3 transition-transform duration-700 ease-in-out space-x-2 w-full'
+            className='flex w-full gap-3 space-x-2 transition-transform duration-700 ease-in-out'
             style={{ transform: `translateX(${transX}rem)` }}
           >
             {categoryList.map((item, index) => {
-              // if (index > 13) {
-              //   return null
-              // }
               return (
-                <CategoryItem
-                  key={index}
-                  categoryIcon={item.categoryIcon}
-                  categoryName={item.categoryName}
-                />
+                <Link key={index} href={`/?category=${index}`}>
+                  <CategoryItem categoryIcon={item.categoryIcon} categoryName={item.categoryName} />
+                </Link>
               )
             })}
           </div>
         </div>
-        <div className='w-10 h-10 flex place-items-center place-content-center'>
+        <div className='flex h-10 w-10 place-content-center place-items-center'>
           {isLeftArrow && (
             <ArrowButton onClickArrowButton={onClickLeftArrowButton} direction={'left'} />
           )}
