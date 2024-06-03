@@ -18,7 +18,7 @@ const PlaceCardInfo = ({ id, location, rating, distance, dates, price }) => {
           <p className='text-zinc-600 text-sm font-normal '>{distance} 거리</p>
           <p className='text-zinc-600 text-sm font-normal'>{dates}</p>
           <p className='text-neutral-800 text-sm pt-1'>
-            <span className='font-semibold'>\{formattedPrice}</span>
+            <span className='font-semibold'>￦{formattedPrice}</span>
             <span className='font-medium'> /박</span>
           </p>
         </div>

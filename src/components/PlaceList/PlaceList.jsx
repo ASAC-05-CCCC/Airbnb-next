@@ -25,8 +25,8 @@ const PlaceList = ({ categoryId }) => {
 
   return (
     <div className='place-list grid grid-cols-fluid justify-center gap-5 '>
-      {accommodations.map(place => (
-        <div key={place.accommodationId} className='mb-6'>
+      {accommodations.map((place, index) => (
+        <div key={index} className='mb-6'>
           <PlaceCardImageList
             id={place.accommodationId}
             photos={place.imageUrl}
