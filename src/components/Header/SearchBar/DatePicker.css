@@ -1,12 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .react-datepicker {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
   font-family: 'Inter', sans-serif;
   border: none;
 }
 
+.react-datepicker__month {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+.react-datepicker__day,
+.react-datepicker__day:hover {
+  background: none;
+}
+
+
+.react-datepicker__day--outside-month {
+  color: gray;
+}
+
+.react-datepicker__week {
+  display: flex;
+}
+
+.react-datepicker__day--today {
+  font-weight: 400;
+}
+
 .react-datepicker__header {
-  background-color: #ffffff;
+  background: none;
   border-bottom: none;
+}
+
+.react-datepicker__day {
+  margin: 0;
+  border-radius: 100%;
+}
+
+.react-datepicker__day--in-range {
+  border-radius: 0;
 }
 
 .react-datepicker__day-name,
@@ -14,17 +55,22 @@
 .react-datepicker__time-name {
   width: 2.5rem;
   line-height: 2.5rem;
+  border: 1px solid #ffffff00;
+
 }
 
-.react-datepicker__day--selected,
-.react-datepicker__day--in-range,
-.react-datepicker__day--in-selecting-range {
-  background-color: #4a90e2;
-  color: #fff;
+.react-datepicker__day:hover,
+.react-datepicker__time-name:hover {
+  border-radius: 100%;
+  border: 1px solid #000;
+  background: none;
+  color: #000;
 }
+
 
 .react-datepicker__day--keyboard-selected {
-  background-color: #4a90e2;
+  background: none;
+
 }
 
 .react-datepicker__current-month,
@@ -40,4 +86,26 @@
 
 .react-datepicker__navigation--next {
   border-left-color: #000;
+}
+
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+  background: none;
+  color: #000;
+}
+
+.react-datepicker__day--in-range,
+.react-datepicker__day--in-selecting-range {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--range-start,
+.react-datepicker__day--range-end,
+.react-datepicker__day--range-end:hover {
+  border-radius: 100%;
+  background-color: #000;
+  color: #fff;
 }

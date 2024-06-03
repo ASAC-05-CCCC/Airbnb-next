@@ -15,8 +15,8 @@ const useModal = () => {
   return {
     // Modal이 열린 상태라면, 컴포넌트 반환, 아니면 null
     Modal: isOpen
-      ? ({ children, modalRef }) => {
-          return <SearchModal modalRef={modalRef}>{children}</SearchModal>
+      ? ({ children }) => {
+          return <SearchModal>{children}</SearchModal>
         }
       : () => null,
     open,

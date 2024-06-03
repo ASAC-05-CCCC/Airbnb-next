@@ -2,11 +2,26 @@ import { useState } from 'react'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import './DatePicker.css'
+import { ko } from 'date-fns/locale'
+import { useSearchContext } from '@/context/SearchContext'
 // import './App.css' // 추가적인 Tailwind CSS 스타일링을 위한 CSS 파일
 
 const DatePickerInput = () => {
-  const [selectedStartDate, setSelectedStartDate] = useState(new Date())
-  const [selectedEndDate, setSelectedEndDate] = useState(null)
+  const { handleStartDateSelected, handleEndDateSelected } = useSearchContext()
+  const [startDate, setStartDate] = useState(null)
+  const [endDate, setEndDate] = useState(null)
+
+  const onChange = dates => {
+    const [start, end] = dates
+    setStartDate(start)
+    setEndDate(end)
+
+    if (start && !end) {
+      handleStartDateSelected(start)
+    } else if (start && end) {
+      handleEndDateSelected(end)
+    }
+  }
 
   return (
     <>
@@ -27,21 +42,14 @@ const DatePickerInput = () => {
 
         <div className='flex justify-center gap-10'>
           <DatePicker
-            selected={selectedStartDate}
-            onChange={date => setSelectedStartDate(date)}
-            selectsStart
-            startDate={selectedStartDate}
-            endDate={selectedEndDate}
+            selected={startDate}
+            onChange={onChange}
+            startDate={startDate}
+            endDate={endDate}
+            selectsRange
             inline
-          />
-          <DatePicker
-            selected={selectedEndDate}
-            onChange={date => setSelectedEndDate(date)}
-            selectsEnd
-            startDate={selectedStartDate}
-            endDate={selectedEndDate}
-            minDate={selectedStartDate}
-            inline
+            monthsShown={2}
+            locale={ko}
           />
         </div>
         <div className='flex justify-start gap-4'>
