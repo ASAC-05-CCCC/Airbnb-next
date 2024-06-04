@@ -23,7 +23,9 @@ const PlaceCardInfo = ({ id, location, rating, distance, dates, price }) => {
       <Link href={`/rooms/${id}`}>
         <div className='card_header flex items-center justify-between'>
           <div className='text-sm font-bold text-neutral-800'>{location}</div>
-          <p className='text-sm font-normal text-neutral-800'>★{rating}</p>
+          <p className='text-sm font-normal text-neutral-800'>
+            ★{rating !== 'undefined' ? rating : ''}
+          </p>
         </div>
         <div>
           <p className='text-sm font-normal text-zinc-600 '>{distance} 거리</p>
