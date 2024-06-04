@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper/modules'
@@ -21,7 +22,7 @@ const PlaceCardImageList = ({ id, photos, guestFavorite }) => {
   }
 
   return (
-    <div className='relative w-full group'>
+    <div className='group relative w-full'>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -35,9 +36,9 @@ const PlaceCardImageList = ({ id, photos, guestFavorite }) => {
       >
         {photos.map((photo, index) => (
           <SwiperSlide key={index}>
-            <div className='w-full h-full aspect-square'>
+            <div className='aspect-square h-full w-full'>
               {/* 하트 모양 표시 */}
-              <div className='absolute top-2 right-2 z-20 p-2'>
+              <div className='absolute right-2 top-2 z-20 p-2'>
                 <Image
                   src={liked ? filledHeart : emptyHeart}
                   alt='Like'
@@ -48,7 +49,7 @@ const PlaceCardImageList = ({ id, photos, guestFavorite }) => {
               </div>
               {/* guestFavorite이 true면 게스트 선호 표시 */}
               {guestFavorite && (
-                <div className='absolute top-3 left-3 z-10 px-3 py-1 text-black bg-white rounded-3xl font-semibold'>
+                <div className='absolute left-3 top-3 z-10 rounded-3xl bg-white px-3 py-1 font-semibold text-black'>
                   <GuestPreference />
                 </div>
               )}
@@ -60,7 +61,7 @@ const PlaceCardImageList = ({ id, photos, guestFavorite }) => {
                     alt={`Slide`}
                     fill
                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-                    className='w-full h-full object-cover aspect-square bg-zinc-300 rounded-xl'
+                    className='aspect-square h-full w-full rounded-xl bg-zinc-300 object-cover'
                     priority
                   />
                 </div>
