@@ -38,13 +38,14 @@ const RoomFacilities = () => {
     .then(response => response.json())
     .then(data => {
       setRoomData(data)
-      console.log(data)
     })
     .catch(error => console.error('Error fetching room data:', error));
   }, []);
 
   if (!roomData) {
-    return <div>Loading...</div>;
+    return (
+      <></>
+    );
   }
   
   const displayedAmenities = showAllAmenities ? roomData.amenities : roomData.amenities.slice(0, 10);
