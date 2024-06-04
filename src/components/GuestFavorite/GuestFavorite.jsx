@@ -1,10 +1,10 @@
 import GuestFavoriteHeader from '@/components/GuestFavorite/GuestFavoriteHeader'
 import GuestFavoriteContent from '@/components/GuestFavorite/GuestFavoriteContent'
 
-const GuestFavorite = () => {
+const GuestFavorite = ({ data }) => {
   return (
     <div className='flex-row'>
-      <GuestFavoriteHeader />
+      <GuestFavoriteHeader data={data} />
       <GuestFavoriteContent />
     </div>
   )

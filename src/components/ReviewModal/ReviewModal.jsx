@@ -13,6 +13,7 @@ import ValueIcon from '/public/images/Value.svg'
 import XIcon from '/public/images/XIcon.svg'
 
 import Image from 'next/image'
+import averageRatings from '@/utils/averageRatings'
 
 const ReviewMeta = [
   { category: '청결도', icon: CleanlinessIcon },
@@ -36,17 +37,17 @@ const ReviewModal = ({ reviewMetaData, reviewData, isOpen, closeModal }) => {
 
   return (
     <DetailModal>
-      <div className='flex flex-col rounded-3xl justify-center text-sm bg-white w-[72vw] h-full px-auto overflow-hidden'>
+      <div className='px-auto flex h-full w-[72vw] flex-col justify-center overflow-hidden rounded-3xl bg-white text-sm'>
         <div className='flex justify-between px-5 py-8'>
-          <button onClick={closeModal} className=' hover:bg-gray-200 rounded-full'>
-            <Image src={XIcon} className='h-8 w-8 text-black p-2' alt='XIcon' />
+          <button onClick={closeModal} className=' rounded-full hover:bg-gray-200'>
+            <Image src={XIcon} className='h-8 w-8 p-2 text-black' alt='XIcon' />
           </button>
         </div>
-        <div className='flex px-16 gap-8 h-full overflow-y-auto flex-grow'>
+        <div className='flex h-full flex-grow gap-8 overflow-y-auto px-16'>
           <div className=' grid grid-cols-1 gap-8 lg:grid-cols-2'>
             <div>
-              <div className='flex flex-col sticky top-0 z-10 bg-white'>
-                {true && <GuestFavorite />}
+              <div className='sticky top-0 z-10 flex flex-col bg-white'>
+                {true && <GuestFavorite data={averageRatings(reviewData)} />}
                 <ReviewOverall ratings={[...reviewMetaData.ratings].reverse()} />
                 {mergeData.map(({ category, value, icon }, index) => (
                   <ReviewModalContent key={index} category={category} value={value} icon={icon} />
