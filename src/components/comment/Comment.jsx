@@ -5,6 +5,7 @@ import Review from '@/components/Review/Review'
 import ReviewInform from '@/components/ReviewInform/ReviewInform'
 import GenerateReviewMetaData from '@/utils/generateReviewMetaData'
 import { useState, useEffect } from 'react'
+import averageRatings from '@/utils/averageRatings'
 
 const Comment = () => {
   const [reviewData, setReviewData] = useState([])
@@ -40,8 +41,8 @@ const Comment = () => {
   }
 
   return (
-    <div className='flex flex-col w-full px-10'>
-      <GuestFavorite />
+    <div className='flex w-full flex-col px-10'>
+      <GuestFavorite data={averageRatings(reviewData)} />
       <ReviewMeta reviewMetaData={reviewMetaData} />
       <Review reviewData={reviewData} reviewMetaData={reviewMetaData} />
       <ReviewInform />
