@@ -20,7 +20,7 @@ const PlaceCardInfo = ({ id, location, rating, distance, dates, price }) => {
   return (
     <div className='card_info pt-2'>
       {/* 카드 누르면 디테일 페이지로 이동 */}
-      <Link href={`/rooms/${id}`}>
+      <Link href={`/rooms/${id}`} target='_blank'>
         <div className='card_header flex items-center justify-between'>
           <div className='text-sm font-bold text-neutral-800'>{location}</div>
           <p className='text-sm font-normal text-neutral-800'>
