@@ -1,20 +1,16 @@
 import clsx from 'clsx'
 
-function CountSelectButton({ number, width, setCount, count }) {
-  const onEventHandler = () => {
-    setCount(number)
-  }
-
+function CountSelectButton({ count, width, onClick, present }) {
   return (
     <div style={{ width: width, height: '50px' }}>
       <button
-        onClick={onEventHandler}
+        onClick={() => onClick(count)}
         className={clsx(
-          'border-[1px] border-gray-300 rounded-3xl mr-2 py-[10px] px-[24px] hover:border-black duration-200 active:scale-90',
-          number === count ? 'bg-slate-800 text-white' : 'bg-white text-gray-800',
+          'mr-2 rounded-3xl border-[1px] border-gray-300 px-[24px] py-[10px] duration-200 hover:border-black active:scale-90',
+          present === count ? 'bg-slate-800 text-white' : 'bg-white text-gray-800',
         )}
       >
-        <div className='text-xs white whitespace-nowrap'>{number}</div>
+        <div className='white whitespace-nowrap text-xs'>{count}</div>
       </button>
     </div>
   )
