@@ -1,9 +1,13 @@
+'use client'
+
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import ReviewModal from '@/components/ReviewModal/ReviewModal';
 
-const GuestPrefer = () => {
+const GuestPrefer = ({ reviewData, reviewMetaData }) => {
   const [roomData, setRoomData] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const pathname = usePathname();
   const id = pathname.slice(7);
 
@@ -20,6 +24,19 @@ const GuestPrefer = () => {
     return (
       <></>
     );
+  }
+
+  if (!reviewMetaData || reviewMetaData.length === 0) {
+    return <></>
+  }
+
+  const openModal = () => {
+    setIsModalOpen(true)
+    document.body.style.overflow = 'hidden'
+  }
+  const closeModal = () => {
+    setIsModalOpen(false)
+    document.body.style.overflow = ''
   }
 
   return (
@@ -51,11 +68,17 @@ const GuestPrefer = () => {
             </div>
             <div className='grid px-5 gap-2 place-items-center'>
               <span className="text-xl font-bold">{roomData.reviewCount}개</span>
-              <button className='border-b'>후기</button>
+              <button className='border-b' onClick={openModal}>후기</button>
             </div>
           </div>
         </div>
       )}
+      <ReviewModal
+        isOpen={isModalOpen}
+        closeModal={closeModal}
+        reviewData={reviewData}
+        reviewMetaData={reviewMetaData}
+      />
     </div>
   )
 }
