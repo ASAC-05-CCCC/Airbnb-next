@@ -1,4 +1,5 @@
 import SuperHost from '/public/images/SuperHost.svg'
+import DefaultProfileImage from '/public/images/DefaultProfileImage.svg'
 import Image from 'next/image'
 
 const Label = ({ label, value }) => {
@@ -12,11 +13,11 @@ const Label = ({ label, value }) => {
     }
   }
   return (
-    <div className='flex flex-col items-start gap-1 w-[96px] '>
+    <div className='flex w-[96px] flex-col items-start gap-1 '>
       <span className='text-xs font-bold'>{label}</span>
-      <span className='text-xl flex items-baseline'>
+      <span className='flex items-baseline text-xl'>
         {valueData()}
-        <span className='text-base ml-1'>
+        <span className='ml-1 text-base'>
           {label === '후기' ? '개' : label === '평점' ? '★' : value > 12 ? '년' : '개월'}
         </span>
       </span>
@@ -26,24 +27,28 @@ const Label = ({ label, value }) => {
 
 const HostProfile = ({ name, superHost, review, rating, career }) => {
   return (
-    <section className='flex bg-white rounded-3xl py-8 px-6 bg-wite justify-between shadow-md w-[341px]'>
-      <div className='flex flex-col justify-center items-center gap-2'>
-        <button className='rounded-full overflow-hidden focus:outline-none'>
-          <img src='asb' alt='User profile' className='h-24 w-24 rounded-full bg-gray-300' />
+    <section className='bg-wite flex w-[341px] justify-between rounded-3xl bg-white px-6 py-8 shadow-md'>
+      <div className='flex flex-col items-center justify-center gap-2'>
+        <button className='overflow-hidden rounded-full focus:outline-none'>
+          <Image
+            src={DefaultProfileImage}
+            alt='User profile'
+            className='h-24 w-24 rounded-full bg-gray-300'
+          />
         </button>
-        <h2 className='text-center text-3xl font-bold w-[150px]'>{name}</h2>
+        <h2 className='w-[150px] text-center text-3xl font-bold'>{name}</h2>
         {superHost && (
-          <span className='flex items-center text-sm mt-2'>
-            <Image src={SuperHost} width={24} height={24} alt='superhost' />
-            <span className=' text-sm ml-1'>슈퍼호스트</span>
+          <span className='mt-2 flex items-center text-sm'>
+            <Image src={SuperHost} width={24} height={24} alt='superHost' />
+            <span className=' ml-1 text-sm'>슈퍼호스트</span>
           </span>
         )}
       </div>
       <div className='flex flex-col'>
         <Label label='후기' value={review} />
-        <hr className='block mt-2 mb-2 mx-auto border border-inset w-full'></hr>
+        <hr className='border-inset mx-auto mb-2 mt-2 block w-full border'></hr>
         <Label label='평점' value={rating} />
-        <hr className='block mt-2 mb-2 mx-auto border border-inset w-full'></hr>
+        <hr className='border-inset mx-auto mb-2 mt-2 block w-full border'></hr>
         <Label label='호스팅 경력' value={career} />
       </div>
     </section>
