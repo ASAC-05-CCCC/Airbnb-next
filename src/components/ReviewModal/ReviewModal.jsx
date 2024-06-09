@@ -15,26 +15,26 @@ import XIcon from '/public/images/XIcon.svg'
 import Image from 'next/image'
 import averageRatings from '@/utils/averageRatings'
 
-const ReviewMeta = [
-  { category: '청결도', icon: CleanlinessIcon },
-  { category: '정확도', icon: AccuracyIcon },
-  { category: '체크인', icon: CheckInIcon },
-  { category: '의사소통', icon: CommunicationIcon },
-  { category: '위치', icon: LocationIcon },
-  { category: '가격 대비 만족도', icon: ValueIcon },
-]
-
-const ReviewModal = ({ reviewMetaData, reviewData, isOpen, closeModal }) => {
-  const mergeData = ReviewMeta.map(({ category, icon }, index) => {
-    return {
-      category: category,
-      icon: icon,
-      value: reviewMetaData?.MetaData[index]?.value ?? 0,
-    }
-  })
+const ReviewModal = ({
+  reviewMetaData,
+  reviewData,
+  isOpen,
+  closeModal,
+  averageRating,
+  reviewOverall,
+  guestFavorite,
+}) => {
+  const ReviewMeta = [
+    { category: '청결도', icon: CleanlinessIcon, value: reviewMetaData.Cleanliness },
+    { category: '정확도', icon: AccuracyIcon, value: reviewMetaData.Accuracy },
+    { category: '체크인', icon: CheckInIcon, value: reviewMetaData.CheckIn },
+    { category: '의사소통', icon: CommunicationIcon, value: reviewMetaData.Communication },
+    { category: '위치', icon: LocationIcon, value: reviewMetaData.Location },
+    { category: '가격 대비 만족도', icon: ValueIcon, value: reviewMetaData.Value },
+  ]
 
   if (!isOpen) return null
-
+  console.log(guestFavorite)
   return (
     <DetailModal>
       <div className='px-auto flex h-full w-[72vw] flex-col justify-center overflow-hidden rounded-3xl bg-white text-sm'>
@@ -47,9 +47,9 @@ const ReviewModal = ({ reviewMetaData, reviewData, isOpen, closeModal }) => {
           <div className=' grid grid-cols-1 gap-8 lg:grid-cols-2'>
             <div>
               <div className='sticky top-0 z-10 flex flex-col bg-white'>
-                {true && <GuestFavorite data={averageRatings(reviewData)} />}
-                <ReviewOverall ratings={[...reviewMetaData.ratings].reverse()} />
-                {mergeData.map(({ category, value, icon }, index) => (
+                {GuestFavorite && <GuestFavorite data={averageRating} />}
+                <ReviewOverall ratings={reviewOverall} />
+                {ReviewMeta.map(({ category, value, icon }, index) => (
                   <ReviewModalContent key={index} category={category} value={value} icon={icon} />
                 ))}
               </div>

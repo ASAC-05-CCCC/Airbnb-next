@@ -1,15 +1,14 @@
 import Image from 'next/image'
 
 function ReviewMetaContent({ category, value, icon }) {
-  const valueFloat = value.toFixed(1)
   return (
-    <div className=' px-4 pb-1 border-l-gray-300 border-l-2 w-1/4'>
-      <div className='flex flex-col justify-between font-semibold bg-white text-gray-700 text-sm h-full'>
+    <div className=' w-1/4 border-l-2 border-l-gray-300 px-4 pb-1'>
+      <div className='flex h-full flex-col justify-between bg-white text-sm font-semibold text-gray-700'>
         <div className=' gap-1'>
           <div>{category}</div>
-          <div>{valueFloat}</div>
+          <div>{value}</div>
         </div>
-        <Image src={icon} className='w-6 h-6' alt={category} />
+        <Image src={icon} className='h-6 w-6' alt={category} />
       </div>
     </div>
   )
