@@ -20,14 +20,17 @@ const RoomHost = () => {
   }, []);
 
   if (!roomData) {
-    return <div>Loading...</div>;
+    return (
+      <></>
+    );
   }
+
   return (
     <div className="w-full grid gap-2 border-b">
       <div className="border-t border-gray-300 pt-4">
         <div className="flex items-center space-x-3">
           <button className='mb-4'>
-            <Image src="/images/ONDA.png" width={40} height={40} />
+            <Image src="/images/ONDA.png" alt='' width={40} height={40} />
           </button>
           <div>
             <p className="font-bold">호스트: {roomData.hostName} 님</p>
