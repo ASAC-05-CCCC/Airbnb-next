@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const Label = ({ label, value }) => {
   const valueData = () => {
-    if (label === '호스팅 경력' && value > 12) {
-      return Math.floor(value / 12)
+    if (label === '호스팅 경력') {
+      return Math.floor(2024 - value)
     } else if (value === 0) {
       return 1
     } else {
@@ -18,7 +18,7 @@ const Label = ({ label, value }) => {
       <span className='flex items-baseline text-xl'>
         {valueData()}
         <span className='ml-1 text-base'>
-          {label === '후기' ? '개' : label === '평점' ? '★' : value > 12 ? '년' : '개월'}
+          {label === '후기' ? '개' : label === '평점' ? '★' : '년'}
         </span>
       </span>
     </div>
@@ -36,7 +36,7 @@ const HostProfile = ({ name, superHost, review, rating, career }) => {
             className='h-24 w-24 rounded-full bg-gray-300'
           />
         </button>
-        <h2 className='w-[150px] text-center text-3xl font-bold'>{name}</h2>
+        <h2 className='w-[150px] text-center text-lg font-bold'>{name}</h2>
         {superHost && (
           <span className='mt-2 flex items-center text-sm'>
             <Image src={SuperHost} width={24} height={24} alt='superHost' />
