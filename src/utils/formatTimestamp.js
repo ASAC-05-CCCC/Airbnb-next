@@ -3,21 +3,30 @@ const formatTimestamp = reviews => {
 
   return reviews.map(review => {
     const targetDate = new Date(review.timestamp)
-    // @ts-ignore
     const diffTime = Math.abs(currentDate - targetDate)
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-
-    // 현재 년도와 타겟 년도가 같은지 확인
     const isSameYear = currentDate.getFullYear() === targetDate.getFullYear()
 
     if (diffDays <= 6) {
-      return { ...review, timestamp: `${diffDays}일 전` }
+      return {
+        ...review,
+        timestamp: `${diffDays}일 전`,
+      }
     } else if (diffDays <= 13) {
-      return { ...review, timestamp: '1주 전' }
+      return {
+        ...review,
+        timestamp: '1주 전',
+      }
     } else if (diffDays <= 20) {
-      return { ...review, timestamp: '2주 전' }
+      return {
+        ...review,
+        timestamp: '2주 전',
+      }
     } else if (diffDays <= 27) {
-      return { ...review, timestamp: '3주 전' }
+      return {
+        ...review,
+        timestamp: '3주 전',
+      }
     } else if (isSameYear) {
       return {
         ...review,

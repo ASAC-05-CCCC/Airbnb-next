@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client'
 import HostHeader from '@/components/Host/HostHeader.jsx'
 import HostIntro from '@/components/Host/HostIntro.jsx'
@@ -38,7 +37,7 @@ const Host = () => {
     fetch(`/apis/host/${id}`)
       .then(response => response.json())
       .then(data => {
-        console.log(data)
+        // @ts-ignore
         setHostData(GenerateHostData(data))
         setHostIntroData(GenerateHostIntroData(data))
         setHostContentData(GenerateHostContentData(data))
@@ -49,7 +48,6 @@ const Host = () => {
   if (!hostData || hostData.length === 0) {
     return <></>
   }
-  console.log(hostData)
 
   return (
     <div className='w-full flex-col items-center justify-center px-10'>
