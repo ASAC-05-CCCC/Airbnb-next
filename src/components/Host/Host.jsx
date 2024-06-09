@@ -37,7 +37,6 @@ const Host = () => {
     fetch(`/apis/host/${id}`)
       .then(response => response.json())
       .then(data => {
-        console.log(data)
         // @ts-ignore
         setHostData(GenerateHostData(data))
         setHostIntroData(GenerateHostIntroData(data))

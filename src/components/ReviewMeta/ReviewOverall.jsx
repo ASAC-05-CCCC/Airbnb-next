@@ -2,7 +2,6 @@ const ReviewOverall = ({ ratings }) => {
   if (!ratings || ratings.length === 0) {
     return <></>
   }
-  console.log(ratings)
   return (
     <div className='mr-8 items-center'>
       <h3 className='w-32 text-sm font-semibold'>전체 평점</h3>

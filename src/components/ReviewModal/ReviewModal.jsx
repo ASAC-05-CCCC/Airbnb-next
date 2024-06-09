@@ -34,7 +34,6 @@ const ReviewModal = ({
   ]
 
   if (!isOpen) return null
-  console.log(guestFavorite)
   return (
     <DetailModal>
       <div className='px-auto flex h-full w-[72vw] flex-col justify-center overflow-hidden rounded-3xl bg-white text-sm'>
