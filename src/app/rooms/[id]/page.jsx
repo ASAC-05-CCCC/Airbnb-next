@@ -1,5 +1,6 @@
 'use client'
 
+import GuestFavorite from '@/components/GuestFavorite/GuestFavorite'
 import Host from '@/components/Host/Host'
 import Notification from '@/components/Notification/Notification'
 import RoomFacilities from '@/components/RoomFacilities/RoomFacilities'
@@ -20,9 +21,9 @@ export default function RoomsHome() {
           <RoomIntroduce />
           <SleepSpec />
         </div>
-        {/* <div className='w-full basis-1/3'>
+        <div className='w-full basis-1/3'>
           <Reservation />
-        </div> */}
+        </div>
       </section>
 
       <section className='flex w-full flex-col items-center'>
@@ -31,9 +32,9 @@ export default function RoomsHome() {
           <RoomFacilities />
           {/* 달력 */}
         </section>
-        {/* <GuestFavorite /> */}
+        <GuestFavorite />
         <Host />
-        {/*<Notification /> */}
+        <Notification />
       </section>
     </div>
   )
