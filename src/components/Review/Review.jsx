@@ -8,12 +8,12 @@ import { useState } from 'react'
 import SortByTimestamp from '@/utils/sortByTimestamp'
 import FormatTimestamp from '@/utils/formatTimestamp'
 
-const Review = ({ reviewData, reviewMetaData }) => {
+const Review = ({ reviewData, reviewMetaData, averageRating, reviewOverall, guestFavorite }) => {
   if (!reviewMetaData || reviewMetaData.length === 0) {
     return <></>
   }
-  const sortReviewData = FormatTimestamp(SortByTimestamp(reviewData))
 
+  const sortReviewData = FormatTimestamp(SortByTimestamp(reviewData))
   const [isModalOpen, setIsModalOpen] = useState(false)
   const openModal = () => {
     setIsModalOpen(true)
@@ -26,11 +26,11 @@ const Review = ({ reviewData, reviewMetaData }) => {
   return (
     <div>
       <hr className='my-4 border-gray-300' />
-      <div className='grid grid-cols-1 lg:grid-cols-2 w-full '>
+      <div className='grid w-full grid-cols-1 lg:grid-cols-2 '>
         {sortReviewData.map((comment, index) => {
           if (index > 5) return null
           return (
-            <div key={index} className='bg-white p-4 px-2 mr-20'>
+            <div key={index} className='mr-20 bg-white p-4 px-2'>
               <div className=' mb-10 text-base'>
                 <ReviewHeader image={comment.image} name={comment.name} country={comment.country} />
                 <ReviewContent
@@ -44,7 +44,7 @@ const Review = ({ reviewData, reviewMetaData }) => {
           )
         })}
       </div>
-      <div className='flex justify-between mt-4'>
+      <div className='mt-4 flex justify-between'>
         <ReviewMoreButton openModal={openModal} data={reviewData.length} />
       </div>
       <ReviewModal
@@ -52,6 +52,9 @@ const Review = ({ reviewData, reviewMetaData }) => {
         closeModal={closeModal}
         reviewData={reviewData}
         reviewMetaData={reviewMetaData}
+        averageRating={averageRating}
+        reviewOverall={reviewOverall}
+        guestFavorite={guestFavorite}
       />
     </div>
   )

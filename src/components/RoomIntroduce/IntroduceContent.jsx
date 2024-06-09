@@ -18,7 +18,6 @@ const IntroduceContent = () => {
     .then(response => response.json())
     .then(data => {
       setRoomData(data)
-      console.log(data)
       if (data.desc.length > maxLength) {
         setShortDesc(data.desc.substring(0, maxLength) + '...');
       } else {
@@ -29,7 +28,9 @@ const IntroduceContent = () => {
   }, []);
 
   if (!roomData) {
-    return <div>Loading...</div>;
+    return (
+      <></>
+    );
   }
   
   const handleSeeMore = () => {

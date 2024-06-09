@@ -7,32 +7,27 @@ import CommunicationIcon from '/public/images/Communication.svg'
 import LocationIcon from '/public/images/Location.svg'
 import ValueIcon from '/public/images/Value.svg'
 
-const ReviewMeta = ({ reviewMetaData }) => {
+const ReviewMeta = ({ reviewMetaData, reviewOverall }) => {
   if (!reviewMetaData || reviewMetaData.length === 0) {
-    return <div>Loading...</div>
+    return <></>
+  }
+  if (!reviewOverall || reviewOverall.length === 0) {
+    return <></>
   }
 
   const ReviewMeta = [
-    { category: '청결도', icon: CleanlinessIcon, value: 5.0 },
-    { category: '정확도', icon: AccuracyIcon, value: 5.0 },
-    { category: '체크인', icon: CheckInIcon, value: 5.0 },
-    { category: '의사소통', icon: CommunicationIcon, value: 5.0 },
-    { category: '위치', icon: LocationIcon, value: 5.0 },
-    { category: '가격 대비 만족도', icon: ValueIcon, value: 5.0 },
+    { category: '청결도', icon: CleanlinessIcon, value: reviewMetaData.Cleanliness },
+    { category: '정확도', icon: AccuracyIcon, value: reviewMetaData.Accuracy },
+    { category: '체크인', icon: CheckInIcon, value: reviewMetaData.CheckIn },
+    { category: '의사소통', icon: CommunicationIcon, value: reviewMetaData.Communication },
+    { category: '위치', icon: LocationIcon, value: reviewMetaData.Location },
+    { category: '가격 대비 만족도', icon: ValueIcon, value: reviewMetaData.Value },
   ]
 
-  const mergeData = ReviewMeta.map(({ category, icon }, index) => {
-    return {
-      category: category,
-      icon: icon,
-      value: reviewMetaData?.MetaData[index]?.value ?? 0,
-    }
-  })
-
   return (
-    <div className='flex pb-4 mb-4'>
-      <ReviewOverall ratings={[...reviewMetaData.ratings].reverse()} />
-      {mergeData.map(({ category, value, icon }, index) => (
+    <div className='mb-4 flex pb-4'>
+      <ReviewOverall ratings={reviewOverall} />
+      {ReviewMeta.map(({ category, value, icon }, index) => (
         <ReviewMetaContent key={index} category={category} value={value} icon={icon} />
       ))}
     </div>

@@ -14,13 +14,14 @@ const SleepSpec = () => {
     .then(response => response.json())
     .then(data => {
       setRoomData(data)
-      console.log(data)
     })
     .catch(error => console.error('Error fetching room data:', error));
   }, []);
 
   if (!roomData) {
-    return <div>Loading...</div>;
+    return (
+      <></>
+    );
   }
 
   return (
@@ -30,7 +31,7 @@ const SleepSpec = () => {
         <div className="flex flex-wrap">
         {roomData.roomInfo.map((room) => (
             <div key={room.roomId} className="w-full sm:w-1/2 lg:w-1/4 px-2 pb-8">
-              <div className="border p-4 py-4 rounded-lg flex flex-col items-left justify-center aspect-square">
+              <div className="h-full w-full border p-4 py-4 rounded-lg flex flex-col items-left justify-start aspect-square">
                 <div className='flex items-center pb-4'>
                   {/* 이미지와 텍스트를 동적으로 생성 */}
                   {room.beds.map((bed, index) => (
@@ -40,7 +41,7 @@ const SleepSpec = () => {
                         alt={bed.bedType} 
                         width={24} 
                         height={24} 
-                        className="mr-2"
+                        className="pr-1"
                       />
                       {index !== room.beds.length - 1 && <span>,&nbsp;</span>}
                     </>
