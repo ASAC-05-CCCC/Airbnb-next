@@ -13,21 +13,19 @@ export default function Home({ searchParams }) {
   const categoryId = searchParams.category
 
   return (
-    <Provider store={filterStore}>
-      <div className='flex w-full flex-col items-center transition-all'>
-        <div className='sticky top-0 z-10 flex w-full flex-col bg-white'>
-          <div className='item-center flex w-full justify-center'>
-            <Header />
-          </div>
-          <div className='flex w-full items-center justify-center  overflow-auto sm:px-8 lg:px-10 xl:px-20'>
-            <Category />
-          </div>
+    <div className='flex w-full flex-col items-center transition-all'>
+      <div className='sticky top-0 z-10 flex w-full flex-col bg-white'>
+        <div className='item-center flex w-full justify-center'>
+          <Header />
         </div>
-        <section className='h-[1200px] w-full overflow-auto sm:px-8 lg:px-10  xl:px-20'>
-          <PlaceList categoryId={categoryId} />
-        </section>
-        <Footer />
+        <div className='flex w-full items-center justify-center  overflow-auto sm:px-8 lg:px-10 xl:px-20'>
+          <Category />
+        </div>
       </div>
-    </Provider>
+      <section className='h-[1200px] w-full overflow-auto sm:px-8 lg:px-10  xl:px-20'>
+        <PlaceList categoryId={categoryId} />
+      </section>
+      <Footer />
+    </div>
   )
 }

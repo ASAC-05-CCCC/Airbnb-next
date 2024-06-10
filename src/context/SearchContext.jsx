@@ -1,3 +1,4 @@
+import { useRouter } from 'next/navigation'
 import { createContext, useContext, useState } from 'react'
 
 const SearchContext = createContext({ toggle: () => {} })
@@ -36,76 +37,73 @@ function SearchContextProvider({ children }) {
     pets: 0,
   })
 
+  const router = useRouter()
+
   //모달 오픈 정보
   const toggle = type => {
-    openModal[type] === true //
-      ? setOpenModal({ [type]: false })
-      : setOpenModal({ [type]: true })
+    // openModal[type] === true //
+    //   ? setOpenModal({ [type]: false })
+    //   : setOpenModal({ [type]: true })
   }
 
   //선택한 location data를 저장
   const updateLocation = name => {
-    setLocation(name)
+    // setLocation(name)
   }
 
   //선택한 datepicker data를 저장
   const updateDatepicker = (start, end) => {
-    console.log(start, end)
-    console.log({ startDate: start, endDate: end })
+    // console.log(start, end)
+    // console.log({ startDate: start, endDate: end })
     // setDatepicker({ startDate: start, endDate: end })
   }
 
   // Click하는 대상의 count를 증가 시킴
   const increaseGuest = e => {
-    const target = e.target.name
-
-    target !== 'adults' &&
-      guest.adults === 0 &&
-      setGuest(prev => ({ ...prev, adults: (prev['adults'] += 1) }))
-
-    if (target === 'kids' && guest[target] >= 15) {
-      return null
-    }
-    if (target === 'babies' && guest[target] >= 5) {
-      return null
-    }
-    if (target === 'pets' && guest[target] >= 5) {
-      return null
-    }
-
-    setGuest(prev => ({ ...prev, [target]: prev[target] + 1 }))
+    // const target = e.target.name
+    // target !== 'adults' &&
+    //   guest.adults === 0 &&
+    //   setGuest(prev => ({ ...prev, adults: (prev['adults'] += 1) }))
+    // if (target === 'kids' && guest[target] >= 15) {
+    //   return null
+    // }
+    // if (target === 'babies' && guest[target] >= 5) {
+    //   return null
+    // }
+    // if (target === 'pets' && guest[target] >= 5) {
+    //   return null
+    // }
+    // setGuest(prev => ({ ...prev, [target]: prev[target] + 1 }))
   }
 
   const decreaseGuest = e => {
-    const target = e.target.name
-
-    if (guest[target] < 1) {
-      return
-    }
-    setGuest(prev => ({ ...prev, [target]: prev[target] - 1 }))
+    // const target = e.target.name
+    // if (guest[target] < 1) {
+    //   return
+    // }
+    // setGuest(prev => ({ ...prev, [target]: prev[target] - 1 }))
   }
 
   // 검색 버튼을 눌렀을 때 API 요청하는 함수
   const handleSearchSubmit = async () => {
-    const searchData = {
-      location,
-      datepicker,
-      //guest 수의 총합
-      guest: Object.values(guest).reduce((prev, current) => {
-        return prev + current
-      }),
-    }
-    console.log(searchData)
+    // router.push(
+    //   `/search?location=${location}&startDate=${datepicker.startDate}&endDate=${datepicker.endDate}&guest=${Object.values(
+    //     guest,
+    //   ) //
+    //     .reduce((prev, current) => prev + current)}`,
+    // )
   }
 
   const handleStartDateSelected = start => {
-    setDatepicker(prev => ({ ...prev, startDate: start.toLocaleDateString() }))
-    console.dir(start.toLocaleDateString())
+    // const formattingStart = `${start.getFullYear()}-${start.getMonth()}-${start.getDay()}`
+    // console.log(formattingStart)
+    // setDatepicker(prev => ({ ...prev, startDate: formattingStart }))
   }
 
   const handleEndDateSelected = end => {
-    setDatepicker(prev => ({ ...prev, endDate: end.toLocaleDateString() }))
-    console.dir(end.toLocaleDateString())
+    // const formattingEnd = `${end.getFullYear()}-${end.getMonth()}-${end.getDay()}`
+    // console.log(formattingEnd)
+    // setDatepicker(prev => ({ ...prev, endDate: formattingEnd }))
   }
 
   return (
