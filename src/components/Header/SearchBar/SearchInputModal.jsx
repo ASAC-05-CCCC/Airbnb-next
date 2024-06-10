@@ -2,12 +2,10 @@ import DatePickerInput from '@/components/Header/SearchBar/DatePickerInput'
 import LocationInput from '@/components/Header/SearchBar/LocationInput'
 import GuestInput from '@/components/common/GuestInput'
 import SearchModal from '@/components/common/SearchModal'
-import { useSearchContext } from '@/context/SearchContext'
 import clsx from 'clsx'
 import { useDispatch, useSelector } from 'react-redux'
 
 function SearchInputModal() {
-  // const { openModal } = useSearchContext()
   const dispatch = useDispatch()
   const { isOpenModal } = useSelector(state => state.search)
 

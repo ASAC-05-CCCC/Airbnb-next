@@ -4,7 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css'
 import './DatePicker.css'
 import { ko } from 'date-fns/locale'
 import { useDispatch } from 'react-redux'
-import { setCheckInDate, setCheckOutDate } from '@/app/redux/datepickerSlice'
+import { setCheckInDate, setCheckOutDate } from '@/app/redux/searchSlice'
 // import './App.css' // 추가적인 Tailwind CSS 스타일링을 위한 CSS 파일
 
 const DatePickerInput = () => {

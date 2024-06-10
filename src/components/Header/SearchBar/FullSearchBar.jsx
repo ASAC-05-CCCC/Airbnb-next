@@ -5,9 +5,14 @@ import { useRouter } from 'next/navigation'
 
 function FullSearchBar() {
   const dispatch = useDispatch()
-  const { isOpenModal } = useSelector(state => state.search)
-  const { checkInDate, checkOutDate } = useSelector(state => state.datePicker)
-  const guest = useSelector(state => state.guest)
+  const {
+    //
+    location,
+    guestCount,
+    checkInDate,
+    checkOutDate,
+    isOpenModal,
+  } = useSelector(state => state.search)
 
   const router = useRouter()
 
@@ -15,7 +20,7 @@ function FullSearchBar() {
     //
     router.push(
       `/search?location=${location}&startDate=${checkInDate}&endDate=${checkOutDate}&guest=${Object.values(
-        guest,
+        guestCount,
       ).reduce((prev, current) => prev + current)}`,
     )
   }
@@ -39,7 +44,6 @@ function FullSearchBar() {
         {/* <SearchBarLocation> */}
         <div
           onClick={() => {
-            console.log(isOpenModal)
             dispatch(modalToggle({ key: 'location' }))
           }}
           className={clsx(
@@ -55,12 +59,7 @@ function FullSearchBar() {
                 type='text'
                 placeholder='여행지 검색'
                 className='bg-transparent text-gray-900 focus:outline-none'
-                // onChange={e => {
-                //   location === '유연한 검색'
-                //     ? (e.target.value = '여행지 검색')
-                //     : (e.target.value = location)
-                // }}
-                // value={location || '유연한 검색'}
+                value={location || '유연한 검색'}
               />
             </div>
           </div>
@@ -75,8 +74,7 @@ function FullSearchBar() {
             }}
             className={clsx(
               'w-full rounded-full border-r border-gray-300 px-4 py-2 transition-all duration-75 hover:bg-gray-200 ',
-              (isOpenModal.checkInDate || isOpenModal.checkOutDate) &&
-                'bg-white shadow-lg  hover:bg-white',
+              isOpenModal.checkInDate && 'bg-white shadow-lg  hover:bg-white',
             )}
           >
             <div className='w-full'>
@@ -90,9 +88,8 @@ function FullSearchBar() {
               dispatch(modalToggle({ key: 'checkOutDate' }))
             }}
             className={clsx(
-              'w-full border-r border-gray-300 px-4 py-2 transition-all duration-75 hover:rounded-full hover:bg-gray-200 ',
-              (isOpenModal.checkInDate || isOpenModal.checkOutDate) &&
-                'bg-white shadow-lg  hover:bg-white',
+              'w-full rounded-full border-r border-gray-300 px-4 py-2 transition-all duration-75 hover:bg-gray-200 ',
+              isOpenModal.checkOutDate && 'bg-white shadow-lg  hover:bg-white',
             )}
           >
             <div className='w-full'>
@@ -119,7 +116,7 @@ function FullSearchBar() {
               <span className='block text-xs font-semibold '>여행자</span>
               <button className='text-gray-500'>
                 {`게스트
-                ${Object.values(guest) //
+                ${Object.values(guestCount) //
                   .reduce((prev, current) => prev + current)}` || //
                   '게스트 추가'}
               </button>
