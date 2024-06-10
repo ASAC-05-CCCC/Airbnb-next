@@ -15,7 +15,7 @@ export default function RoomsHome() {
   return (
     <div className='p-10'>
       <RoomView />
-      <section className='flex w-full border-b-2'>
+      <section className='flex w-full border-b-2 gap-x-20'>
         <div className='flex w-full basis-2/3 flex-col'>
           <RoomInfo />
           <RoomIntroduce />
