@@ -9,9 +9,7 @@ import PlaceList from '@/components/PlaceList/PlaceList'
 import filterStore from '@/app/redux/filterStore'
 
 //searchParam을 받아서 list 업데이트
-export default function Home({ searchParams }) {
-  const categoryId = searchParams.category
-
+export default function Home() {
   return (
     <Provider store={filterStore}>
       <div className='flex w-full flex-col items-center transition-all'>
@@ -24,7 +22,7 @@ export default function Home({ searchParams }) {
           </div>
         </div>
         <section className='h-[1200px] w-full overflow-auto sm:px-8 lg:px-10  xl:px-20'>
-          <PlaceList categoryId={categoryId} />
+          <PlaceList />
         </section>
         <Footer />
       </div>
