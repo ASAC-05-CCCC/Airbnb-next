@@ -9,9 +9,7 @@ import PlaceList from '@/components/PlaceList/PlaceList'
 import filterStore from '@/app/redux/filterStore'
 
 //searchParam을 받아서 list 업데이트
-export default function Home({ searchParams }) {
-  const categoryId = searchParams.category
-
+export default function Home() {
   return (
     <div className='flex w-full flex-col items-center transition-all'>
       <div className='sticky top-0 z-10 flex w-full flex-col bg-white'>

@@ -9,18 +9,6 @@ const useFetchAccommodations = (page, categoryId, location, startDate, endDate, 
     if (categoryId) {
       url += `&category=${categoryId}`
     }
-    if (location) {
-      url += `&location=${location}`
-    }
-    if (startDate) {
-      url += `&startDate=${startDate}`
-    }
-    if (endDate) {
-      url += `&endDate=${endDate}`
-    }
-    if (guest) {
-      url += `&guest=${guest}`
-    }
 
     fetch(url)
       .then(response => response.json())
