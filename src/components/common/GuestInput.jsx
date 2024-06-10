@@ -1,4 +1,4 @@
-import GuestItem from './GuestItem'
+import GuestItem from '@/components/common/GuestItem'
 
 const GuestInput = () => {
   const list = [
@@ -8,7 +8,7 @@ const GuestInput = () => {
     { name: 'pets', title: '반려동물', desc: '보조동물을 동반하시나요?' },
   ]
   return (
-    <ul className='flex flex-col w-full gap-5 p-4'>
+    <ul className='flex w-full flex-col gap-5 p-4'>
       {list.map((each, idx) => {
         return <GuestItem key={idx} name={each.name} desc={each.desc} title={each.title} />
       })}

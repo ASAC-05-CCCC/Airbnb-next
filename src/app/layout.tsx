@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import ReduxProvider from '@/components/common/reduxProvider'
 
 export const metadata: Metadata = {
   title: 'Airbnb Clone',
@@ -10,7 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='ko'>
       <body>
-        <div className='flex w-full flex-col items-center transition-all'>{children}</div>
+        <div className='flex w-full flex-col items-center transition-all'>
+          <ReduxProvider>{children}</ReduxProvider>
+        </div>
       </body>
     </html>
   )
