@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import ReviewModal from '@/components/ReviewModal/ReviewModal';
 
-const SimpleInfo = ({ reviewData, reviewMetaData }) => {
+const SimpleInfo = ({ reviewData, reviewMetaData, averageRating, reviewOverall, guestFavorite }) => {
   const [roomData, setRoomData] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false)
   const pathname = usePathname();
@@ -58,6 +58,9 @@ const SimpleInfo = ({ reviewData, reviewMetaData }) => {
         closeModal={closeModal}
         reviewData={reviewData}
         reviewMetaData={reviewMetaData}
+        averageRating={averageRating}
+        reviewOverall={reviewOverall}
+        guestFavorite={guestFavorite}
       />
     </div>
   )
