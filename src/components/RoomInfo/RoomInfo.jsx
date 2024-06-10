@@ -7,44 +7,62 @@ import InfoDetail from '@/components/RoomInfo/InfoDetail.jsx'
 import GenerateReviewMetaData from '@/utils/generateReviewMetaData'
 import GuestPrefer from './GuestPrefer'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+
+function ReviewData(data) {
+  return data.map(data => {
+    return {
+      name: data.name,
+      country: data.country,
+      image: data.image,
+      rating: data.rating,
+      timestamp: data.timestamp,
+      message: data.message,
+    }
+  })
+}
+
+function ReviewMetaData(data) {
+  return data.Ratings
+}
 
 const RoomInfo = () => {
   const [reviewData, setReviewData] = useState([])
   const [reviewMetaData, setReviewMetaData] = useState([])
+  const [reviewOverall, setReviewOverall] = useState([])
+  const [guestFavorite, setGuestFavorite] = useState(false)
+  const [averageRating, setAverageRating] = useState(0)
+  const pathname = usePathname()
+  const id = pathname.slice(7)
 
   useEffect(() => {
-    fetch('/apis/review')
+    fetch(`/apis/host/${id}`)
       .then(response => response.json())
       .then(data => {
-        setReviewData(processReviewData(data))
+        setReviewMetaData(ReviewMetaData(data))
+        setGuestFavorite(data.guestFavorite)
+        setAverageRating(data.rating)
+      })
+      .catch(error => console.error('Error fetching ReviewData.json:', error))
+
+    fetch(`/apis/review/${id}`)
+      .then(response => response.json())
+      .then(data => {
+        setReviewData(ReviewData(data))
         // @ts-ignore
-        setReviewMetaData(GenerateReviewMetaData(data))
+        setReviewOverall(calculateStarCounts(data))
       })
       .catch(error => console.error('Error fetching ReviewData.json:', error))
   }, [])
 
-  // ratings 평균 값을 내주는 함수
-  const calculateAverageRating = ratings => {
-    const totalScore = Object.values(ratings).reduce((acc, curr) => acc + curr, 0)
-    const numberOfCategories = Object.keys(ratings).length
-    return (totalScore / numberOfCategories).toFixed(1)
-  }
-
-  // rating 객체로 가공하는 함수.
-  const processReviewData = data => {
-    return data.map(item => {
-      const averageRating = calculateAverageRating(item.Ratings)
-      return {
-        ...item.review,
-        rating: parseFloat(averageRating), // 소수점 한 자리까지 표시
-      }
-    })
-  }
-
   return (
     <div>
-      <SimpleInfo reviewData={reviewData} reviewMetaData={reviewMetaData}/>
-      <GuestPrefer reviewData={reviewData} reviewMetaData={reviewMetaData}/>
+      <SimpleInfo reviewData={reviewData}
+        reviewMetaData={reviewMetaData}
+        averageRating={averageRating} />
+      <GuestPrefer reviewData={reviewData}
+        reviewMetaData={reviewMetaData}
+        averageRating={averageRating} />
       <InfoDetail />
       <RoomHost />
     </div>
