@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import ReduxProvider from '@/components/common/\breduxProvider'
+import ReduxProvider from '@/components/common/reduxProvider'
 
 export const metadata: Metadata = {
   title: 'Airbnb Clone',
