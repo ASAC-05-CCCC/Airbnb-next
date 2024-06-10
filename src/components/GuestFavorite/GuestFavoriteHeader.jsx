@@ -10,7 +10,7 @@ const GuestFavoriteHeader = ({ data }) => {
         className='size-48 h-32 w-auto object-contain'
         alt='laurelwreath1'
       />
-      <h2 className='inset-x-0 top-0 text-7xl'>{data.toFixed(2)}</h2>
+      <h2 className='inset-x-0 top-0 text-7xl'>{data}</h2>
       <Image
         src={laurelwreath2}
         className='size-48 h-32 w-auto object-contain'

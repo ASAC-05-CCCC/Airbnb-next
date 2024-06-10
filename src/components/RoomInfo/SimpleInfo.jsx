@@ -3,9 +3,11 @@
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import ReviewModal from '@/components/ReviewModal/ReviewModal';
 
-const SimpleInfo = () => {
+const SimpleInfo = ({ reviewData, reviewMetaData, averageRating, reviewOverall, guestFavorite }) => {
   const [roomData, setRoomData] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const pathname = usePathname();
   const id = pathname.slice(7);
 
@@ -23,6 +25,19 @@ const SimpleInfo = () => {
       <></>
     );
   }
+
+  if (!reviewMetaData || reviewMetaData.length === 0) {
+    return <></>
+  }
+
+  const openModal = () => {
+    setIsModalOpen(true)
+    document.body.style.overflow = 'hidden'
+  }
+  const closeModal = () => {
+    setIsModalOpen(false)
+    document.body.style.overflow = ''
+  }
   
   const briefInfo = roomData.briefRoomInfo.map((item, index) => `${item} ${index !== roomData.briefRoomInfo.length - 1 ? '· ' : ''}`);
 
@@ -35,9 +50,18 @@ const SimpleInfo = () => {
           <Image src="/images/star.svg" alt='' width={12} height={12} />
           <span className="text-gray-700 font-bold">{roomData.rating}</span>
           <span className="text-gray-500 mx-2">·</span>
-          <a href="#" className="text-gray-700 underline">후기 {roomData.reviewCount}개</a>
+          <a href="#" className="text-gray-700 underline" onClick={openModal}>후기 {roomData.reviewCount}개</a>
         </div>
       )}
+      <ReviewModal
+        isOpen={isModalOpen}
+        closeModal={closeModal}
+        reviewData={reviewData}
+        reviewMetaData={reviewMetaData}
+        averageRating={averageRating}
+        reviewOverall={reviewOverall}
+        guestFavorite={guestFavorite}
+      />
     </div>
   )
 }

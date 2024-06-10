@@ -1,17 +1,20 @@
 const ReviewOverall = ({ ratings }) => {
+  if (!ratings || ratings.length === 0) {
+    return <></>
+  }
   return (
-    <div className='items-center mr-8'>
-      <h3 className='font-semibold text-sm w-32'>전체 평점</h3>
+    <div className='mr-8 items-center'>
+      <h3 className='w-32 text-sm font-semibold'>전체 평점</h3>
       <ol className='list-none justify-between'>
         {ratings.map((rating, index) => (
-          <li key={index} className='flex items-center first-letter:gap-2 mb-0 gap-2'>
+          <li key={index} className='mb-0 flex items-center gap-2 first-letter:gap-2'>
             <div className='flex items-center '>
               <span>{rating.stars}</span>
             </div>
-            <div className='bg-gray-200 h-1 w-full rounded'>
+            <div className='h-1 w-full rounded bg-gray-200'>
               <div
-                className='h-full bg-black rounded'
-                style={{ width: `${rating.percentage}%` }}
+                className='h-full rounded bg-black'
+                style={{ width: `${rating.percentage.toFixed(1)}%` }}
               ></div>
             </div>
           </li>
