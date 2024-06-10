@@ -6,7 +6,7 @@ const PlaceCardInfo = ({ id, location, rating, distance, dates, price }) => {
   // price 숫자 변환
   const formattedPrice = new Intl.NumberFormat('ko-KR').format(price)
 
-  // 날짜 변환  "dates": { "startDate": "2024-6-2", "endDate": "2024-6-7" },
+  // 날짜 변환
   const formattedDate = dateString => {
     const date = new Date(dateString)
     const month = date.getMonth() + 1
