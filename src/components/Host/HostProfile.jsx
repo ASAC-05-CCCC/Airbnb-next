@@ -37,10 +37,14 @@ const HostProfile = ({ name, superHost, review, rating, career }) => {
           />
         </button>
         <h2 className='w-[150px] text-center text-lg font-bold'>{name}</h2>
-        {superHost && (
+        {superHost ? (
           <span className='mt-2 flex items-center text-sm'>
             <Image src={SuperHost} width={24} height={24} alt='superHost' />
-            <span className=' ml-1 text-sm'>슈퍼호스트</span>
+            <span className=' ml-1 '>슈퍼호스트</span>
+          </span>
+        ) : (
+          <span className='mt-2 flex items-center text-lg font-bold'>
+            <span className=' ml-1 '>호스트</span>
           </span>
         )}
       </div>
