@@ -12,21 +12,23 @@ const ReservationGuestInput = () => {
     { name: 'pets', title: '반려동물', desc: '보조동물을 동반하시나요?' },
   ]
   return (
-    <ul className='flex w-full flex-col gap-5 p-4'>
-      {list.map((each, idx) => {
-        return (
-          <GuestItem
-            key={idx}
-            guestCount={guestCount}
-            increaseGuest={increaseGuest}
-            decreaseGuest={decreaseGuest}
-            name={each.name}
-            desc={each.desc}
-            title={each.title}
-          />
-        )
-      })}
-    </ul>
+    <div>
+      <ul className='flex w-full flex-col gap-5 p-4'>
+        {list.map((each, idx) => {
+          return (
+            <GuestItem
+              key={idx}
+              guestCount={guestCount}
+              increaseGuest={increaseGuest}
+              decreaseGuest={decreaseGuest}
+              name={each.name}
+              desc={each.desc}
+              title={each.title}
+            />
+          )
+        })}
+      </ul>
+    </div>
   )
 }
 

@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import DatePicker from 'react-datepicker'
-import 'react-datepicker/dist/react-datepicker.css'
-import './DatePicker.css'
-import { ko } from 'date-fns/locale'
+// import DatePicker from 'react-datepicker'
+// import 'react-datepicker/dist/react-datepicker.css'
+// import '@/components/common/DatePicker.css'
+// import { ko } from 'date-fns/locale'
 import { useDispatch } from 'react-redux'
 import { setCheckInDate, setCheckOutDate } from '@/app/redux/searchSlice'
+import DatePickerWrapper from '@/components/common/datePickerWrapper'
 // import './App.css' // 추가적인 Tailwind CSS 스타일링을 위한 CSS 파일
 
 const DatePickerInput = () => {
@@ -16,13 +17,12 @@ const DatePickerInput = () => {
     const [start, end] = dates
     setStartDate(start)
     setEndDate(end)
+    console.log(start, end)
 
     if (start && !end) {
-      const formattingStart = `${start.getFullYear()}-${start.getMonth()}-${start.getDay()}`
-      dispatch(setCheckInDate(formattingStart))
+      dispatch(setCheckInDate(start))
     } else if (start && end) {
-      const formattingEnd = `${end.getFullYear()}-${end.getMonth()}-${end.getDay()}`
-      dispatch(setCheckOutDate(formattingEnd))
+      dispatch(setCheckOutDate(end))
     }
   }
 
@@ -42,8 +42,15 @@ const DatePickerInput = () => {
             </button>
           </div>
         </div>
-
-        <div className='flex justify-center gap-10'>
+        {/*  */}
+        <DatePickerWrapper
+          //
+          startDate={startDate}
+          onChange={onChange}
+          endDate={endDate}
+          shown={2}
+        />
+        {/* <div className='flex justify-center gap-10'>
           <DatePicker
             selected={startDate}
             onChange={onChange}
@@ -54,7 +61,8 @@ const DatePickerInput = () => {
             monthsShown={2}
             locale={ko}
           />
-        </div>
+        </div> */}
+        {/*  */}
         <div className='flex justify-start gap-4'>
           <button className='w-18 focus:border-3 rounded-full border border-gray-200 px-3 py-1 text-sm transition-all hover:border-gray-500'>
             정확한 날짜

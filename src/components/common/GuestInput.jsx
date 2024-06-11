@@ -1,6 +1,10 @@
 import GuestItem from '@/components/common/GuestItem'
+import { useSelector } from 'react-redux'
+import { increaseGuest, decreaseGuest } from '@/app/redux/searchSlice'
 
 const GuestInput = () => {
+  const { guestCount } = useSelector(state => state.search)
+
   const list = [
     { name: 'adults', title: '성인', desc: '13세 이상' },
     { name: 'kids', title: '어린이', desc: '2~12세' },
@@ -10,7 +14,17 @@ const GuestInput = () => {
   return (
     <ul className='flex w-full flex-col gap-5 p-4'>
       {list.map((each, idx) => {
-        return <GuestItem key={idx} name={each.name} desc={each.desc} title={each.title} />
+        return (
+          <GuestItem
+            key={idx}
+            guestCount={guestCount}
+            increaseGuest={increaseGuest}
+            decreaseGuest={decreaseGuest}
+            name={each.name}
+            desc={each.desc}
+            title={each.title}
+          />
+        )
       })}
     </ul>
   )

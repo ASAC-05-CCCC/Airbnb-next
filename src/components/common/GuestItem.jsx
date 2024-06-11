@@ -1,11 +1,9 @@
 'use client'
 
-import { useDispatch, useSelector } from 'react-redux'
-import { increase, decrease } from '@/app/redux/guestSlice'
+import { useDispatch } from 'react-redux'
 
-const GuestItem = ({ name, desc, title }) => {
+const GuestItem = ({ name, desc, title, guestCount, increaseGuest, decreaseGuest }) => {
   const dispatch = useDispatch()
-  const guestCount = useSelector(state => state.guest)
   return (
     <li
       className={`flex items-center justify-between   ${
@@ -21,16 +19,14 @@ const GuestItem = ({ name, desc, title }) => {
 
       <div className='flex gap-4'>
         <button
-          onClick={() => dispatch(decrease({ key: name }))}
+          onClick={() => dispatch(decreaseGuest({ key: name }))}
           className='rounded-full border border-gray-200 px-2 transition-all hover:border-gray-600'
         >
           -
         </button>
         <span>{guestCount[name]}</span>
         <button
-          onClick={() => {
-            dispatch(increase({ key: name }))
-          }}
+          onClick={() => dispatch(increaseGuest({ key: name }))}
           className='rounded-full border border-gray-200 px-2 transition-all hover:border-gray-600'
         >
           +

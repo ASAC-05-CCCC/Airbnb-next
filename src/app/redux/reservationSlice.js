@@ -17,10 +17,12 @@ const reservationSlice = createSlice({
   reducers: {
     //
     setCheckInDate: (state, action) => {
-      state.checkInDate = action.payload
+      const formattingDate = `${action.payload.getFullYear()}-${action.payload.getMonth()}-${action.payload.getDay()}`
+      state.checkInDate = formattingDate
     },
     setCheckOutDate: (state, action) => {
-      state.checkOutDate = action.payload
+      const formattingDate = `${action.payload.getFullYear()}-${action.payload.getMonth()}-${action.payload.getDay()}`
+      state.checkOutDate = formattingDate
     },
 
     //
