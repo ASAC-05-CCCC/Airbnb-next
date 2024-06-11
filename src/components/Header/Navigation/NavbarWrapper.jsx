@@ -6,7 +6,7 @@ import SearchBar from '@/components/Header/SearchBar/SearchBar'
 import SearchInputModal from '@/components/Header/SearchBar/SearchInputModal'
 import SmallSearchBar from '@/components/Header/SearchBar/SmallSearchBar'
 import { SearchContextProvider } from '@/context/SearchContext'
-import useIsScroll from '@/hooks/useIsScroll'
+// import useIsScroll from '@/hooks/useIsScroll'
 import clsx from 'clsx'
 import { usePathname } from 'next/navigation'
 

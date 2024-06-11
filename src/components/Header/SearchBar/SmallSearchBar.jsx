@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import useIsScroll from '@/hooks/useIsScroll'
 
 function SmallSearchBar() {
   // const scrolled = useIsScroll()
