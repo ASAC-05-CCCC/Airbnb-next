@@ -37,10 +37,13 @@ const searchSlice = createSlice({
 
     //
     setCheckInDate: (state, action) => {
-      state.checkInDate = action.payload
+      const formattingDate = `${action.payload.getFullYear()}-${action.payload.getMonth() + 1}-${action.payload.getDate()}`
+
+      state.checkInDate = formattingDate
     },
     setCheckOutDate: (state, action) => {
-      state.checkOutDate = action.payload
+      const formattingDate = `${action.payload.getFullYear()}-${action.payload.getMonth() + 1}-${action.payload.getDate()}`
+      state.checkOutDate = formattingDate
     },
 
     //
