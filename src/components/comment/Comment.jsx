@@ -4,9 +4,10 @@ import ReviewMeta from '@/components/ReviewMeta/ReviewMeta'
 import Review from '@/components/Review/Review'
 import ReviewInform from '@/components/ReviewInform/ReviewInform'
 import { useState, useEffect } from 'react'
-import averageRatings from '@/utils/averageRatings'
 import { usePathname } from 'next/navigation'
 import calculateStarCounts from '@/utils/calculateStarCounts'
+import ReviewHeader from '@/components/ReviewHeader/ReviewHeader'
+import ReviewEmpty from '@/components/ReviewHeader/ReviewEmpty'
 
 function ReviewData(data) {
   return data.map(data => {
@@ -42,7 +43,7 @@ const Comment = () => {
         setGuestFavorite(data.guestFavorite)
         setAverageRating(data.rating)
       })
-      .catch(error => console.error('Error fetching ReviewData.json:', error))
+      .catch(error => console.error('Error fetching host.json:', error))
 
     fetch(`/apis/review/${id}`)
       .then(response => response.json())
@@ -51,20 +52,32 @@ const Comment = () => {
         // @ts-ignore
         setReviewOverall(calculateStarCounts(data))
       })
-      .catch(error => console.error('Error fetching ReviewData.json:', error))
+      .catch(error => console.error('Error fetching review.json:', error))
   }, [])
 
   return (
-    <div className='flex w-full flex-col px-10'>
-      {guestFavorite && <GuestFavorite data={averageRating} />}
-      <ReviewMeta reviewMetaData={reviewMetaData} reviewOverall={reviewOverall} />
-      <Review
-        reviewData={reviewData}
-        reviewMetaData={reviewMetaData}
-        averageRating={averageRating}
-      />
-      {/* <ReviewInform /> */}
-    </div>
+    <>
+      {reviewData.length === 0 ? (
+        <ReviewEmpty />
+      ) : (
+        <div className='flex w-full flex-col px-10'>
+          {guestFavorite ? (
+            <GuestFavorite data={averageRating} />
+          ) : (
+            <ReviewHeader data={averageRating} reviewCount={reviewData.length} />
+          )}
+          <ReviewMeta reviewMetaData={reviewMetaData} reviewOverall={reviewOverall} />
+          <Review
+            reviewData={reviewData}
+            reviewMetaData={reviewMetaData}
+            averageRating={averageRating}
+            reviewOverall={reviewOverall}
+            guestFavorite={guestFavorite}
+          />
+          <ReviewInform />
+        </div>
+      )}
+    </>
   )
 }
 
