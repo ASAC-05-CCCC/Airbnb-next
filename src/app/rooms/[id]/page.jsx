@@ -13,7 +13,7 @@ import Comment from '@/components/comment/Comment'
 
 export default function RoomsHome() {
   return (
-    <div className='p-10'>
+    <div className='p-10 sm:px-8 lg:px-10 xl:px-20'>
       <RoomView />
       <section className='flex w-full border-b-2'>
         <div className='flex w-full basis-2/3 flex-col'>
