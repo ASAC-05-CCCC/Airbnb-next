@@ -36,10 +36,8 @@ const useFetchAccommodations = (page, categoryId, location, startDate, endDate, 
         if (guest) {
           const guestCount = parseInt(guest)
           filteredData = filteredData.filter(item => {
-            const maxGuest = parseInt(
-              //'최대 인원 4명' 여기서 4만 추출
-              item.briefRoomInfo.find(info => info.includes('최대 인원')).match(/\d+/)[0],
-            )
+            const guestInfo = item.briefRoomInfo.find(info => info.includes('최대 인원'))
+            const maxGuest = guestInfo ? parseInt(guestInfo.match(/\d+/)[0]) : 0
             return maxGuest >= guestCount
           })
         }
