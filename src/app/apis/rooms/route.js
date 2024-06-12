@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import Data from '/public/json/Data.json'
+import Data from '/public/json/Accommodation.json'
 
 export async function GET(request, context) {
   const url = new URL(request.url)
