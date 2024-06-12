@@ -2,7 +2,16 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ['example.com', 'a0.muscache.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'a0.muscache.com',
+      },
+    ],
   },
 }
 
