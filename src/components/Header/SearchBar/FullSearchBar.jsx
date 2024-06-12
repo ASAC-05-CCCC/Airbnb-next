@@ -59,7 +59,7 @@ function FullSearchBar() {
                 type='text'
                 placeholder='여행지 검색'
                 className='bg-transparent text-gray-900 focus:outline-none'
-                value={location || '유연한 검색'}
+                defaultValue={location || '유연한 검색'}
               />
             </div>
           </div>
