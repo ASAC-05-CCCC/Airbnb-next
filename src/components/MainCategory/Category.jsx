@@ -1,13 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 import CategoryItem from '@/components/MainCategory/CategoryItem'
 import FilterButton from '@/components/MainCategory/FilterButton'
 import FilterComponent from '@/components/MainCategory/FilterComponent'
 import ArrowButton from '@/components/common/ArrowButton'
 import categoryData from '/public/categoryList.json'
-import Link from 'next/link'
 
 function Category() {
   const categoryList = categoryData.categoryList
@@ -18,7 +18,6 @@ function Category() {
   const [transX, setTransX] = useState(0)
 
   const onClickLeftArrowButton = () => {
-    console.log(transX)
     if (transX === -200) {
       setTransX(transX - 60)
       setIsLeftArrow(false)
@@ -29,7 +28,6 @@ function Category() {
   }
 
   const onClickRightArrowButton = () => {
-    console.log(transX)
     if (transX === -60) {
       setTransX(transX + 60)
       setIsRightArrow(false)
