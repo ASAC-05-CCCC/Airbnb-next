@@ -1,5 +1,4 @@
 import SuperHost from '/public/images/SuperHost.svg'
-import DefaultProfileImage from '/public/images/DefaultProfileImage.svg'
 import Image from 'next/image'
 
 const Label = ({ label, value }) => {
@@ -25,15 +24,17 @@ const Label = ({ label, value }) => {
   )
 }
 
-const HostProfile = ({ name, superHost, review, rating, career }) => {
+const HostProfile = ({ name, superHost, review, rating, career, image }) => {
   return (
     <section className='bg-wite flex w-[341px] justify-between rounded-3xl bg-white px-6 py-8 shadow-md'>
       <div className='flex flex-col items-center justify-center gap-2'>
         <button className='overflow-hidden rounded-full focus:outline-none'>
           <Image
-            src={DefaultProfileImage}
+            src={image}
             alt='User profile'
             className='h-24 w-24 rounded-full bg-gray-300'
+            width={96}
+            height={96}
           />
         </button>
         <h2 className='w-[150px] text-center text-lg font-bold'>{name}</h2>
