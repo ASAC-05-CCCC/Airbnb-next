@@ -3,6 +3,12 @@
     {
       "accommodationId": 1,
       "accommodationName": "여주 남한강 전거도로1분, 금은모래 캠핑장3분, 썬밸리호텔5초",
+      "countryLocationName": "한국 여주시",
+      "distance": "57km",
+      "dates": {
+        "startDate": "2024-6-5",
+        "endDate": "2024-6-7"
+      },
       "locationName": "여주시, 한국의 방",
       "briefRoomInfo": [
         "이층 침대 6개",
@@ -13,6 +19,7 @@
       "reviewCount": "23",
       "hostName": "Shinku",
       "hostSince": 2014,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/2d4b6226-7ccc-4f1e-a670-29d5a463852b.jpg?im_w=240",
       "pricePerDay": 30000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/69079e4a-818c-4a07-97c4-34c51f6bd265.jpg?im_w=1200",
@@ -188,6 +195,12 @@
     {
       "accommodationId": 2,
       "accommodationName": "{양양 죽도해변} 오션스테이 #2023신축 #오픈특가 할로우#6",
+      "countryLocationName": "한국 Yang Yang",
+      "distance": "155km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Hyeonnam-myeon, Yangyang-gun, 한국의 레지던스 전체",
       "briefRoomInfo": [
         "최대 인원 2명",
@@ -200,6 +213,7 @@
       "pricePerDay": 79705,
       "hostName": "Blue Twelve 양양네오스",
       "hostSince": 2023,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-494885665/original/6d1e942a-08b0-4288-8278-e81499f8a010.jpeg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-806929901183102808/original/a749aafc-189e-497e-b2da-b5c8bbb31ec6.jpeg?im_w=1200",
         "https://a0.muscache.com/im/pictures/miso/Hosting-806929901183102808/original/50dfcb34-eb3e-45fc-8840-707c60dc695f.jpeg?im_w=720",
@@ -287,6 +301,12 @@
     {
       "accommodationId": 3,
       "accommodationName": "나인하우스 #독채",
+      "countryLocationName": "한국 가평군",
+      "distance": "47km",
+      "dates": {
+        "startDate": "2024-6-5",
+        "endDate": "2024-6-7"
+      },
       "locationName": "가평군, 한국의 저택 전체",
       "briefRoomInfo": [
         "최대 인원 8명",
@@ -298,6 +318,7 @@
       "reviewCount": "3",
       "hostName": "Sahee",
       "hostSince": 2022,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-65974611/original/2a048f11-2a58-4d87-acf6-c07bc987da9b.jpeg?im_w=240",
       "pricePerDay": 1320000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-617784885502078213/original/56b74c47-1dda-4dea-8d86-ac909c1d6961.jpeg?im_w=720",
@@ -378,6 +399,12 @@
     {
       "accommodationId": 4,
       "accommodationName": "VILLA 포지타노(69평 전체) #하루한팀#모닥불&바베큐장#넓은 주차공간#확트인 전망",
+      "countryLocationName": "한국 양평군",
+      "distance": "62km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-7"
+      },
       "locationName": "양평군, 한국의 별장 전체",
       "briefRoomInfo": [
         "최대 인원 8명",
@@ -391,6 +418,7 @@
       "pricePerDay": 360000,
       "hostName": "Sangkuk",
       "hostSince": 2020,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/01f7a164-5c91-43a2-9c6b-8657ca68a278.jpg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/38929911-53df-44ce-9ab2-12551da8333c.jpg?im_w=960",
         "https://a0.muscache.com/im/pictures/5dae1e8c-eefb-4107-b6f3-e68d5fd7e2ed.jpg?im_w=720",
@@ -498,6 +526,12 @@
       "accommodationId": 5,
       "accommodationName": "강이바로앞 강변하우스. 예쁘고 넓은정원과 마당.데크에서 보는 풍경과 전망이 좋아요",
       "locationName": "Chilseong-myeon, Goesan, 한국의 게스트용 별채 전체",
+      "countryLocationName": "한국 Chilseong-myeon",
+      "distance": "55km",
+      "dates": {
+        "startDate": "2024-6-5",
+        "endDate": "2024-6-7"
+      },
       "briefRoomInfo": [
         "최대 인원 2명",
         "침실 1개",
@@ -509,6 +543,7 @@
       "reviewCount": "124",
       "hostName": "Miyoung",
       "hostSince": 2021,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/f1043510-a173-42cd-8756-b02429abdd71.jpg?im_w=240",
       "pricePerDay": 100000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/0f06bb80-228a-4c8b-8fa2-d3b39ddf488f.jpg?im_w=1200",
@@ -594,6 +629,12 @@
     {
       "accommodationId": 6,
       "accommodationName": "클로드에덴 : 트리하우스",
+      "countryLocationName": "한국 Jipyeong-myeon",
+      "distance": "57km",
+      "dates": {
+        "startDate": "2024-6-2",
+        "endDate": "2024-6-7"
+      },
       "locationName": "Jipyeong-myeon, Yangpyeong-gun, 한국의 트리하우스",
       "briefRoomInfo": [
         "최대 인원 2명",
@@ -607,6 +648,7 @@
       "pricePerDay": 297000,
       "hostName": "Kwanghoe",
       "hostSince": 2024,
+      "hostImage": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=%EA%B4%91&im_w=240&im_s=133.33&im_f=apple-sd-gothic-medium.ttf&im_c=ffffff",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-713419345905850852/original/1a001eb0-466a-4e7d-bf91-5f99067a31ee.jpeg?im_w=1200",
         "https://a0.muscache.com/im/pictures/3681b9e1-1d86-4f94-87be-f20759ded2de.jpg?im_w=720",
@@ -691,6 +733,12 @@
     {
       "accommodationId": 7,
       "accommodationName": "Y1호 #포차바베큐 #독채 #불멍 #빔프로젝터#마샬 민트&크림 다락방",
+      "countryLocationName": "한국 Seosan-si",
+      "distance": "87km",
+      "dates": {
+        "startDate": "2024-6-5",
+        "endDate": "2024-6-7"
+      },
       "locationName": "상면, 가평군, 한국의 게스트용 별채 전체",
       "briefRoomInfo": [
         "최대 인원 2명",
@@ -703,6 +751,7 @@
       "reviewCount": "149",
       "hostName": "Yeoulmok",
       "hostSince": 2021,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-400648247/original/23db6bc0-beab-43df-8184-1c93ad9ac62f.jpeg?im_w=240",
       "pricePerDay": 99000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/d84393fd-db4d-4e42-854c-e8dc8f926d1e.jpg?im_w=720",
@@ -797,6 +846,12 @@
     {
       "accommodationId": 8,
       "accommodationName": "[ 마당있는 한옥 ]",
+      "countryLocationName": "한국 Seosan-si",
+      "distance": "98km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Seosan-si, 한국의 집 전체",
       "briefRoomInfo": [
         "최대 인원 2명",
@@ -809,6 +864,7 @@
       "pricePerDay": 150000,
       "hostName": "Mia",
       "hostSince": 2022,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/6e35b4f5-a274-4692-b3d4-1f52d8404f7b.jpg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/18cdfcdc-9841-4c27-a196-621c8f5ac0b0.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/bb594da5-c6dc-4190-957f-089ae3164b04.jpg?im_w=720",
@@ -888,6 +944,12 @@
     {
       "accommodationId": 9,
       "accommodationName": "파스텔 글램핑",
+      "countryLocationName": "한국 Gapyeong-gun",
+      "distance": "50km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Buk-myeon, Gapyeong-gun, 한국의 캠핑카의 개인실",
       "briefRoomInfo": [
         "최대 인원 4명",
@@ -900,6 +962,7 @@
       "reviewCount": "9",
       "hostName": "Pastel Gapyeong",
       "hostSince": 2017,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/a151271c-4d83-4833-b40f-2832afac56be.jpg?im_w=240",
       "pricePerDay": 99800,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/5ed3d00a-4f88-455e-8f6a-c4bc1d036f10.jpg?im_w=960",
@@ -990,6 +1053,12 @@
     {
       "accommodationId": 10,
       "accommodationName": "{[천안터미널5분] Main Location ★인스타갬성,포근한숙소,주차장x,★방역&알콜소독",
+      "countryLocationName": "한국 Cheonan-si",
+      "distance": "89km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Dongnam-gu, Cheonan-si, 한국의 집 전체",
       "briefRoomInfo": [
         "최대 인원 4명",
@@ -1003,6 +1072,7 @@
       "pricePerDay": 49999,
       "hostName": "Nene",
       "hostSince": 2019,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/1f27ddd7-2e83-4868-ba0d-bf42842de3d0.jpg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/0ccb1155-1b65-486d-af36-b735071f0ec7.jpg?im_w=960",
         "https://a0.muscache.com/im/pictures/d3328589-e819-4b88-9e90-7c4b587e4cf0.jpg?im_w=480",
@@ -1169,6 +1239,12 @@
     {
       "accommodationId": 11,
       "accommodationName": "홍천터미널 도보3분 | 마운틴뷰 | 무료주차 | 넷플릭스(개인계정) | 장기숙박 가능",
+      "countryLocationName": "한국 홍천",
+      "distance": "57km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "홍천, 한국의 집 전체",
       "briefRoomInfo": [
         "최대 인원 2명",
@@ -1180,6 +1256,7 @@
       "reviewCount": "28",
       "hostName": "Yunji 님",
       "hostSince": "2023",
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-481974924/original/972ea943-9161-42f2-9318-7aa548b107af.jpeg?im_w=240",
       "pricePerDay": 78200,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/7bd38f35-3e9f-4967-a701-975e2b9c462f.jpg?im_w=1200",
@@ -1270,6 +1347,12 @@
     {
       "accommodationId": 12,
       "accommodationName": "[신불당, 천안아산역] 편안하고 감성적인 바이브가 넘치는 청춘하우스",
+      "countryLocationName": "한국 Cheonan-si",
+      "distance": "85km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Seobuk-gu, Cheonan-si, 한국의 집 전체",
       "briefRoomInfo": [
         "최대 인원 2명",
@@ -1281,6 +1364,7 @@
       "reviewCount": "83",
       "hostName": "Ye Eun 님",
       "hostSince": "2024",
+      "hostImage": "https://www.airbnb.co.kr/rooms/756130818043353085?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-06-09&check_out=2024-06-14&source_impression_id=p3_1717835544_P3OlSsiLzhWF3CEB&previous_page_section_name=1000&federated_search_id=9e1eb2c1-c3d9-4b3e-b6c3-afb606e5185b",
       "pricePerDay": 55000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/8918bf63-a25b-4365-8cd8-b8c669af0c20.jpg?im_w=1200",
@@ -1367,6 +1451,12 @@
     {
       "accommodationId": 13,
       "accommodationName": "호재 (乎哉) Hojae 25평 독채숙소",
+      "countryLocationName": "한국 Paju-si",
+      "distance": "37km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Tanhyeon-myeon, Paju-si, 한국의 타운하우스 전체",
       "briefRoomInfo": [
         "최대 인원 4명",
@@ -1380,6 +1470,7 @@
       "pricePerDay": 137800,
       "hostName": "호재",
       "hostSince": 2021,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/90e19bd8-e2e5-463e-b08e-df1602ff9f09.jpg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/502f3f0a-ec82-457d-a70a-0237cd1a8824.jpg?im_w=1200",
         "https://a0.muscache.com/im/pictures/215351dd-060c-449d-a049-1256f99899a4.jpg?im_w=720",
@@ -1463,6 +1554,12 @@
     {
       "accommodationId": 14,
       "accommodationName": "신축/서울근교/대명인근/마당넓은집/온수풀무료/파격세일/연박할인/마감할인/불멍/독채실내풀빌라",
+      "countryLocationName": "한국 Hongcheon-gun",
+      "distance": "98km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Seo-myeon, Hongcheon-gun, 한국의 저택 전체",
       "briefRoomInfo": [
         "최대 인원 8명",
@@ -1476,6 +1573,7 @@
       "pricePerDay": 275500,
       "hostName": "서현",
       "hostSince": 2022,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-439494046/original/a765f3a9-3a39-490c-b790-14da367b7088.jpeg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NzM4NDQzMzE1NjYxMDUzNzEx/original/7213803a-418b-4361-a18f-8f758d1eebcb.jpeg?im_w=1200",
         "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NzM4NDQzMzE1NjYxMDUzNzEx/original/7e698926-0f45-402a-b2de-ebfaf137d2ed.jpeg?im_w=720",
@@ -1554,6 +1652,12 @@
     {
       "accommodationId": 15,
       "accommodationName": "벽화마을 내 자쿠지 독채 한옥 [자사녹]",
+      "countryLocationName": "한국 Gimcheon",
+      "distance": "192km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Gimcheon, 한국의 통나무집 전체",
       "briefRoomInfo": [
         "최대 인원 6명",
@@ -1566,6 +1670,7 @@
       "reviewCount": "6",
       "hostName": "Ns",
       "hostSince": 2023,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/e181a674-b62d-4336-8282-a267820f96c5.jpg?im_w=240",
       "pricePerDay": 324000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-1053856174102938583/original/f898c10c-f11f-4e30-bc40-e1d2533ba215.jpeg?im_w=1200",
@@ -1640,6 +1745,12 @@
     {
       "accommodationId": 16,
       "accommodationName": "동마루 캐빈",
+      "countryLocationName": "한국 Geumsan",
+      "distance": "165km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Nami-myeon, Geumsan, 한국의 게스트용 별채 전체",
       "briefRoomInfo": [
         "최대 인원 6명",
@@ -1651,6 +1762,7 @@
       "reviewCount": "16",
       "pricePerDay": 116000,
       "hostName": "나경",
+      "hostImage": "https://a0.muscache.com/im/Portrait/Avatars/messaging/b3e03835-ade9-4eb7-a0bb-2466ab9a534d.jpg?im_policy=medq_w_text&im_t=%EB%82%98&im_w=240&im_s=133.33&im_f=apple-sd-gothic-medium.ttf&im_c=ffffff",
       "hostSince": 2023,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-776593980755715305/original/8d6ce1f4-b748-4864-a4a7-f4f03f7aaa47.jpeg?im_w=1200",
@@ -1726,6 +1838,12 @@
     {
       "accommodationId": 17,
       "accommodationName": "태안에서 반려견과 함께 즐겁게 보낼 수 있는 위드독 독채 풀빌라(스파,애견)",
+      "countryLocationName": "한국 Taean-gun",
+      "distance": "109km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Taean-gun, 한국의 펜션",
       "briefRoomInfo": [
         "침실 2개",
@@ -1737,6 +1855,7 @@
       "reviewCount": "4",
       "hostName": "Onda",
       "hostSince": 2023,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/1ed6d7ee-4e28-4963-ac1b-5006b2f4b290.jpg?im_w=240",
       "pricePerDay": 272420,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/prohost-api/Hosting-944688949784349638/original/43e8f4d0-0a26-4258-8ea2-2b5a402474e9.jpeg?im_w=1200",
@@ -1836,6 +1955,12 @@
     {
       "accommodationId": 18,
       "accommodationName": "한가로운 휴일의 시작 춘천 유유자적 삼동",
+      "countryLocationName": "한국 Seo-myeon, Chuncheon-si",
+      "distance": "60km",
+      "dates": {
+        "startDate": "2024-6-5",
+        "endDate": "2024-6-7"
+      },
       "locationName": "Seo-myeon, Chuncheon-si, 한국의 집 전체",
       "briefRoomInfo": [
         "최대 인원 2명",
@@ -1849,6 +1974,7 @@
       "pricePerDay": 234000,
       "hostName": "유자",
       "hostSince": 2021,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/c55f572c-4608-4f9b-bc3d-4cea3d3e1b8d.jpg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-49336798/original/f4fcd93c-0991-49d6-b39a-2e54122c0818.jpeg?im_w=1200",
         "https://a0.muscache.com/im/pictures/6c7811d0-d8d1-40fb-849f-116f5fb52e1b.jpg?im_w=720",
@@ -1932,6 +2058,12 @@
     {
       "accommodationId": 19,
       "accommodationName": "양양의 푸르름 속 맑은 자연을 느낄 수 있는 6.다온빌(스파/개별풀)",
+      "countryLocationName": "한국 Seo-myeon, Yangyang",
+      "distance": "151km",
+      "dates": {
+        "startDate": "2024-6-2",
+        "endDate": "2024-6-7"
+      },
       "locationName": "Seo-myeon, Yangyang, 한국의 펜션",
       "briefRoomInfo": [
         "최대 인원 10명",
@@ -1944,6 +2076,7 @@
       "reviewCount": "478",
       "hostName": "Onda",
       "hostSince": 2018,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/09cc046b-cec7-4612-b582-9345c38b370b.jpg?im_w=240",
       "pricePerDay": 410220,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/prohost-api/Hosting-842470660285049495/original/85ca260c-0cdc-430c-9fd7-6038fa4263c6.jpeg?im_w=1200",
@@ -2034,6 +2167,12 @@
     {
       "accommodationId": 20,
       "accommodationName": "느티나무방 *노루목68＊ 비발디, 홍천강 인근 편안한 펜션",
+      "countryLocationName": "한국 Hongcheon-gun",
+      "distance": "98km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Bukbang-myeon, Hongcheon-gun, 한국의 펜션의 개인실",
       "briefRoomInfo": [
         "최대 인원 8명",
@@ -2046,6 +2185,7 @@
       "reviewCount": "10",
       "hostName": "진영",
       "hostSince": 2023,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/0aaa0bba-0582-470b-b3c9-df8b41c97a3d.jpg?im_w=240",
       "pricePerDay": 150000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-844563589844055805/original/6da79413-6fce-47e7-9460-1e90c8276f5d.jpeg?im_w=1200",
@@ -2121,6 +2261,12 @@
     {
       "accommodationId": 21,
       "accommodationName": "pool villa 201/노래방/영화관/실내히노끼탕[60평]",
+      "countryLocationName": "한국 인천",
+      "distance": "27km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "인천, 한국의 별장 전체",
       "briefRoomInfo": [
         "최대 인원 8명",
@@ -2133,6 +2279,7 @@
       "reviewCount": "48",
       "hostName": "Stay",
       "hostSince": 2022,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-404144080/original/7e35b0bd-fbf3-456a-a960-fc9b71ae861f.jpeg?im_w=240",
       "pricePerDay": 306000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-638236455500487522/original/c897c623-8351-4af4-9db8-f5ddb8a3b311.jpeg?im_w=1200",
@@ -2236,6 +2383,12 @@
     {
       "accommodationId": 22,
       "accommodationName": "베리더힐 송도 berry the hill /고층/퀸침대/장박환영",
+      "countryLocationName": "한국 Yeonsu-gu",
+      "distance": "35km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Songdo-dong, Yeonsu-gu, 한국의 레지던스 전체",
       "briefRoomInfo": [
         "최대 인원 2명",
@@ -2248,6 +2401,7 @@
       "reviewCount": "148",
       "hostName": "힐즈",
       "hostSince": 2021,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-83789223/original/76e8deaa-c94f-4888-a0e6-1cb8f03e3a83.jpeg?im_w=240",
       "pricePerDay": 86000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/ee61b6f0-72f3-40d1-9ebb-a5a4cd2c11df.jpg?im_w=1200",
@@ -2350,6 +2504,12 @@
     {
       "accommodationId": 23,
       "accommodationName": "하버하우스-[여성3인실]우든보트를 제작하는 청년들이 지은 이야기가 있는 집",
+      "countryLocationName": "한국 제주시",
+      "distance": "452km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "제주시 조천읍, 한국의 방",
       "briefRoomInfo": [
         "싱글 침대 3개",
@@ -2360,6 +2520,7 @@
       "reviewCount": "113",
       "hostName": "라보드",
       "hostSince": 2019,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-289784152/original/641da89f-4cc0-4bf2-aa00-b44393b44494.jpeg?im_w=240",
       "pricePerDay": 34000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/af7f7d1a-b1cc-40f8-bfb0-9b43d62ec4f9.jpg?im_w=1200",
@@ -2472,6 +2633,12 @@
     {
       "accommodationId": 24,
       "accommodationName": "나무사이로 햇살이",
+      "countryLocationName": "한국 제주시",
+      "distance": "452km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "구좌읍, 제주시, 한국의 집 전체",
       "briefRoomInfo": [
         "최대 인원 4명",
@@ -2484,6 +2651,7 @@
       "reviewCount": "211",
       "hostName": "지오",
       "hostSince": 2016,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/2d4e1c1a-1665-407c-821e-5bd47ea47e93.jpg?im_w=240",
       "pricePerDay": 1385000,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/ff4bd504-fc1a-46e2-a6c4-3665db56d11a.jpg?im_w=1200",
@@ -2577,100 +2745,13 @@
     },
     {
       "accommodationId": 25,
-      "accommodationName": "클로드에덴 : 트리하우스",
-      "locationName": "Jipyeong-myeon, Yangpyeong-gun, 한국의 트리하우스",
-      "briefRoomInfo": [
-        "최대 인원 2명",
-        "침실 1개",
-        "침대 1개",
-        "욕실 1.5개"
-      ],
-      "guestFavorite": true,
-      "rating": "4.96",
-      "reviewCount": "93",
-      "hostName": "광회",
-      "hostSince": 2024,
-      "pricePerDay": 297000,
-      "imageUrl": [
-        "https://a0.muscache.com/im/pictures/1ee30d58-0658-40ad-8cff-5e34eaef7798.jpg?im_w=960",
-        "https://a0.muscache.com/im/pictures/3681b9e1-1d86-4f94-87be-f20759ded2de.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/391c9050-dc29-4f7c-b52b-9c2d2df9a0be.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/8fa1a142-ad7d-459e-8062-ecdaa3ea0565.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/2fbb0551-d537-4b50-a88a-31668df40afb.jpg?im_w=720"
-      ],
-      "amenities": [
-        {
-          "amenityName": "정원 전망",
-          "icon": "AmenityGardenView"
-        },
-        {
-          "amenityName": "건물 내 무료 주차",
-          "icon": "AmenityParking"
-        },
-        {
-          "amenityName": "반려동물 입실 가능",
-          "icon": "AmenityPet"
-        },
-        {
-          "amenityName": "세탁기",
-          "icon": "AmenityWasher"
-        },
-        {
-          "amenityName": "전용 온수 욕조",
-          "icon": "AmenityHottub"
-        },
-        {
-          "amenityName": "주방",
-          "icon": "AmenityKitchen"
-        },
-        {
-          "amenityName": "숙소 내 실외 보안 카메라",
-          "icon": "AmenitySecurity"
-        },
-        {
-          "amenityName": "에어컨",
-          "icon": "AmenityAc"
-        },
-        {
-          "amenityName": "일산화탄소 경보기",
-          "icon": "AmenityCo"
-        }
-      ],
-      "roomInfo": [
-        {
-          "roomId": 1,
-          "beds": [
-            {
-              "bedType": "퀸사이즈 침대",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "desc": "아주 특별한곳 아름다운 추억과 힐링을 원하시는분 이색숙소를 찾으시는분 커플을위한 최적화된 이상형장소를 찾고 계신다면 떡갈나무 트리하우스를 진심 추천합니다.\n\n양평에서 가장아름다운 정원 양평군 공식지정정원 팜포레스트는 삼면이 백합나무숲으로 둘러 쌓여 아늑하면서도 신비로운 곳 2300여평의 정원내에 위치해 있으며 오직 단2팀을 위한 공간으로 전체를 활용하고 있습니다.\n\n트리하우스에서 내려다 보는 뷰는 정말이지 환상적이고 침실은 고급나무로만 만들어져 포근하고 달콤한 꿀잠을 선사합니다.",
-      "HostIntro": [],
-      "HostContent": [
-        {
-          "title": "공동 호스트",
-          "body": "태완"
-        },
-        {
-          "title": "호스트 상세 정보",
-          "body": "응답률 :100%\n1시간 이내에 응답"
-        }
-      ],
-      "Ratings": {
-        "Cleanliness": 4.9,
-        "Accuracy": 5.0,
-        "CheckIn": 4.9,
-        "Communication": 5.0,
-        "Location": 4.9,
-        "Value": 4.9
-      }
-    },
-    {
-      "accommodationId": 26,
       "accommodationName": "커플 및 가족을 위한 우아하고 한적한 오두막",
+      "countryLocationName": "일본 나가노",
+      "distance": "990km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-7"
+      },
       "locationName": "나가노, 일본의 통나무집 전체",
       "briefRoomInfo": [
         "최대 인원 4명",
@@ -2684,6 +2765,7 @@
       "pricePerDay": 198567,
       "hostName": "Matt and Maya",
       "hostSince": 2016,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/8b795136-4cb1-4abd-aba2-6d62938bcc08.jpg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/07eda303-0a89-419e-a7b8-1b788ef4e6f0.jpg?im_w=960",
         "https://a0.muscache.com/im/pictures/ed750929-3e90-4b43-a309-8a50439779c4.jpg?im_w=720",
@@ -2788,8 +2870,14 @@
       }
     },
     {
-      "accommodationId": 27,
+      "accommodationId": 26,
       "accommodationName": "노지리 호수의 멋진 전망을 감상할 수 있는 전용 사우나를 갖춘 아노이 주택",
+      "countryLocationName": "일본 Shinano",
+      "distance": "990km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-8"
+      },
       "locationName": "Shinano, Kamiminochi District, 일본의 초소형 주택",
       "briefRoomInfo": [
         "최대 인원 6명",
@@ -2802,6 +2890,7 @@
       "reviewCount": "321",
       "hostName": "Go",
       "hostSince": 2022,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/3a97d8dc-a601-4ea1-be3d-6154d8b7b7b8.jpg?im_w=240",
       "pricePerDay": 601055,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/b2c0f556-f726-4db8-985f-25a668369fe7.jpg?im_w=960",
@@ -2902,8 +2991,14 @@
       }
     },
     {
-      "accommodationId": 28,
+      "accommodationId": 27,
       "accommodationName": "서나와 할아버지 통나무집 - 산님",
+      "countryLocationName": "한국 Hwachon-myeon",
+      "distance": "93km",
+      "dates": {
+        "startDate": "2024-6-5",
+        "endDate": "2024-6-7"
+      },
       "locationName": "Hwachon-myeon, Hongcheon, 한국의 통나무집 전체",
       "briefRoomInfo": [
         "최대 인원 4명",
@@ -2916,6 +3011,7 @@
       "reviewCount": "299",
       "hostName": "서나 아빠",
       "hostSince": 2022,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/126bb463-ab3e-43ae-9653-68faea40c46b.jpg?im_w=240",
       "pricePerDay": 136888,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/32e8b4a0-83ff-4dba-8253-5340d8d05215.jpg?im_w=960",
@@ -3008,8 +3104,14 @@
       }
     },
     {
-      "accommodationId": 29,
+      "accommodationId": 28,
       "accommodationName": "통나무집 1 - 바툴라오 전망을 감상할 수 있는 산악 럭셔리 오두막",
+      "countryLocationName": "필리핀 Calaca",
+      "distance": "2,666km",
+      "dates": {
+        "startDate": "2024-6-3",
+        "endDate": "2024-6-7"
+      },
       "locationName": "Calaca, 필리핀의 통나무집 전체",
       "briefRoomInfo": [
         "최대 인원 8명",
@@ -3022,6 +3124,7 @@
       "reviewCount": "176",
       "hostName": "Camper And Cabin",
       "hostSince": 2014,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/84d63cb0-42a9-4e68-a7d9-10d2b29f95ee.jpg?im_w=240",
       "pricePerDay": 586995,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/52d8dc82-66cc-4edd-8457-2bf158067077.jpg?im_w=1200",
@@ -3127,8 +3230,14 @@
       }
     },
     {
-      "accommodationId": 30,
+      "accommodationId": 29,
       "accommodationName": "언덕 위의 통나무집 프로젝트 ph",
+      "countryLocationName": "필리핀 Antipolo",
+      "distance": "2,616km",
+      "dates": {
+        "startDate": "2024-6-5",
+        "endDate": "2024-6-7"
+      },
       "locationName": "Antipolo, 필리핀의 통나무집 전체",
       "briefRoomInfo": [
         "최대 인원 7명",
@@ -3142,6 +3251,7 @@
       "pricePerDay": 78845,
       "hostName": "Sheila",
       "hostSince": 2023,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-510421565/original/92db4785-ad67-4521-927c-35536de4efa9.jpeg?im_w=240",
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/b21bf387-d240-463c-a073-9755e58fe769.jpg?im_w=720",
         "https://a0.muscache.com/im/pictures/hosting/Hosting-871412734935173328/original/1e154097-2d0d-42f8-af5f-4fb551b90af7.jpeg?im_w=720",
@@ -3242,8 +3352,14 @@
       }
     },
     {
-      "accommodationId": 31,
+      "accommodationId": 30,
       "accommodationName": "바다까지 0초! 무료 바비큐! 바닷가를 즐겨보세요!",
+      "countryLocationName": "일본 Onjuku",
+      "distance": "657km",
+      "dates": {
+        "startDate": "2024-6-2",
+        "endDate": "2024-6-7"
+      },
       "locationName": "Onjuku, Isumi District, 일본의 별장 전체",
       "briefRoomInfo": [
         "최대 인원 5명",
@@ -3255,6 +3371,7 @@
       "reviewCount": "98",
       "hostName": "Kazuto",
       "hostSince": 2022,
+      "hostImage": "https://a0.muscache.com/im/users/1395256/profile_pic/1321010405/original.jpg?im_w=240",
       "pricePerDay": 170734,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-638687891243657194/original/594156f4-2b40-44d4-a8d2-67c4e667beec.jpeg?im_w=960",
@@ -3321,11 +3438,45 @@
           ]
         }
       ],
-      "desc": "지역 정보 지역 정보"
+      "desc": "지역 정보 지역 정보",
+      "HostIntro": [
+        {
+          "category": "BornInThe",
+          "text": "80년대생"
+        },
+        {
+          "category": "FunFact",
+          "text": "흥미로운 사실: 저희는 칠레와 도미니카에서 살았습니다."
+        }
+      ],
+      "HostContent": [
+        {
+          "title": "Kazuto 님은 슈퍼호스트입니다",
+          "body": "슈퍼호스트는 풍부한 경험과 높은 평점을 자랑하며 게스트가 숙소에서 편안히 머무를 수 있도록 최선을 다하는 호스트입니다."
+        },
+        {
+          "title": "호스트 상세 정보",
+          "body": "응답률 :100%\n1시간 이내에 응답"
+        }
+      ],
+      "Ratings": {
+        "Cleanliness": 4.7,
+        "Accuracy": 4.8,
+        "CheckIn": 4.8,
+        "Communication": 4.9,
+        "Location": 4.9,
+        "Value": 4.4
+      }
     },
     {
-      "accommodationId": 32,
+      "accommodationId": 31,
       "accommodationName": "인스타그램에서 10% 할인해드립니다! 北軽井沢전용 빌라 ~ D-place つまごい~",
+      "countryLocationName": "일본 Agatsuma District",
+      "distance": "637km",
+      "dates": {
+        "startDate": "2024-6-2",
+        "endDate": "2024-6-7"
+      },
       "locationName": "大字, Tsumagoi, Agatsuma District, 일본의 집 전체",
       "briefRoomInfo": [
         "최대 인원 10명",
@@ -3337,6 +3488,7 @@
       "reviewCount": "29",
       "hostName": "D-Place",
       "hostSince": 2023,
+      "hostImage": "https://a0.muscache.com/im/pictures/user/User-531969798/original/874be461-efac-4c52-938f-bf937f7ec822.jpeg?im_w=240",
       "pricePerDay": 217773,
       "imageUrl": [
         "https://a0.muscache.com/im/pictures/miso/Hosting-972349742729113224/original/a1094405-0419-422c-91d8-2bada9006c43.jpeg?im_w=960",
@@ -3384,172 +3536,31 @@
         }
       ],
       "roomInfo": [],
-      "desc": ""
-    },
-    {
-      "accommodationId": 33,
-      "accommodationName": "강원도 영월에 위치한 통나무집 A",
-      "locationName": "Yeongwol-gun, 한국의 통나무집 전체",
-      "briefRoomInfo": [
-        "최대 인원 4명",
-        "원룸",
-        "침대 1개",
-        "욕실 1개"
-      ],
-      "guestFavorite": true,
-      "rating": "4.96",
-      "reviewCount": "746",
-      "pricePerDay": 100000,
-      "hostName": "Geumju",
-      "hostSince": 2015,
-      "imageUrl": [
-        "https://a0.muscache.com/im/pictures/e4a65b99-ca44-4e3f-96d2-42072fb7ad62.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/b538f736-29b9-4626-8eea-81284704b403.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/584cfc49-e0ac-4663-b004-d4a709ec6c7c.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/a826d242-2eba-4c4a-bc35-a876c84e7656.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/f81de197-d5b5-415f-a366-8a697333481f.jpg?im_w=720"
-      ],
-      "amenities": [
+      "desc": "",
+      "HostIntro": [
         {
-          "amenityName": "정원 전망",
-          "icon": "AmenityGardenView"
+          "category": "BornInThe",
+          "text": "90년대생"
         },
         {
-          "amenityName": "산 전망",
-          "icon": "AmenityMountainView"
-        },
-        {
-          "amenityName": "주방",
-          "icon": "AmenityKitchen"
-        },
-        {
-          "amenityName": "무선 인터넷",
-          "icon": "AmenityWifi"
-        },
-        {
-          "amenityName": "업무 전용 공간",
-          "icon": "AmenityDesk"
-        },
-        {
-          "amenityName": "건물 내 무료 주차",
-          "icon": "AmenityParking"
-        },
-        {
-          "amenityName": "세탁기 무료 사용 - 건물 내",
-          "icon": "AmenityWasher"
-        },
-        {
-          "amenityName": "에어컨 - 분리형 무배관 시스템",
-          "icon": "AmenityAc"
-        },
-        {
-          "amenityName": "전기차 충전시설",
-          "icon": "AmenityElectricCar"
-        },
-        {
-          "amenityName": "전용 뒷마당 - 울타리 완비",
-          "icon": "AmenityBackyard"
+          "category": "MyWork",
+          "text": "직업: 회사 직원"
         }
       ],
-      "roomInfo": [
+      "HostContent": [
         {
-          "roomId": 1,
-          "beds": [
-            {
-              "bedType": "퀸사이즈 침대",
-              "count": 1
-            }
-          ]
+          "title": "호스트 상세 정보",
+          "body": "응답률 :100%\n1시간 이내에 응답"
         }
       ],
-      "desc": "Yeongwol-gun, 강원도, 한국\n조용한 산골마을이며 자연과 벗삼아 오롯이 쉼을 가지실수 있는 곳입니다!"
-    },
-    {
-      "accommodationId": 34,
-      "accommodationName": "힐링과 방갈로, 개울이 있는 자연의 집 - 양평 4계절",
-      "locationName": "Gangha-myeon, Yangpyeong, 한국의 통나무집 전체",
-      "briefRoomInfo": [
-        "최대 인원 8명",
-        "침실 3개",
-        "침대 2개",
-        "욕실 2개"
-      ],
-      "guestFavorite": true,
-      "rating": "4.95",
-      "reviewCount": "478",
-      "pricePerDay": 148000,
-      "hostName": "Terence",
-      "hostSince": 2019,
-      "imageUrl": [
-        "https://a0.muscache.com/im/pictures/e2ff0726-e249-42dc-a794-7fe8bdc68fd9.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/ce360a70-3290-4737-82fe-fc0de190de90.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/1e255122-1cf4-442d-9b30-b43a4990084f.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/2e677082-10df-45c0-a24e-1f184fe83fd9.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/eface97a-c3fb-4523-89dc-359b88ffc48e.jpg?im_w=720"
-      ],
-      "amenities": [
-        {
-          "amenityName": "수변에 인접",
-          "icon": "AmenityWater"
-        },
-        {
-          "amenityName": "주방",
-          "icon": "AmenityKitchen"
-        },
-        {
-          "amenityName": "무선 인터넷",
-          "icon": "AmenityWifi"
-        },
-        {
-          "amenityName": "건물 내 무료 주차",
-          "icon": "AmenityParking"
-        },
-        {
-          "amenityName": "TV + 일반 케이블 TV",
-          "icon": "AmenityTv"
-        },
-        {
-          "amenityName": "세탁기",
-          "icon": "AmenityWasher"
-        },
-        {
-          "amenityName": "에어컨",
-          "icon": "AmenityAc"
-        },
-        {
-          "amenityName": "공용 파티오 또는 발코니",
-          "icon": "AmenityPatio"
-        },
-        {
-          "amenityName": "뒷마당",
-          "icon": "AmenityBackyard"
-        },
-        {
-          "amenityName": "실내 벽난로",
-          "icon": "AmenityFireplace"
-        }
-      ],
-      "roomInfo": [
-        {
-          "roomId": 1,
-          "beds": [
-            {
-              "bedType": "더블 침대",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "roomId": 2,
-          "beds": [
-            {
-              "bedType": "퀸사이즈 침대",
-              "count": 1
-            }
-          ]
-        }
-      ],
-      "desc": "Gangha-myeon, Yangpyeong, 경기도, 한국\n3km에 강변 공원이 있습니다.\n자동차로 10분 거리에 강하면 하나마트가 있습니다."
+      "Ratings": {
+        "Cleanliness": 4.4,
+        "Accuracy": 4.7,
+        "CheckIn": 4.8,
+        "Communication": 4.8,
+        "Location": 4.5,
+        "Value": 4.4
+      }
     }
   ]
 }
