@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react'
 const useFetchAccommodations = (page, categoryId, location, startDate, endDate, guest) => {
   const [accommodations, setAccommodations] = useState([])
 
-  const fetchData = (page, categoryId, location, startDate, endDate, guest) => {
+  const fetchData = (page, categoryId) => {
     let url = `http://localhost:3000/apis/rooms/?page=${page}`
+
     if (categoryId) {
       url += `&category=${categoryId}`
     }
@@ -50,13 +51,13 @@ const useFetchAccommodations = (page, categoryId, location, startDate, endDate, 
   // 초기 데이터 로드
   useEffect(() => {
     setAccommodations([])
-    fetchData(0, categoryId, location, startDate, endDate, guest)
+    fetchData(page, categoryId)
   }, [categoryId, location, startDate, endDate, guest])
 
   // 스크롤에 따른 추가 데이터 로드
   useEffect(() => {
-    if (page > 0) {
-      fetchData(page, categoryId, location, startDate, endDate, guest)
+    if (page > 1) {
+      fetchData(page - 1)
     }
   }, [page])
 
