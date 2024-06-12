@@ -1,4 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { enableMapSet } from 'immer'
+enableMapSet()
 
 export const filterSlice = createSlice({
   name: 'filter',
@@ -10,6 +12,17 @@ export const filterSlice = createSlice({
     bedroomCount: '상관없음',
     bedCount: '상관없음',
     bathroomCount: '상관없음',
+    isPreference: false,
+    isHouse: false,
+    isApartment: false,
+    isOutbuilding: false,
+    isHotel: false,
+    accessibilityOption: [[], [], [], []],
+    facilitiesOption: [[], [], [], []],
+    languageOption: [[]],
+    isInstantBook: false,
+    isSelfCheckIn: false,
+    isAllowPet: false,
   },
   reducers: {
     setClear: prevState => {
@@ -20,6 +33,17 @@ export const filterSlice = createSlice({
       prevState.bedroomCount = '상관없음'
       prevState.bedCount = '상관없음'
       prevState.bathroomCount = '상관없음'
+      prevState.isPreference = false
+      prevState.isHouse = false
+      prevState.isApartment = false
+      prevState.isOutbuilding = false
+      prevState.isHotel = false
+      prevState.accessibilityOption = [[], [], [], []]
+      prevState.facilitiesOption = [[], [], [], []]
+      prevState.languageOption = [[]]
+      prevState.isInstantBook = false
+      prevState.isSelfCheckIn = false
+      prevState.isAllowPet = false
     },
 
     selectPlaceType: (prevState, action) => {
@@ -54,6 +78,116 @@ export const filterSlice = createSlice({
     setBathroomCount: (prevState, action) => {
       prevState.bathroomCount = action.payload
     },
+
+    setIsPreference: prevState => {
+      if (prevState.isPreference) {
+        prevState.isPreference = false
+      } else {
+        prevState.isPreference = true
+      }
+    },
+
+    setIsHouse: prevState => {
+      if (prevState.isHouse) {
+        prevState.isHouse = false
+      } else {
+        prevState.isHouse = true
+      }
+    },
+
+    setIsApartment: prevState => {
+      if (prevState.isApartment) {
+        prevState.isApartment = false
+      } else {
+        prevState.isApartment = true
+      }
+    },
+
+    setIsOutbuilding: prevState => {
+      if (prevState.isOutbuilding) {
+        prevState.isOutbuilding = false
+      } else {
+        prevState.isOutbuilding = true
+      }
+    },
+
+    setIsHotel: prevState => {
+      if (prevState.isHotel) {
+        prevState.isHotel = false
+      } else {
+        prevState.isHotel = true
+      }
+    },
+
+    setAccessibilityOption: (prevState, action) => {
+      const { optionIdx, contentIdx } = action.payload
+      const newArray = prevState.accessibilityOption[optionIdx]
+      if (newArray.includes(contentIdx)) {
+        newArray.filter(item => item !== contentIdx)
+      } else {
+        newArray.push(contentIdx)
+      }
+
+      prevState.accessibilityOption = [
+        ...prevState.accessibilityOption.slice(0, optionIdx),
+        newArray,
+        ...prevState.accessibilityOption.slice(optionIdx + 1),
+      ]
+    },
+
+    setFacilitiesOption: (prevState, action) => {
+      const { optionIdx, contentIdx } = action.payload
+      const newArray = prevState.facilitiesOption[optionIdx]
+      if (newArray.includes(contentIdx)) {
+        newArray.filter(item => item !== contentIdx)
+      } else {
+        newArray.push(contentIdx)
+      }
+
+      prevState.facilitiesOption = [
+        ...prevState.facilitiesOption.slice(0, optionIdx),
+        newArray,
+        ...prevState.facilitiesOption.slice(optionIdx + 1),
+      ]
+    },
+
+    setLanguageOption: (prevState, action) => {
+      const { optionIdx, contentIdx } = action.payload
+      const newArray = prevState.languageOption[optionIdx]
+      if (newArray.includes(contentIdx)) {
+        newArray.filter(item => item !== contentIdx)
+      } else {
+        newArray.push(contentIdx)
+      }
+
+      prevState.languageOption = [
+        ...prevState.languageOption.slice(0, optionIdx),
+        newArray,
+        ...prevState.languageOption.slice(optionIdx + 1),
+      ]
+    },
+
+    setIsInstantBook: prevState => {
+      if (prevState.isInstantBook) {
+        prevState.isInstantBook = false
+      } else {
+        prevState.isInstantBook = true
+      }
+    },
+    setIsSelfCheckIn: prevState => {
+      if (prevState.isSelfCheckIn) {
+        prevState.isSelfCheckIn = false
+      } else {
+        prevState.isSelfCheckIn = true
+      }
+    },
+    setIsAllowPet: prevState => {
+      if (prevState.isAllowPet) {
+        prevState.isAllowPet = false
+      } else {
+        prevState.isAllowPet = true
+      }
+    },
   },
 })
 
@@ -64,5 +198,17 @@ export const {
   setBedroomCount,
   setBedCount,
   setBathroomCount,
+  setIsPreference,
+  setIsHouse,
+  setIsApartment,
+  setIsOutbuilding,
+  setIsHotel,
+  setAccessibilityOption,
+  setFacilitiesOption,
+  setLanguageOption,
+  setIsInstantBook,
+  setIsSelfCheckIn,
+  setIsAllowPet,
 } = filterSlice.actions
+
 export default filterSlice.reducer

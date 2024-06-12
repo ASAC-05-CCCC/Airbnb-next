@@ -1,9 +1,16 @@
-import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import SelectOptionComponent from '@/components/MainCategory/FilterComponent/SelectOption/SelectOptionComponent'
+import { setAccessibilityOption } from '@/app/redux/filterSlice'
 
 function AccessibilityComponent() {
-  const [checkItem, setCheckItem] = useState([new Set(), new Set(), new Set(), new Set()])
+  const dispatch = useDispatch()
+
+  const checkItem = useSelector(states => states['filter'].accessibilityOption)
+  const setCheckItem = (optionIdx, contentIdx) => {
+    dispatch(setAccessibilityOption({ optionIdx: optionIdx, contentIdx: contentIdx }))
+  }
+
   return (
     <>
       <SelectOptionComponent
