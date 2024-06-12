@@ -4,19 +4,6 @@ import FilterEachComponent from '@/components/MainCategory/FilterComponent/Filte
 import checkIcon from '/public/images/checkIcon.svg'
 
 function SelectOptionComponent({ title, options, checkItem, setCheckItem }) {
-  const checkItemHandler = (optionIdx, contentIdx) => {
-    setCheckItem(prev => {
-      const newSet = new Set(prev[optionIdx])
-      if (newSet.has(contentIdx)) {
-        newSet.delete(contentIdx)
-      } else {
-        newSet.add(contentIdx)
-      }
-
-      return [...prev.slice(0, optionIdx), newSet, ...prev.slice(optionIdx + 1)]
-    })
-  }
-
   return (
     <FilterEachComponent title={title}>
       {options.map((option, optionIdx) => (
@@ -25,14 +12,14 @@ function SelectOptionComponent({ title, options, checkItem, setCheckItem }) {
           <div className='grid grid-cols-2'>
             {option.contents.map((content, contentIdx) => (
               <div
-                onClick={() => checkItemHandler(optionIdx, contentIdx)}
+                onClick={() => setCheckItem(optionIdx, contentIdx)}
                 key={contentIdx}
-                className='flex flex-row mb-6 cursor-pointer'
+                className='mb-6 flex cursor-pointer flex-row'
               >
                 <div
-                  className='p-[3px] w-[23px] h-[23px] border-[1px] border-gray-400 rounded'
+                  className='h-[23px] w-[23px] rounded border-[1px] border-gray-400 p-[3px]'
                   style={{
-                    backgroundColor: checkItem[optionIdx].has(contentIdx) ? 'black' : 'white',
+                    backgroundColor: checkItem[optionIdx].includes(contentIdx) ? 'black' : 'white',
                   }}
                 >
                   <Image src={checkIcon} width={15} height={15} />
