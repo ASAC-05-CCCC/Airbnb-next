@@ -1,82 +1,56 @@
 // @ts-nocheck
-import ReservationGuestInput from '@/components/reservation/reservationGuestInput'
+'use client'
+
 import useModal from '@/hooks/useModal'
+import ReservationDateModalButton from './reservationDateModalButton'
+import ReservationGuestModalButton from '@/components/reservation/reservationGuestmodalButton'
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { useSelector } from 'react-redux'
 
 export default function ReservationForm() {
   const { Modal: DateModal, open: dateOpen, close: dateClose, isOpen: dateIsOpen } = useModal()
   const { Modal: GuestModal, open: guestOpen, close: guestClose, isOpen: guestIsOpen } = useModal()
 
-  const { guestCount } = useSelector(state => state.reservation)
+  const { checkInDate, checkOutDate, guestCount } = useSelector(state => state.reservation)
+
+  const router = useRouter()
+
+  // 초기 url 값을 가져왔을 때, 해당 값을 읽어 예약 state에 업데이트 하는 초기 effect
+
+  // 모달을 눌렀을 때, url을 변경하는 effect
+  useEffect(() => {
+    const params = new URLSearchParams()
+    checkInDate && params.set('checkIn', checkInDate)
+    checkOutDate && params.set('checkOut', checkOutDate)
+
+    guestCount && params.set('guests', guestCount.adults)
+
+    router.push(`?${params.toString()}`, { scroll: false })
+  }, [checkInDate, checkOutDate, guestCount, router])
 
   return (
     <form onSubmit={e => e.preventDefault()}>
       <div className='flex w-full flex-col gap-4 '>
-        <div className='w-full'>
+        <div className='w-full rounded-md border-[1px] border-gray-300'>
           {/* date modal */}
-          <section className='relative'>
-            <div
-              onClick={e => {
-                e.stopPropagation()
-
-                dateIsOpen ? dateClose() : dateOpen()
-                guestIsOpen && guestClose()
-              }}
-              className='datePickerBox  flex w-full cursor-pointer items-center justify-around rounded-md border-[1px] border-black hover:border-2'
-            >
-              <div className='flex w-full flex-col border-r-[1px] border-black p-3'>
-                <span className='text-sm'>체크인</span>
-                <input
-                  className='w-full border-none outline-none'
-                  type='text'
-                  name=''
-                  id=''
-                  placeholder={'2024. 8. 22.'}
-                />
-              </div>
-              <div className='flex w-full flex-col p-3'>
-                <span className='text-sm'>체크아웃</span>
-                <input
-                  className='w-full border-none outline-none'
-                  type='text'
-                  name=''
-                  id=''
-                  placeholder={'2024. 8. 22.'}
-                />
-              </div>
-            </div>
-            <div className='absolute left-0 top-full z-10 w-full bg-white'>
-              <DateModal>{/* {} */}</DateModal>
-            </div>
-          </section>
-
+          <ReservationDateModalButton
+            dateIsOpen={dateIsOpen}
+            dateClose={dateClose}
+            dateOpen={dateOpen}
+            guestIsOpen={guestIsOpen}
+            guestClose={guestClose}
+            DateModal={DateModal}
+          />
           {/* guest modal */}
-          <section className='relative'>
-            <div
-              onClick={e => {
-                e.stopPropagation()
-
-                guestIsOpen ? guestClose() : guestOpen()
-                dateIsOpen && dateClose()
-              }}
-              className='cursor-pointer rounded-md border-[1px] border-black px-2 py-3 hover:border-2'
-            >
-              <div className='flex items-center justify-between'>
-                <div className='flex flex-col'>
-                  <span className='text-sm'>인원</span>
-                  <div className='text-gray-400'>
-                    게스트 {Object.values(guestCount).reduce((prev, current) => prev + current)}명
-                  </div>
-                </div>
-                <div>버튼</div>
-              </div>
-            </div>
-            <div className='absolute left-0 top-full z-20  w-full bg-white'>
-              <GuestModal>
-                <ReservationGuestInput />
-              </GuestModal>
-            </div>
-          </section>
+          <ReservationGuestModalButton
+            GuestModal={GuestModal}
+            guestOpen={guestOpen}
+            guestClose={guestClose}
+            guestIsOpen={guestIsOpen}
+            dateIsOpen={dateIsOpen}
+            dateClose={dateClose}
+          />
         </div>
 
         <div className='flex items-center justify-center'>

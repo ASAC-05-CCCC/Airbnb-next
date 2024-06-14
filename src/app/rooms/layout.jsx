@@ -10,7 +10,7 @@ export default function RoomsLayout({ children }) {
       <div className='flex w-full flex-col items-center gap-10 transition-all sm:px-8 lg:px-10 xl:px-20'>
         {children}
       </div>
-      {/* <FooterRoom/> */}
+      <Footer />
     </div>
   )
 }

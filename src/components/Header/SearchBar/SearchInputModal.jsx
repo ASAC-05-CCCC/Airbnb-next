@@ -13,7 +13,7 @@ function SearchInputModal() {
   return (
     <div
       className={clsx(
-        'absolute top-16 z-10',
+        'absolute top-36 z-10',
         isOpenModal.location && ' left-0 w-2/3',
         isOpenModal.datepicker && 'w-full',
         isOpenModal.guest && 'right-0 w-2/3',
