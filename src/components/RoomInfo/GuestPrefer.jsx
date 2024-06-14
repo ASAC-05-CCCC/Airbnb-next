@@ -44,12 +44,12 @@ const GuestPrefer = ({ reviewData, reviewMetaData, averageRating, reviewOverall,
       {roomData.guestFavorite && (
         <div className="flex flex-col sm:flex-row items-center justify-between border rounded-lg p-4 bg-white shadow-md">
           <div className="flex items-center justify-start">
-            <Image src="/images/LeftWing.svg" alt="Left Wing" width={24} height={24} />
+            <Image src="/images/LeftWing.svg" alt="Left Wing" width={24} height={24} className='w-auto h-auto' />
             <div className='grid place-items-center px-2'>
               <span className="text-lg font-bold">게스트</span>
               <span className="text-lg font-bold">선호</span>
             </div>
-            <Image src="/images/RightWing.svg" alt="Right Wing" width={24} height={24} />
+            <Image src="/images/RightWing.svg" alt="Right Wing" width={24} height={24} className='w-auto h-auto'/>
             <div className="grid pl-6">
               <span className="font-bold">에어비앤비 게스트에게 가장</span>
               <span className="font-bold">사랑받는 숙소</span>
