@@ -13,7 +13,7 @@ export default function Home() {
         <div className='item-center flex w-full justify-center'>
           <Header />
         </div>
-        <div className='flex w-full items-center justify-center  overflow-auto sm:px-8 lg:px-10 xl:px-20'>
+        <div className='flex w-full items-center justify-center  overflow-auto transition-all sm:px-8 lg:px-10 xl:px-10'>
           <Category />
         </div>
       </div>
