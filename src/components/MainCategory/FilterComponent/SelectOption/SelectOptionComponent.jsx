@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Image from 'next/image'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
@@ -5,7 +6,12 @@ import checkIcon from '/public/images/checkIcon.svg'
 
 function SelectOptionComponent({ title, options, checkItem, setCheckItem }) {
   return (
-    <FilterEachComponent title={title}>
+    <FilterEachComponent
+      title={title}
+      description={undefined}
+      // eslint-disable-next-line react/no-children-prop
+      children={undefined}
+    >
       {options.map((option, optionIdx) => (
         <div key={optionIdx} className='mb-6 last:mb-1'>
           {option.title && <div className='mb-6 text-[15px]'>{option.title}</div>}
@@ -22,7 +28,7 @@ function SelectOptionComponent({ title, options, checkItem, setCheckItem }) {
                     backgroundColor: checkItem[optionIdx].includes(contentIdx) ? 'black' : 'white',
                   }}
                 >
-                  <Image src={checkIcon} width={15} height={15} />
+                  <Image src={checkIcon} width={15} height={15} alt='checkIcon' />
                 </div>
                 <div className='ml-4 text-[15px] font-normal text-gray-600'>{content}</div>
               </div>

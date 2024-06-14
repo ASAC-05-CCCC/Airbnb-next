@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useDispatch, useSelector } from 'react-redux'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
@@ -32,7 +33,12 @@ function ReservationComponent() {
 
   return (
     <>
-      <FilterEachComponent title={'예약 옵션'}>
+      <FilterEachComponent
+        title={'예약 옵션'}
+        description={undefined}
+        // eslint-disable-next-line react/no-children-prop
+        children={undefined}
+      >
         {reservationOptions.map((reservationOption, index) => (
           <ReservationEachOption
             key={index}

@@ -7,7 +7,7 @@ import CategoryItem from '@/components/MainCategory/CategoryItem'
 import FilterButton from '@/components/MainCategory/FilterButton'
 import FilterComponent from '@/components/MainCategory/FilterComponent'
 import ArrowButton from '@/components/common/ArrowButton'
-import categoryData from '/public/categoryList.json'
+import categoryData from '../../../public/categoryList.json'
 
 function Category() {
   const categoryList = categoryData.categoryList

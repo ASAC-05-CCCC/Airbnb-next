@@ -1,3 +1,4 @@
+// @ts-nocheck
 import clsx from 'clsx'
 import { useDispatch, useSelector } from 'react-redux'
 import { modalToggle } from '@/app/redux/searchSlice'

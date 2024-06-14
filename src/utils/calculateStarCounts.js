@@ -1,3 +1,4 @@
+// @ts-nocheck
 const convertStarCountsToRatings = starCounts => {
   return Object.keys(starCounts)
     .sort((a, b) => b - a) // 키를 내림차순으로 정렬

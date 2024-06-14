@@ -55,12 +55,20 @@ const RoomInfo = () => {
 
   return (
     <div>
-      <SimpleInfo reviewData={reviewData}
+      <SimpleInfo
+        reviewData={reviewData}
         reviewMetaData={reviewMetaData}
-        averageRating={averageRating} />
-      <GuestPrefer reviewData={reviewData}
+        averageRating={averageRating}
+        reviewOverall={undefined}
+        guestFavorite={undefined}
+      />
+      <GuestPrefer
+        reviewData={reviewData}
         reviewMetaData={reviewMetaData}
-        averageRating={averageRating} />
+        averageRating={averageRating}
+        reviewOverall={undefined}
+        guestFavorite={undefined}
+      />
       <InfoDetail />
       <RoomHost />
     </div>

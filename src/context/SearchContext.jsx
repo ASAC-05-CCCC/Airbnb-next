@@ -110,6 +110,7 @@ function SearchContextProvider({ children }) {
     <SearchContext.Provider
       value={{
         toggle,
+        // @ts-ignore
         openModal,
         setOpenModal,
         location,

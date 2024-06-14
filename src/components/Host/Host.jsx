@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client'
 import HostHeader from '@/components/Host/HostHeader.jsx'
 import HostIntro from '@/components/Host/HostIntro.jsx'

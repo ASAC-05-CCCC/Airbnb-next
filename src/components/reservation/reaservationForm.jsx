@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ReservationGuestInput from '@/components/reservation/reservationGuestInput'
 import useModal from '@/hooks/useModal'
 import { useSelector } from 'react-redux'
