@@ -33,6 +33,7 @@ const RoomPictures = () => {
             alt="Large view"  
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
+            priority
             className="rounded-lg rounded-tl-lg transition-all" 
           />
         </div>
