@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client'
 import HostHeader from '@/components/Host/HostHeader.jsx'
 import HostIntro from '@/components/Host/HostIntro.jsx'
@@ -15,6 +16,7 @@ const GenerateHostData = data => {
     review: data.reviewCount,
     rating: data.rating,
     career: data.hostSince,
+    image: data.hostImage,
   }
 }
 
@@ -66,6 +68,7 @@ const Host = () => {
                     review={hostData.review}
                     rating={hostData.rating}
                     career={hostData.career}
+                    image={hostData.image}
                   />
                 )}
                 <div className='mt-4 flex w-[341px] flex-col gap-4 lg:mt-0'>

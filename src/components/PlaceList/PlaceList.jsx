@@ -13,20 +13,61 @@ const PlaceList = () => {
   const [page, setPage] = useState(0)
 
   const searchParams = useSearchParams()
-  const categoryId = searchParams.get('category')
+  const category = searchParams.get('category')
+
+  // 검색
   const location = searchParams.get('location')
   const startDate = searchParams.get('startDate')
   const endDate = searchParams.get('endDate')
   const guest = searchParams.get('guest')
 
-  const accommodations = useFetchAccommodations(
-    page,
-    categoryId,
+  // 필터
+  const type = searchParams.get('type')
+  const description = searchParams.get('description')
+  const minPrice = searchParams.get('minPrice')
+  const maxPrice = searchParams.get('maxPrice')
+  const bedroomCount = searchParams.get('bedroomCount')
+  const bedCount = searchParams.get('bedCount')
+  const bathroomCount = searchParams.get('bathroomCount')
+  const isPreference = searchParams.get('isPreference')
+  const isHouse = searchParams.get('isHouse')
+  const isApartment = searchParams.get('isApartment')
+  const isOutbuilding = searchParams.get('isOutbuilding')
+  const isHotel = searchParams.get('isHotel')
+  const accessibilityOption = searchParams.get('accessibilityOption')
+  const facilitiesOption = searchParams.get('facilitiesOption')
+  const languageOption = searchParams.get('languageOption')
+  const isInstantBook = searchParams.get('isInstantBook')
+  const isSelfCheckIn = searchParams.get('isSelfCheckIn')
+  const isAllowPet = searchParams.get('isAllowPet')
+
+  const filters = {
+    category,
     location,
     startDate,
     endDate,
     guest,
-  )
+    type,
+    description,
+    minPrice,
+    maxPrice,
+    bedroomCount,
+    bedCount,
+    bathroomCount,
+    isPreference,
+    isHouse,
+    isApartment,
+    isOutbuilding,
+    isHotel,
+    accessibilityOption,
+    facilitiesOption,
+    languageOption,
+    isInstantBook,
+    isSelfCheckIn,
+    isAllowPet,
+  }
+
+  const accommodations = useFetchAccommodations(page, filters)
 
   useEffect(() => {
     if (isIntersecting) setPage(prev => prev + 1) //isInersecting이 true면 페이지 번호 증가 시킴. 스크롤 내려서 끝에 도착하면 다음 페이지

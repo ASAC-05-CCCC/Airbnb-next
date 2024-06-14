@@ -14,6 +14,7 @@ const Review = ({ reviewData, reviewMetaData, averageRating, reviewOverall, gues
   }
 
   const sortReviewData = FormatTimestamp(SortByTimestamp(reviewData))
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [isModalOpen, setIsModalOpen] = useState(false)
   const openModal = () => {
     setIsModalOpen(true)

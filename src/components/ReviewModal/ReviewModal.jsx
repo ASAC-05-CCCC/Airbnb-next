@@ -3,6 +3,7 @@ import ReviewModalContent from '@/components/ReviewModal/ReviewModalContent.jsx'
 import GuestFavorite from '@/components/GuestFavorite/GuestFavorite.jsx'
 import ReviewOverall from '@/components/ReviewMeta/ReviewOverall.jsx'
 import ReviewModalCategory from '@/components/ReviewModal/ReviewModalCategory'
+import ReviewModalHeader from '@/components/ReviewHeader/ReviewModalHeader'
 
 import CleanlinessIcon from '/public/images/Cleanliness.svg'
 import AccuracyIcon from '/public/images/Accuracy.svg'
@@ -46,7 +47,11 @@ const ReviewModal = ({
           <div className=' grid grid-cols-1 gap-8 lg:grid-cols-2'>
             <div>
               <div className='sticky top-0 z-10 flex flex-col bg-white'>
-                {GuestFavorite && <GuestFavorite data={averageRating} />}
+                {guestFavorite ? (
+                  <GuestFavorite data={averageRating} />
+                ) : (
+                  <ReviewModalHeader data={averageRating} />
+                )}
                 <ReviewOverall ratings={reviewOverall} />
                 {ReviewMeta.map(({ category, value, icon }, index) => (
                   <ReviewModalContent key={index} category={category} value={value} icon={icon} />

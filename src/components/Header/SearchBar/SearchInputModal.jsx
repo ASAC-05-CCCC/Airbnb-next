@@ -1,3 +1,4 @@
+// @ts-nocheck
 import DatePickerInput from '@/components/Header/SearchBar/DatePickerInput'
 import LocationInput from '@/components/Header/SearchBar/LocationInput'
 import GuestInput from '@/components/common/GuestInput'

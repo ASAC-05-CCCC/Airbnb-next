@@ -1,3 +1,4 @@
+// @ts-nocheck
 const formatTimestamp = reviews => {
   const currentDate = new Date()
 

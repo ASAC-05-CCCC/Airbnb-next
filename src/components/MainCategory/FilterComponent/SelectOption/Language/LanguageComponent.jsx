@@ -1,9 +1,15 @@
-import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import SelectOptionComponent from '@/components/MainCategory/FilterComponent/SelectOption/SelectOptionComponent'
+import { setLanguageOption } from '@/app/redux/filterSlice'
 
 function LanguageComponent() {
-  const [checkItem, setCheckItem] = useState([new Set()])
+  const dispatch = useDispatch()
+
+  const checkItem = useSelector(states => states['filter'].languageOption)
+  const setCheckItem = (optionIdx, contentIdx) => {
+    dispatch(setLanguageOption({ optionIdx: optionIdx, contentIdx: contentIdx }))
+  }
 
   return (
     <>

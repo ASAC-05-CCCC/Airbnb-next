@@ -1,9 +1,15 @@
-import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import SelectOptionComponent from '@/components/MainCategory/FilterComponent/SelectOption/SelectOptionComponent'
+import { setFacilitiesOption } from '@/app/redux/filterSlice'
 
 function FacilitiesComponent() {
-  const [checkItem, setCheckItem] = useState([new Set(), new Set(), new Set(), new Set()])
+  const dispatch = useDispatch()
+
+  const checkItem = useSelector(states => states['filter'].facilitiesOption)
+  const setCheckItem = (optionIdx, contentIdx) => {
+    dispatch(setFacilitiesOption({ optionIdx: optionIdx, contentIdx: contentIdx }))
+  }
 
   return (
     <>
