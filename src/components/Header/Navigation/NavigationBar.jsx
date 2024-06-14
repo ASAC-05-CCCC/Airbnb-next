@@ -6,7 +6,7 @@ const NavigationBar = () => {
           <li className='change_dropdown flex gap-3'>
             <div className=''>
               <button>
-                <span className='hover:text-black'>숙소</span>
+                <span className='text-black'>숙소</span>
               </button>
             </div>
             <div className=''>
