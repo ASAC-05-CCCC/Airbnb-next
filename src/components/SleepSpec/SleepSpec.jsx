@@ -35,7 +35,7 @@ const SleepSpec = () => {
                 <div className='flex items-center pb-4'>
                   {/* 이미지와 텍스트를 동적으로 생성 */}
                   {room.beds.map((bed, index) => (
-                    <>
+                    <div key={index} className="flex items-center">
                       <Image 
                         src={bed.bedType === '싱글 침대' ? '/images/singleBed.svg' : '/images/queenBed.svg'} 
                         alt={bed.bedType} 
@@ -44,7 +44,7 @@ const SleepSpec = () => {
                         className="pr-1"
                       />
                       {index !== room.beds.length - 1 && <span>,&nbsp;</span>}
-                    </>
+                    </div>
                   ))}
                 </div>
                 <h3 className="text-xl font-semibold">침실 {room.roomId}</h3>

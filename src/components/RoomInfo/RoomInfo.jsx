@@ -49,8 +49,6 @@ const RoomInfo = () => {
       .then(response => response.json())
       .then(data => {
         setReviewData(ReviewData(data))
-        // @ts-ignore
-        setReviewOverall(calculateStarCounts(data))
       })
       .catch(error => console.error('Error fetching ReviewData.json:', error))
   }, [])
