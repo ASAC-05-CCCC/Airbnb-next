@@ -9,6 +9,7 @@ export default function ReservationGuestModalButton({
   dateIsOpen,
   dateClose,
 }) {
+  // @ts-ignore
   const { guestCount } = useSelector(state => state.reservation)
   return (
     <section className='relative'>

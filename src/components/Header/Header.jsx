@@ -1,13 +1,28 @@
 'use client'
 import Login from '@/components/Header/Login'
 import Logo from '@/components/Header/Logo'
-import SearchFormWrapper from '@/components/Header/SearchBar/SearchFormWrapper'
 import SmallSearchBar from '@/components/Header/SearchBar/SmallSearchBar'
 import clsx from 'clsx'
 import useIsScroll from '@/hooks/useIsScroll'
+import SearchFormWrapper from '@/components/Header/SearchBar/searchFormWrapper'
+import { useEffect, useState } from 'react'
+import { useSelectedLayoutSegment } from 'next/navigation'
 
 const Header = () => {
+  const [searchBarOpen, setSearchBarOpen] = useState(false)
   const isScroll = useIsScroll()
+
+  const segments = useSelectedLayoutSegment()
+
+  useEffect(() => {
+    // 메인 페이지
+    if (segments === null) {
+      isScroll ? setSearchBarOpen(false) : setSearchBarOpen(true)
+      // 메인 페이지가 아닐때
+    } else {
+      isScroll && setSearchBarOpen(false)
+    }
+  }, [isScroll, segments])
 
   return (
     <>
@@ -19,10 +34,10 @@ const Header = () => {
             )}
           >
             <Logo />
-            {isScroll && <SmallSearchBar />}
+            <SmallSearchBar searchBarOpen={searchBarOpen} setSearchBarOpen={setSearchBarOpen} />
             <Login />
           </div>
-          {!isScroll && <SearchFormWrapper />}
+          <SearchFormWrapper searchBarOpen={searchBarOpen} />
         </header>
       </div>
     </>

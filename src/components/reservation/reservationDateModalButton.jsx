@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { clearDate } from '@/app/redux/reservationSlice'
 import ReservationDateInput from '@/components/reservation/reservationDateInput'
 import clsx from 'clsx'

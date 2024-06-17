@@ -1,13 +1,13 @@
 import clsx from 'clsx'
 
-function SmallSearchBar() {
-  // const scrolled = useIsScroll()
+function SmallSearchBar({ searchBarOpen, setSearchBarOpen }) {
   return (
     <>
       <div
+        onClick={() => setSearchBarOpen(true)}
         className={clsx(
-          ' flex w-[400px] items-center justify-center rounded-full border-[1px] border-gray-200 py-2 shadow-sm shadow-gray-300 transition-all hover:shadow-lg',
-          // scrolled ? 'visible' : 'invisible',
+          ' flex w-[400px] items-center justify-center rounded-full border-[1px] border-gray-200 py-2 shadow-sm shadow-gray-300 transition-all duration-300 hover:shadow-lg',
+          !searchBarOpen ? ' visible' : 'invisible opacity-0',
         )}
       >
         <button className='flex w-full items-center justify-center text-sm'>
