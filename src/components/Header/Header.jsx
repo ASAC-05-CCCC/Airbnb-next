@@ -28,11 +28,7 @@ const Header = () => {
     <>
       <div className='xl:px-18 w-full border-b-[1px] border-solid bg-white py-2 sm:px-8 lg:px-10'>
         <header className='w-full'>
-          <div
-            className={clsx(
-              'relative z-30 flex h-full w-full items-center justify-between bg-white py-3',
-            )}
-          >
+          <div className={clsx('flex h-full w-full items-center justify-between bg-white py-3')}>
             <Logo />
             <SmallSearchBar searchBarOpen={searchBarOpen} setSearchBarOpen={setSearchBarOpen} />
             <HeaderSideBox />
