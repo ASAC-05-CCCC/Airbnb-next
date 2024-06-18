@@ -1,19 +1,14 @@
 import Image from 'next/image'
-import campingIcon from '/public/images/campingIcon.svg'
 
 function CategoryItem({ categoryIcon, categoryName }) {
   return (
-    <>
-      <button className='group flex flex-col items-center justify-center p-2 w-20'>
-        <div className='w-[30px] h-[30px]'>
-          {/* <Image src={'/public/images/campingIcon.svg'} width={30} height={30} />
-          <Image src={campingIcon} /> */}
-          <Image src={categoryIcon} width={30} height={30} alt='category' />
-        </div>
-        <div className='whitespace-nowrap text-xs w-full justify-center'>{categoryName}</div>
-        <div className='w-10/12 h-0.5 bg-white mt-2 transition-color duration-300 group-hover:bg-gray-300'></div>
-      </button>
-    </>
+    <button className='group flex w-20 flex-col items-center justify-center p-2'>
+      <div className='h-[30px] w-[30px]'>
+        <Image src={categoryIcon} width={30} height={30} alt='category' />
+      </div>
+      <div className='w-full justify-center whitespace-nowrap text-xs'>{categoryName}</div>
+      <div className='transition-color mt-2 h-0.5 w-10/12 bg-white duration-300 group-hover:bg-gray-300'></div>
+    </button>
   )
 }
 

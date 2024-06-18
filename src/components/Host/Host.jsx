@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client'
 import HostHeader from '@/components/Host/HostHeader.jsx'
 import HostIntro from '@/components/Host/HostIntro.jsx'
@@ -6,41 +7,40 @@ import HostMessageButton from '@/components/Host/HostMessageButton.jsx'
 import HostFooter from '@/components/Host/HostFooter.jsx'
 import HostProfile from '@/components/Host/HostProfile.jsx'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 const GenerateHostData = data => {
-  return data.map(item => {
-    return {
-      user_id: item.user_id,
-      post_id: item.post_id,
-      index: item.index,
-    }
-  })
-}
-
-const GenerateHostProfileData = data => {
-  return data.map(item => item.HostProfile)
+  return {
+    name: data.hostName,
+    superHost: data.guestFavorite,
+    review: data.reviewCount,
+    rating: data.rating,
+    career: data.hostSince,
+    image: data.hostImage,
+  }
 }
 
 const GenerateHostIntroData = data => {
-  return data.map(item => item.HostIntro)
+  return data.HostIntro
 }
 
 const GenerateHostContentData = data => {
-  return data.map(item => item.HostContent)
+  return data.HostContent
 }
 
 const Host = () => {
   const [hostData, setHostData] = useState([])
-  const [hostProfileData, setHostProfileData] = useState([])
   const [hostIntroData, setHostIntroData] = useState([])
   const [hostContentData, setHostContentData] = useState([])
+  const pathname = usePathname()
+  const id = pathname.slice(7)
 
   useEffect(() => {
-    fetch('/apis/host')
+    fetch(`/apis/host/${id}`)
       .then(response => response.json())
       .then(data => {
+        // @ts-ignore
         setHostData(GenerateHostData(data))
-        setHostProfileData(GenerateHostProfileData(data))
         setHostIntroData(GenerateHostIntroData(data))
         setHostContentData(GenerateHostContentData(data))
       })
@@ -48,31 +48,32 @@ const Host = () => {
   }, [])
 
   if (!hostData || hostData.length === 0) {
-    return <div>Loading...</div>
+    return <></>
   }
 
   return (
-    <div className='flex justify-center px-10'>
-      <div className='flex-col max-w-7xl'>
+    <div className='w-full flex-col items-center justify-center px-10'>
+      <div className='w-full flex-col'>
         <div>
           <HostHeader />
         </div>
-        <div className='flex items-center justify-center bg-hostColor rounded-2xl flex-auto mx-auto'>
-          <div className='pt-10 pb-6'>
-            <div className='flex flex-col px-20 lg:flex-row gap-8 lg:gap-12 lg:px-10 justify-start items-center'>
+        <div className='mx-auto flex flex-auto items-center justify-center rounded-2xl bg-hostColor'>
+          <div className='w-full pb-6 pt-10'>
+            <div className='flex flex-col items-center justify-start gap-8 px-20 lg:flex-row lg:gap-12 lg:px-10'>
               <div className='flex flex-col lg:gap-8 '>
-                {hostProfileData.length > 0 && (
+                {hostData && (
                   <HostProfile
-                    name={hostProfileData[0].name}
-                    superHost={hostProfileData[0].superHost}
-                    review={hostProfileData[0].review}
-                    rating={hostProfileData[0].rating}
-                    career={hostProfileData[0].career}
+                    name={hostData.name}
+                    superHost={hostData.superHost}
+                    review={hostData.review}
+                    rating={hostData.rating}
+                    career={hostData.career}
+                    image={hostData.image}
                   />
                 )}
-                <div className='flex flex-col w-[341px] mt-4 lg:mt-0 gap-4'>
+                <div className='mt-4 flex w-[341px] flex-col gap-4 lg:mt-0'>
                   {hostIntroData.length > 0 &&
-                    hostIntroData[0].map(({ category, text }, index) => {
+                    hostIntroData.map(({ category, text }, index) => {
                       if (index > 1) {
                         return null
                       }
@@ -82,9 +83,9 @@ const Host = () => {
                     })}
                 </div>
               </div>
-              <div className='flex flex-col w-[341px] gap-8 lg:w-2/3 lg:gap-8 '>
+              <div className='flex w-[341px] flex-col gap-8 lg:w-2/3 lg:gap-8 '>
                 {hostContentData.length > 0 &&
-                  hostContentData[0].map(({ title, body }, index) => {
+                  hostContentData.map(({ title, body }, index) => {
                     return <HostContent title={title} body={body} key={`${title}-${index}`} />
                   })}
                 <HostMessageButton />

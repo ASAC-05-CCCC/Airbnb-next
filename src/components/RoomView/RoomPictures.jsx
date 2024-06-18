@@ -1,66 +1,87 @@
-import React from 'react'
-import Image from 'next/image'
+'use client'
+
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const RoomPictures = () => {
+  const [roomData, setRoomData] = useState(null);
+  const pathname = usePathname();
+  const id = pathname.slice(7);
+
+  useEffect(() => {
+    fetch(`/apis/rooms/${id}`)
+    .then(response => response.json())
+    .then(data => {
+      setRoomData(data)
+    })
+    .catch(error => console.error('Error fetching room data:', error));
+  }, []);
+
+  if (!roomData) {
+    return (
+      <></>
+    );
+  }
+
   return (
-    <div className='w-full'>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
-        <div className="col-span-1">
+    <div className="w-full transition-all">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-2 pb-4 w-full transition-all">
+        <div className="relative col-span-1 lg:col-span-2 row-span-1 lg:row-span-2 lg:aspect-auto transition-all h-[410px]" >
           <Image 
-            src="/images/RoomImage1.png" 
+            src={roomData.imageUrl[0]} 
             alt="Large view"  
-            width={800}
-            height={600}
-            className="rounded-lg rounded-tl-lg" 
+            fill
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            priority
+            className="rounded-lg rounded-tl-lg transition-all" 
           />
         </div>
-        <div className="col-span-1 grid grid-cols-2 gap-2">
-          <div className="col-span-1">
+        <div className="relative col-span-1 row-span-1 lg:aspect-auto transition-all">
+          <Image 
+            src={roomData.imageUrl[1]} 
+            alt="View 1"
+            fill
+            sizes="(max-width: 1024px) 100vw, 25vw"
+            className="rounded-lg transition-all" 
+          />
+        </div>
+        <div className="relative col-span-1 row-span-1 lg:aspect-auto transition-all">
+          <Image 
+            src={roomData.imageUrl[2]} 
+            alt="View 2"
+            fill
+            sizes="(max-width: 1024px) 100vw, 25vw"
+            className="rounded-lg transition-all" 
+          />
+        </div>
+        <div className="relative col-span-1 row-span-1 lg:aspect-auto transition-all" >
+          <Image 
+            src={roomData.imageUrl[3]} 
+            alt="View 3"
+            fill
+            sizes="(max-width: 1024px) 100vw, 25vw"
+            className="rounded-lg transition-all" 
+          />
+        </div>
+        <div className="relative col-span-1 row-span-1 lg:aspect-auto transition-all">
+          <Image 
+            src={roomData.imageUrl[4]} 
+            alt="View 4"
+            fill
+            sizes="(max-width: 1024px) 100vw, 25vw"
+            className="rounded-lg transition-all" 
+          />
+          <button className="absolute bottom-5 right-5 flex items-center justify-center bg-white text-lg rounded-lg border border-black px-4 py-0.5 transition-all">
             <Image 
-              src="/images/RoomImage2.png" 
-              alt="View 1"
-              width={400}
-              height={300}
-              className="rounded-lg" 
+              src="/images/RoomList.svg" 
+              alt="RoomList" 
+              width={12} 
+              height={12} 
+              className="mr-1 transition-all"
             />
-          </div>
-          <div className="col-span-1">
-            <Image 
-                src="/images/RoomImage3.png" 
-                alt="View 1"
-                width={400}
-                height={300}
-                className="rounded-lg" 
-              />
-          </div>
-          <div className="col-span-1">
-            <Image 
-                src="/images/RoomImage4.png" 
-                alt="View 1"
-                width={400}
-                height={300}
-                className="rounded-lg" 
-              />
-          </div>
-          <div className="col-span-1 relative">
-            <Image 
-                src="/images/RoomImage5.png" 
-                alt="View 1"
-                width={400}
-                height={300}
-                className="rounded-lg" 
-              />
-            <button className="absolute bottom-5 right-5 flex items-center justify-center bg-white text-lg rounded-lg border border-black px-4 py-0.5">
-              <Image 
-                src="/images/RoomList.svg" 
-                alt="RoomList" 
-                width={12} 
-                height={12} 
-                margin-right={4}
-              />
-              사진 모두 보기
-            </button>
-          </div>
+            사진 모두 보기
+          </button>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client'
 
 import { useRef, useEffect } from 'react'
@@ -39,17 +40,17 @@ function FilterComponent({ setIsFilterModal }) {
 
   return (
     <DetailModal>
-      <div className='relative w-[710px] h-[90%] bg-white rounded-xl' ref={filterModalRef}>
+      <div className='relative h-[90%] w-[710px] rounded-xl bg-white' ref={filterModalRef}>
         <div
-          className='absolute top-0 flex place-items-center place-content-center 
-        w-full h-[60px] rounded-t-xl border-b-[1px] border-b-slate-200'
+          className='absolute top-0 flex h-[60px] w-full 
+        place-content-center place-items-center rounded-t-xl border-b-[1px] border-b-slate-200'
         >
           <button onClick={onClickXButton} className='absolute left-0 p-5'>
             <Image src={XIcon} alt='X' />
           </button>
           <div className='text-sm	font-bold'>필터</div>
         </div>
-        <div className='absolute w-full top-[60px] bottom-[70px] overflow-y-scroll overflow-x-hidden'>
+        <div className='absolute bottom-[70px] top-[60px] w-full overflow-x-hidden overflow-y-scroll'>
           <PlaceTypeComponent />
           <PriceScopeComponent />
           <BedroomComponent />
@@ -61,7 +62,7 @@ function FilterComponent({ setIsFilterModal }) {
           <LanguageComponent />
         </div>
         <div
-          className='absolute bottom-0 w-full h-[70px] flex flex-row place-content-between 
+          className='absolute bottom-0 flex h-[70px] w-full flex-row place-content-between 
         place-items-center rounded-b-xl border-t-[1px] border-t-slate-200'
         >
           <div className='pl-3'>

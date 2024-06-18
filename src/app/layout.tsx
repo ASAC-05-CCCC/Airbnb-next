@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
-import Category from '@/components/MainCategory/Category'
+import ReduxProvider from '@/components/common/reduxProvider'
 
 export const metadata: Metadata = {
   title: 'Airbnb Clone',
@@ -13,10 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='ko'>
       <body>
-        <div className='flex flex-col items-center transition-all lg:px-10 xl:px-20 sm:px-8 w-full'>
-          {children}
+        <div className='flex w-full flex-col items-center transition-all'>
+          <ReduxProvider>{children}</ReduxProvider>
         </div>
-        <Footer />
       </body>
     </html>
   )

@@ -1,27 +1,32 @@
+// @ts-nocheck
 import DatePickerInput from '@/components/Header/SearchBar/DatePickerInput'
-import GuestInput from '@/components/Header/SearchBar/GuestInput'
 import LocationInput from '@/components/Header/SearchBar/LocationInput'
+import GuestInput from '@/components/common/GuestInput'
 import SearchModal from '@/components/common/SearchModal'
-import { useSearchContext } from '@/context/SearchContext'
 import clsx from 'clsx'
+import { useDispatch, useSelector } from 'react-redux'
 
 function SearchInputModal() {
-  const { openModal } = useSearchContext()
+  const dispatch = useDispatch()
+  const { isOpenModal } = useSelector(state => state.search)
 
   return (
     <div
       className={clsx(
-        'absolute top-16 z-10',
-        openModal.location && ' w-2/3 left-0',
-        openModal.datepicker && 'w-full',
-        openModal.guest && 'w-2/3 right-0',
+        'absolute top-36 z-10',
+        isOpenModal.location && ' left-0 w-2/3',
+        isOpenModal.datepicker && 'w-full',
+        isOpenModal.guest && 'right-0 w-2/3',
       )}
     >
-      {openModal.location || openModal.datepicker || openModal.guest ? (
+      {isOpenModal.location ||
+      isOpenModal.checkInDate ||
+      isOpenModal.checkOutDate ||
+      isOpenModal.guest ? (
         <SearchModal>
-          {openModal.location && <LocationInput />}
-          {openModal.datepicker && <DatePickerInput />}
-          {openModal.guest && <GuestInput />}
+          {isOpenModal.location && <LocationInput />}
+          {(isOpenModal.checkInDate || isOpenModal.checkOutDate) && <DatePickerInput />}
+          {isOpenModal.guest && <GuestInput />}
         </SearchModal>
       ) : null}
     </div>

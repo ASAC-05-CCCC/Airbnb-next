@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client'
 import React, { useState } from 'react'
 import StarRating from '@/components/ReviewInform/StarRating'
@@ -53,7 +54,7 @@ const ReviewInform = () => {
   return (
     <div className='py-4'>
       <button
-        className='border border-black rounded font-semibold text-center px-4 py-2'
+        className='rounded border border-black px-4 py-2 text-center font-semibold'
         onClick={() => setShowForm(!showForm)}
       >
         후기 등록
@@ -71,14 +72,14 @@ const ReviewInform = () => {
             <textarea
               value={reviewText}
               onChange={handleReviewTextChange}
-              className='mt-2 p-2 border rounded'
+              className='mt-2 rounded border p-2'
               rows='4'
               placeholder='Write your review here...'
             />
           </div>
           <button
             type='submit'
-            className='border border-black rounded font-semibold text-center mt-10 px-4 py-2'
+            className='mt-10 rounded border border-black px-4 py-2 text-center font-semibold'
           >
             등록
           </button>

@@ -1,45 +1,54 @@
-import { useState } from 'react'
+// @ts-nocheck
+import { useDispatch, useSelector } from 'react-redux'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
 import StructureTypeEachComponent from './StructureTypeEachButton'
+import { setIsHouse, setIsApartment, setIsOutbuilding, setIsHotel } from '@/app/redux/filterSlice'
 
 function StructureTypeComponent() {
-  const [isHouse, setIsHouse] = useState(false)
-  const [isApartment, setIsApartment] = useState(false)
-  const [isOutbuilding, setIsOutbuilding] = useState(false)
-  const [isHotel, setIsHotel] = useState(false)
+  const dispatch = useDispatch()
+
+  const isHouse = useSelector(states => states['filter'].isHouse)
+  const isApartment = useSelector(states => states['filter'].isApartment)
+  const isOutbuilding = useSelector(states => states['filter'].isOutbuilding)
+  const isHotel = useSelector(states => states['filter'].isHotel)
 
   const structureList = [
     {
       structureIcon: '/images/houseIcon.svg',
       structureName: '주택',
       isSelect: isHouse,
-      setIsSelect: setIsHouse,
+      setIsSelect: () => dispatch(setIsHouse()),
     },
     {
       structureIcon: '/images/apartmentIcon.svg',
       structureName: '아파트',
       isSelect: isApartment,
-      setIsSelect: setIsApartment,
+      setIsSelect: () => dispatch(setIsApartment()),
     },
     {
       structureIcon: '/images/outbuildingIcon.svg',
       structureName: '게스트용 별채',
       isSelect: isOutbuilding,
-      setIsSelect: setIsOutbuilding,
+      setIsSelect: () => dispatch(setIsOutbuilding()),
     },
     {
       structureIcon: '/images/hotelIcon.svg',
       structureName: '호텔',
       isSelect: isHotel,
-      setIsSelect: setIsHotel,
+      setIsSelect: () => dispatch(setIsHotel()),
     },
   ]
 
   return (
     <>
-      <FilterEachComponent title={'건물 유형'}>
-        <div className='grid grid-cols-4 h-[154px] gap-4 mb-2'>
+      <FilterEachComponent
+        title={'건물 유형'}
+        description={undefined}
+        // eslint-disable-next-line react/no-children-prop
+        children={undefined}
+      >
+        <div className='mb-2 grid h-[154px] grid-cols-4 gap-4'>
           {structureList.map((structure, idx) => (
             <StructureTypeEachComponent
               key={idx}

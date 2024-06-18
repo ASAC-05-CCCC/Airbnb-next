@@ -8,15 +8,14 @@ import RoomIntroduce from '@/components/RoomIntroduce/RoomIntroduce'
 import RoomView from '@/components/RoomView/RoomView'
 import SleepSpec from '@/components/SleepSpec/SleepSpec'
 import Reservation from '@/components/reservation/Reservation'
-import Footer from '@/components/Footer/Footer'
 import Comment from '@/components/comment/Comment'
 
-export default function RoomsPage() {
+export default function RoomsHome() {
   return (
-    <div className='flex flex-col px-20 w-full'>
+    <div className='p-10 sm:px-8 lg:px-10 xl:px-20'>
       <RoomView />
-      <section className='flex w-full border-b-2 justify-between gap-10'>
-        <div className='flex flex-col w-full basis-2/3'>
+      <section className='flex w-full gap-x-20 border-b-2'>
+        <div className='flex w-full basis-2/3 flex-col'>
           <RoomInfo />
           <RoomIntroduce />
           <SleepSpec />
@@ -26,13 +25,12 @@ export default function RoomsPage() {
         </div>
       </section>
 
-      <section className='flex flex-col items-center w-full'>
+      <section className='flex w-full flex-col items-center'>
         <Comment />
-        <section className='flex flex-col items-center w-full'>
+        <section className='flex w-full flex-col items-center'>
           <RoomFacilities />
           {/* 달력 */}
         </section>
-        {/* <GuestFavorite /> */}
         <Host />
         <Notification />
       </section>

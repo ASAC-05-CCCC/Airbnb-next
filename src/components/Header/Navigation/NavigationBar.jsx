@@ -1,12 +1,12 @@
 const NavigationBar = () => {
   return (
-    <div className='flex items-center justify-center'>
+    <div className='flex w-full items-center justify-center'>
       <nav>
         <ul className='flex gap-4 text-gray-400 '>
-          <li className='flex gap-3 change_dropdown'>
+          <li className='change_dropdown flex gap-3'>
             <div className=''>
               <button>
-                <span className='hover:text-black'>숙소</span>
+                <span className='text-black'>숙소</span>
               </button>
             </div>
             <div className=''>

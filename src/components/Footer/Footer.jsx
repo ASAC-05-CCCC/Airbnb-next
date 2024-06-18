@@ -3,7 +3,7 @@ import FooterTitle from '@/components/Footer/FooterTitleIn'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='w-full'>
       <NextTravelTitle />
       <FooterTitle />
     </footer>

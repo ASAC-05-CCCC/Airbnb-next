@@ -1,89 +1,74 @@
-import { useSearchContext } from '@/context/SearchContext'
+// @ts-nocheck
 import clsx from 'clsx'
+import { useSelector } from 'react-redux'
+import { modalToggle } from '@/app/redux/searchSlice'
+import { useRouter } from 'next/navigation'
+import SearchBarLocation from '@/components/Header/SearchBar/searchBarLocation'
+import SearchBarDatePicker from '@/components/Header/SearchBar/searchBarDatePicker'
+import SearchBarGuest from '@/components/Header/SearchBar/searchBarGuest'
+import SearchBarButton from '@/components/Header/SearchBar/searchBarButton'
+import { useDispatch } from 'react-redux'
 
 function FullSearchBar() {
-  const { toggle, handleSearchSubmit, datepicker, guest } = useSearchContext()
+  const {
+    //
+    location,
+    guestCount,
+    checkInDate,
+    checkOutDate,
+    isOpenModal,
+  } = useSelector(state => state.search)
 
+  const router = useRouter()
+  const dispatch = useDispatch()
+
+  const handleSearchSubmit = () => {
+    //
+    router.push(
+      `/search?location=${location}&startDate=${checkInDate}&endDate=${checkOutDate}&guest=${Object.values(
+        guestCount,
+      ).reduce((prev, current) => prev + current)}`,
+    )
+  }
   return (
     <>
-      <div
+      <section
         className={clsx(
-          'flex items-center  max-w-4xl transition-all rounded-full shadow-md cursor-pointer',
+          'flex w-full cursor-pointer items-center  overflow-hidden rounded-full border-[1px] border-gray-300  shadow-md transition-all duration-75',
+          (isOpenModal.location ||
+            isOpenModal.checkInDate ||
+            isOpenModal.checkOutDate ||
+            isOpenModal.guest) &&
+            'bg-gray-200',
         )}
       >
+        <SearchBarLocation
+          modalToggle={modalToggle}
+          isOpenModal={isOpenModal}
+          location={location}
+        />
+        <SearchBarDatePicker
+          modalToggle={modalToggle}
+          isOpenModal={isOpenModal}
+          checkInDate={checkInDate}
+          checkOutDate={checkOutDate}
+        />
         <div
-          onClick={() => {
-            toggle('location')
-          }}
+          onClick={() => dispatch(modalToggle({ key: 'guest' }))}
           className={clsx(
-            'px-6 py-2 overflow-hidden transition-all rounded-full hover:bg-gray-300',
+            'flex basis-1/3 rounded-full px-2 py-4 transition-all hover:bg-gray-200',
+            isOpenModal.guest && 'bg-white shadow-lg  hover:bg-white',
           )}
         >
-          <div className='flex items-center border-r border-gray-300 '>
-            <div className='flex flex-col'>
-              <h2 className='text-xs font-semibold'>여행지</h2>
-              <input
-                type='text'
-                placeholder='여행지 검색'
-                className='text-gray-900 bg-transparent focus:outline-none'
-                // value={location}
-              />
-            </div>
-          </div>
+          <SearchBarGuest //
+            guestCount={guestCount}
+          />
+          <SearchBarButton
+            isOpenGuestModal={isOpenModal.guest}
+            handleSearchSubmit={handleSearchSubmit}
+          />
         </div>
-
-        {/* 날짜 추가 */}
-
-        <div
-          onClick={() => {
-            toggle('datepicker')
-          }}
-          className={`flex items-center flex-1 px-4 py-2 rounded-full   hover:bg-gray-300`}
-        >
-          <div className='w-full border-r'>
-            <span className='block text-xs font-semibold '>날짜</span>
-            <button className='text-gray-500'>{datepicker.startDate || '날짜 추가'}</button>
-          </div>
-        </div>
-
-        <div className={`flex rounded-full hover:bg-gray-300 `}>
-          {/* 게스트 추가 */}
-          <div
-            onClick={() => {
-              toggle('guest')
-            }}
-            className='flex items-center px-4 py-2 rounded-full hover:bg-gray-300'
-          >
-            <div>
-              <span className='block text-xs font-semibold '>여행자</span>
-              <button className='text-gray-500'>{`게스트 ${guest.adults}` || '게스트 추가'}</button>
-            </div>
-          </div>
-
-          {/* 검색 버튼 */}
-          <div className='flex items-center px-2 ml-2'>
-            <button
-              onClick={handleSearchSubmit}
-              className='flex items-center justify-center p-3 text-white bg-red-500 rounded-full'
-            >
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-                className='w-5 h-5'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth='2'
-                  d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   )
 }
