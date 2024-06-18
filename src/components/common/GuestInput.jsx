@@ -1,7 +1,7 @@
 // @ts-nocheck
 import GuestItem from '@/components/common/GuestItem'
 import { useSelector } from 'react-redux'
-import { increaseGuest, decreaseGuest } from '@/app/redux/searchSlice'
+import { increaseGuest, decreaseGuest } from '@/redux/searchSlice'
 
 const GuestInput = () => {
   const { guestCount } = useSelector(state => state.search)

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { clearDate } from '@/app/redux/reservationSlice'
+import { clearDate } from '@/redux/reservationSlice'
 import ReservationDateInput from '@/components/reservation/reservationDateInput'
 import clsx from 'clsx'
 import Image from 'next/image'
