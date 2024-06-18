@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 
 import SelectOptionComponent from '@/components/MainCategory/FilterComponent/SelectOption/SelectOptionComponent'
-import { setLanguageOption } from '@/app/redux/filterSlice'
+import { setLanguageOption } from '@/redux/filterSlice'
 
 function LanguageComponent() {
   const dispatch = useDispatch()

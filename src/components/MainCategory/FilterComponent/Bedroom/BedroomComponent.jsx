@@ -4,9 +4,9 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
 import BedroomEachComponent from '@/components/MainCategory/FilterComponent/Bedroom/BedroomEachComponent'
-import { setBedroomCount } from '@/app/redux/filterSlice'
-import { setBedCount } from '@/app/redux/filterSlice'
-import { setBathroomCount } from '@/app/redux/filterSlice'
+import { setBedroomCount } from '@/redux/filterSlice'
+import { setBedCount } from '@/redux/filterSlice'
+import { setBathroomCount } from '@/redux/filterSlice'
 
 function BedroomComponent() {
   const dispatch = useDispatch()

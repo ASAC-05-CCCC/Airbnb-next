@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
 import ReservationEachOption from '@/components/MainCategory/FilterComponent/Reservation/ReservationEachOption'
-import { setIsInstantBook } from '@/app/redux/filterSlice'
-import { setIsSelfCheckIn } from '@/app/redux/filterSlice'
-import { setIsAllowPet } from '@/app/redux/filterSlice'
+import { setIsInstantBook } from '@/redux/filterSlice'
+import { setIsSelfCheckIn } from '@/redux/filterSlice'
+import { setIsAllowPet } from '@/redux/filterSlice'
 
 function ReservationComponent() {
   const dispatch = useDispatch()

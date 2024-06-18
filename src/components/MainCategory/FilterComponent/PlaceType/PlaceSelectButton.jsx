@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { selectPlaceType } from '@/app/redux/filterSlice'
+import { selectPlaceType } from '@/redux/filterSlice'
 
 function PlaceSelectButton({ name }) {
   const dispatch = useDispatch()

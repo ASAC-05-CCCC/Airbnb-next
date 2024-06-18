@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 
-import { setPrice } from '@/app/redux/filterSlice'
+import { setPrice } from '@/redux/filterSlice'
 
 function PriceInputBox({ type, price }) {
   const dispatch = useDispatch()

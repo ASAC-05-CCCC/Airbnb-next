@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 
 import SelectOptionComponent from '@/components/MainCategory/FilterComponent/SelectOption/SelectOptionComponent'
-import { setFacilitiesOption } from '@/app/redux/filterSlice'
+import { setFacilitiesOption } from '@/redux/filterSlice'
 
 function FacilitiesComponent() {
   const dispatch = useDispatch()

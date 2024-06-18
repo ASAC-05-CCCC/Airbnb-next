@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 
-import { setClear } from '@/app/redux/filterSlice'
+import { setClear } from '@/redux/filterSlice'
 
 function FilterClearButton() {
   const dispatch = useDispatch()
