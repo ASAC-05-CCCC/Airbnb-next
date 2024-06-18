@@ -1,10 +1,10 @@
 'use client'
-import Login from '@/components/Header/Login'
-import Logo from '@/components/Header/Logo'
 import SmallSearchBar from '@/components/Header/SearchBar/SmallSearchBar'
+import SearchFormWrapper from '@/components/Header/SearchBar/searchFormWrapper'
+import Logo from '@/components/Header/Logo'
+import HeaderSideBox from '@/components/Header/headerSideBox'
 import clsx from 'clsx'
 import useIsScroll from '@/hooks/useIsScroll'
-import SearchFormWrapper from '@/components/Header/SearchBar/searchFormWrapper'
 import { useEffect, useState } from 'react'
 import { useSelectedLayoutSegment } from 'next/navigation'
 
@@ -30,12 +30,12 @@ const Header = () => {
         <header className='w-full'>
           <div
             className={clsx(
-              'relative flex h-full w-full items-center justify-between bg-white py-3',
+              'relative z-30 flex h-full w-full items-center justify-between bg-white py-3',
             )}
           >
             <Logo />
             <SmallSearchBar searchBarOpen={searchBarOpen} setSearchBarOpen={setSearchBarOpen} />
-            <Login />
+            <HeaderSideBox />
           </div>
           <SearchFormWrapper searchBarOpen={searchBarOpen} />
         </header>

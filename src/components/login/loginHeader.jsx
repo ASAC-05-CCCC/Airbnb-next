@@ -1,9 +1,12 @@
-function LoginHeader() {
+function LoginHeader({ closeLoginModal }) {
   return (
     <div className='w-full border-b-[1px] border-gray-200'>
       <header className='flex items-center p-4'>
         <div className='basis-1/6 text-center'>
-          <button className='rounded-full px-2 py-1 hover:bg-gray-100'>
+          <button
+            onClick={() => closeLoginModal()}
+            className='rounded-full px-2 py-1 hover:bg-gray-100'
+          >
             <span>X</span>
           </button>
         </div>

@@ -26,11 +26,11 @@ const oAuthService = [
   },
 ]
 
-export default function LoginModal() {
+export default function LoginModal({ closeLoginModal }) {
   return (
     <DetailModal>
       <LoginWrapper>
-        <LoginHeader />
+        <LoginHeader closeLoginModal={closeLoginModal} />
         <div className='flex w-full flex-col items-center justify-center overflow-auto py-4'>
           <LoginTitle />
           <LoginForm />
