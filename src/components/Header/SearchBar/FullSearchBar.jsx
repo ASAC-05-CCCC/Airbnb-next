@@ -34,7 +34,7 @@ function FullSearchBar() {
     <>
       <section
         className={clsx(
-          'flex w-full cursor-pointer items-center  overflow-hidden rounded-full border-[1px] border-gray-300  shadow-md transition-all duration-75',
+          'pointer-events-auto flex w-full cursor-pointer  items-center overflow-hidden rounded-full border-[1px]  border-gray-300 shadow-md transition-all duration-75',
           (isOpenModal.location ||
             isOpenModal.checkInDate ||
             isOpenModal.checkOutDate ||

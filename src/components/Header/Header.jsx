@@ -30,11 +30,19 @@ const Header = () => {
         <header className='w-full'>
           <div className={clsx('flex h-full w-full items-center justify-between bg-white py-3')}>
             <Logo />
-            <SmallSearchBar searchBarOpen={searchBarOpen} setSearchBarOpen={setSearchBarOpen} />
+            <div>
+              <SmallSearchBar searchBarOpen={searchBarOpen} setSearchBarOpen={setSearchBarOpen} />
+              <SearchFormWrapper searchBarOpen={searchBarOpen} />
+            </div>
             <HeaderSideBox />
           </div>
-          <SearchFormWrapper searchBarOpen={searchBarOpen} />
         </header>
+        <div
+          className={clsx(
+            'w-full bg-white transition-all duration-300',
+            !searchBarOpen ? 'h-0' : 'lg:h-24',
+          )}
+        ></div>
       </div>
     </>
   )
