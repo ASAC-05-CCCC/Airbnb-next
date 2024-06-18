@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
 import preferenceIcon from '/public/images/preferenceIcon.svg'
-import { setIsPreference } from '@/app/redux/filterSlice'
+import { setIsPreference } from '@/redux/filterSlice'
 
 function GuestPreferenceComponent() {
   const dispatch = useDispatch()

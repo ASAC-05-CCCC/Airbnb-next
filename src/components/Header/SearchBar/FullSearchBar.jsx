@@ -1,7 +1,7 @@
 // @ts-nocheck
 import clsx from 'clsx'
 import { useSelector } from 'react-redux'
-import { modalToggle } from '@/app/redux/searchSlice'
+import { modalToggle } from '@/redux/searchSlice'
 import { useRouter } from 'next/navigation'
 import SearchBarLocation from '@/components/Header/SearchBar/searchBarLocation'
 import SearchBarDatePicker from '@/components/Header/SearchBar/searchBarDatePicker'

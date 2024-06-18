@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { useDispatch } from 'react-redux'
-import { setCheckInDate, setCheckOutDate } from '@/app/redux/searchSlice'
+import { setCheckInDate, setCheckOutDate } from '@/redux/searchSlice'
 import DatePickerWrapper from '@/components/common/datePickerWrapper'
 
 const DatePickerInput = () => {

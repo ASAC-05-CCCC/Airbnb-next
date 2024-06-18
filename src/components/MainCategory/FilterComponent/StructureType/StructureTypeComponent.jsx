@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
 import StructureTypeEachComponent from './StructureTypeEachButton'
-import { setIsHouse, setIsApartment, setIsOutbuilding, setIsHotel } from '@/app/redux/filterSlice'
+import { setIsHouse, setIsApartment, setIsOutbuilding, setIsHotel } from '@/redux/filterSlice'
 
 function StructureTypeComponent() {
   const dispatch = useDispatch()

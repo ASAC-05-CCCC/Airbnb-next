@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useDispatch } from 'react-redux'
-import { updateLocation } from '@/app/redux/searchSlice'
+import { updateLocation } from '@/redux/searchSlice'
 
 const countryData = [
   {

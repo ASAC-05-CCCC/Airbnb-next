@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 
 import SelectOptionComponent from '@/components/MainCategory/FilterComponent/SelectOption/SelectOptionComponent'
-import { setAccessibilityOption } from '@/app/redux/filterSlice'
+import { setAccessibilityOption } from '@/redux/filterSlice'
 
 function AccessibilityComponent() {
   const dispatch = useDispatch()

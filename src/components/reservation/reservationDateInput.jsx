@@ -1,4 +1,4 @@
-import { setCheckInDate, setCheckOutDate } from '@/app/redux/reservationSlice'
+import { setCheckInDate, setCheckOutDate } from '@/redux/reservationSlice'
 import DatePickerWrapper from '@/components/common/datePickerWrapper'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
