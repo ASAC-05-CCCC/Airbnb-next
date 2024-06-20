@@ -39,6 +39,12 @@ const Header = () => {
           </div>
           <SearchFormWrapper searchBarOpen={searchBarOpen} />
         </header>
+        <div
+          className={clsx(
+            'w-full bg-white transition-all duration-300',
+            !searchBarOpen ? 'h-0' : 'h-32 lg:h-24',
+          )}
+        ></div>
       </div>
     </>
   )
