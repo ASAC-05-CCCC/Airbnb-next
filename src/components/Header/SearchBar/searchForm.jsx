@@ -7,7 +7,7 @@ import SearchInputModal from '@/components/Header/SearchBar/SearchInputModal'
 function SearchForm() {
   return (
     <form onSubmit={e => e.preventDefault()} className='w-full max-w-[850px]' action='/'>
-      <div className='relative flex w-full flex-col items-center justify-center gap-10'>
+      <div className='pointer-events-auto relative flex w-full flex-col items-center justify-center gap-10'>
         <SearchBar>
           <div className='flex w-full min-w-fit flex-col items-center justify-center gap-8'>
             <NavigationBar />

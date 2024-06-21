@@ -30,7 +30,7 @@ const Header = () => {
         <header className='w-full'>
           <div
             className={clsx(
-              'relative z-30 flex h-full w-full items-center justify-between bg-white py-3',
+              'relative flex h-full w-full items-center justify-between bg-white py-3',
             )}
           >
             <Logo />
