@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import leftArrow from '/public/images/leftArrow.svg'
-import rightArrow from '/public/images/rightArrow.svg'
+const leftArrow = '/images/leftArrow.svg'
+const rightArrow = '/images/rightArrow.svg'
 
 function ArrowButton({
   onClickArrowButton,
@@ -9,11 +9,16 @@ function ArrowButton({
 }) {
   return (
     <button
-      className='flex place-items-center place-content-center w-7 h-7 border-gray-300 border rounded-full bg-opacity-20 hover:w-8 hover:h-8 hover:shadow-xl'
+      className='flex h-7 w-7 place-content-center place-items-center rounded-full border border-gray-300 bg-opacity-20 hover:h-8 hover:w-8 hover:shadow-xl'
       onClick={onClickArrowButton}
     >
       <div>
-        <Image src={direction === 'left' ? leftArrow : rightArrow} alt='arrow' />
+        <Image
+          src={direction === 'left' ? leftArrow : rightArrow}
+          width={28}
+          height={28}
+          alt='arrow'
+        />
       </div>
     </button>
   )

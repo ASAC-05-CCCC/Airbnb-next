@@ -1,4 +1,4 @@
-import SuperHost from '/public/images/SuperHost.svg'
+const SuperHost = '/images/SuperHost.svg'
 import Image from 'next/image'
 
 const Label = ({ label, value }) => {

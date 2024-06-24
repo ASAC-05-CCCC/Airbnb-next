@@ -17,8 +17,6 @@ import ReservationComponent from '@/components/MainCategory/FilterComponent/Rese
 import AccessibilityComponent from '@/components/MainCategory/FilterComponent/SelectOption/Accessibility/AccessibilityComponent'
 import LanguageComponent from '@/components/MainCategory/FilterComponent/SelectOption/Language/LanguageComponent'
 
-import XIcon from '/public/images/XIcon.svg'
-
 function FilterComponent({ setIsFilterModal }) {
   const filterModalRef = useRef()
 
@@ -46,7 +44,7 @@ function FilterComponent({ setIsFilterModal }) {
         place-content-center place-items-center rounded-t-xl border-b-[1px] border-b-slate-200'
         >
           <button onClick={onClickXButton} className='absolute left-0 p-5'>
-            <Image src={XIcon} alt='X' />
+            <Image src={'/images/XIcon.svg'} alt='X' />
           </button>
           <div className='text-sm	font-bold'>필터</div>
         </div>
