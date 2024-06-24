@@ -1,4 +1,4 @@
-import star from '/public/images/star.svg'
+const star = '/images/star.svg'
 import Image from 'next/image'
 
 const ReviewModalHeader = ({ data }) => {

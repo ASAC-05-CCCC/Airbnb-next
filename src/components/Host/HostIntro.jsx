@@ -1,13 +1,13 @@
-import Language from '/public/images/Language.svg'
-import Service from '/public/images/Service.svg'
-import MyWork from '/public/images/MyWork.svg'
-import ISpendTooMuchTime from '/public/images/ISpendTooMuchTime.svg'
-import WhereIWentToSchool from '/public/images/WhereIWentToSchool.svg'
-import LivesIn from '/public/images/LivesIn.svg'
-import FunFact from '/public/images/FunFact.svg'
-import BornInThe from '/public/images/BornInThe.svg'
-import FavoriteSongInHighSchool from '/public/images/FavoriteSongInHighSchool.svg'
-import HappyToSpendTimeWithGuests from '/public/images/HappyToSpendTimeWithGuests.svg'
+const Language = '/images/Language.svg'
+const Service = '/images/Service.svg'
+const MyWork = '/images/MyWork.svg'
+const ISpendTooMuchTime = '/images/ISpendTooMuchTime.svg'
+const WhereIWentToSchool = '/images/WhereIWentToSchool.svg'
+const LivesIn = '/images/LivesIn.svg'
+const FunFact = '/images/FunFact.svg'
+const BornInThe = '/images/BornInThe.svg'
+const FavoriteSongInHighSchool = '/images/FavoriteSongInHighSchool.svg'
+const HappyToSpendTimeWithGuests = '/images/HappyToSpendTimeWithGuests.svg'
 import Image from 'next/image'
 
 const svgMap = {
@@ -27,7 +27,16 @@ const HostIntro = ({ category, text }) => {
   const SvgIcon = svgMap[category]
   return (
     <div className='flex gap-1'>
-      <Image src={SvgIcon} className='h-6 w-6' alt='icon' />
+      <div className='h-6 w-6 '>
+        <Image
+          src={SvgIcon}
+          width={0}
+          height={0}
+          sizes='100vw'
+          style={{ width: '100%', height: 'auto' }}
+          alt='icon'
+        />
+      </div>
       <p>{text}</p>
     </div>
   )

@@ -7,8 +7,8 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import GuestPreference from '@/components/PlaceList/GuestPreference'
 import './NavigationCustom.css'
-import emptyHeart from '/public/images/like.svg' // 회색하트
-import filledHeart from '/public/images/liked.svg' // 핑크하트
+const emptyHeart = '/images/like.svg' // 회색하트
+const filledHeart = '/images/liked.svg' // 핑크하트
 import ArrowButton from '@/components/common/ArrowButton'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -39,11 +39,14 @@ const PlaceCardImageList = ({ id, photos, guestFavorite }) => {
             <div className='aspect-square h-full w-full'>
               {/* 하트 모양 표시 */}
               <div className='absolute right-2 top-2 z-20 p-2'>
+                <div className='h-7 w-7'></div>
                 <Image
                   src={liked ? filledHeart : emptyHeart}
                   alt='Like'
-                  width={28}
-                  height={28}
+                  width={0}
+                  height={0}
+                  sizes='100vw'
+                  style={{ width: '100%', height: 'auto' }}
                   onClick={handleLikeClick}
                 />
               </div>

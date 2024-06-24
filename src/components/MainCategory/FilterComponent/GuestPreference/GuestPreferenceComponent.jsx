@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import { useDispatch, useSelector } from 'react-redux'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
-import preferenceIcon from '/public/images/preferenceIcon.svg'
+const preferenceIcon = '/images/preferenceIcon.svg'
 import { setIsPreference } from '@/redux/filterSlice'
 
 function GuestPreferenceComponent() {

@@ -2,7 +2,7 @@
 import Image from 'next/image'
 
 import FilterEachComponent from '@/components/MainCategory/FilterComponent/FilterEachComponent'
-import checkIcon from '/public/images/checkIcon.svg'
+const checkIcon = '/images/checkIcon.svg'
 
 function SelectOptionComponent({ title, options, checkItem, setCheckItem }) {
   return (

@@ -1,6 +1,6 @@
 'use clinet'
 import { useState } from 'react'
-import DefaultProfileImage from '/public/images/DefaultProfileImage.svg'
+const DefaultProfileImage = '/images/DefaultProfileImage.svg'
 import Image from 'next/image'
 
 const ReviewHeader = ({ image, name, country }) => {
@@ -17,7 +17,7 @@ const ReviewHeader = ({ image, name, country }) => {
           alt={name}
           width={40}
           height={40}
-          className='w-10 h-10 bg-neutral-200 rounded-full mr-4'
+          className='mr-4 h-10 w-10 rounded-full bg-neutral-200'
           onError={handleImageError}
         />
       ) : (
@@ -26,7 +26,7 @@ const ReviewHeader = ({ image, name, country }) => {
           alt='Default Profile'
           width={40}
           height={40}
-          className='w-10 h-10 bg-neutral-200 rounded-full mr-4'
+          className='mr-4 h-10 w-10 rounded-full bg-neutral-200'
         />
       )}
       <div>

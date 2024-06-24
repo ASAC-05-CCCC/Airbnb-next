@@ -1,11 +1,11 @@
 import ReviewMetaContent from '@/components/ReviewMeta/ReviewMetaContent'
 import ReviewOverall from '@/components/ReviewMeta/ReviewOverall'
-import CleanlinessIcon from '/public/images/Cleanliness.svg'
-import AccuracyIcon from '/public/images/Accuracy.svg'
-import CheckInIcon from '/public/images/CheckIn.svg'
-import CommunicationIcon from '/public/images/Communication.svg'
-import LocationIcon from '/public/images/Location.svg'
-import ValueIcon from '/public/images/Value.svg'
+const CleanlinessIcon = '/images/Cleanliness.svg'
+const AccuracyIcon = '/images/Accuracy.svg'
+const CheckInIcon = '/images/CheckIn.svg'
+const CommunicationIcon = '/images/Communication.svg'
+const LocationIcon = '/images/Location.svg'
+const ValueIcon = '/images/Value.svg'
 
 const ReviewMeta = ({ reviewMetaData, reviewOverall }) => {
   if (!reviewMetaData || reviewMetaData.length === 0) {

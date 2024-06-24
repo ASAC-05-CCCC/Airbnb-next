@@ -8,7 +8,16 @@ function ReviewMetaContent({ category, value, icon }) {
           <div>{category}</div>
           <div>{value}</div>
         </div>
-        <Image src={icon} className='h-6 w-6' alt={category} />
+        <div className='h-6 w-6'>
+          <Image
+            src={icon}
+            width={0}
+            height={0}
+            sizes='100vw'
+            style={{ width: '100%', height: 'auto' }}
+            alt={category}
+          />
+        </div>
       </div>
     </div>
   )
