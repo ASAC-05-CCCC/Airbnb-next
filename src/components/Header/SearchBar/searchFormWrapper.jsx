@@ -1,7 +1,6 @@
-import SearchForm from '@/components/Header/SearchBar/searchForm'
 import clsx from 'clsx'
 
-function SearchFormWrapper({ searchBarOpen }) {
+function SearchFormWrapper({ searchBarOpen, children }) {
   return (
     <>
       <div
@@ -11,7 +10,7 @@ function SearchFormWrapper({ searchBarOpen }) {
           !searchBarOpen && '-translate-y-28 scale-0 opacity-0 sm:h-0',
         )}
       >
-        <SearchForm />
+        {children}
       </div>
     </>
   )

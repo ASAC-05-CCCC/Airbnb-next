@@ -3,6 +3,11 @@ import SmallSearchBar from '@/components/Header/SearchBar/SmallSearchBar'
 import SearchFormWrapper from '@/components/Header/SearchBar/searchFormWrapper'
 import Logo from '@/components/Header/Logo'
 import HeaderSideBox from '@/components/Header/headerSideBox'
+import SearchForm from '@/components/Header/SearchBar/searchForm'
+import NavigationBar from '@/components/Header/Navigation/NavigationBar'
+import FullSearchBar from '@/components/Header/SearchBar/FullSearchBar'
+import SearchBar from '@/components/Header/SearchBar/SearchBar'
+import SearchInputModal from '@/components/Header/SearchBar/SearchInputModal'
 import clsx from 'clsx'
 import useIsScroll from '@/hooks/useIsScroll'
 import { useEffect, useState } from 'react'
@@ -30,14 +35,24 @@ const Header = () => {
         <header className='w-full'>
           <div
             className={clsx(
-              'relative z-30 flex h-full w-full items-center justify-between bg-white py-3',
+              'relative flex h-full w-full items-center justify-between bg-white py-3',
             )}
           >
             <Logo />
             <SmallSearchBar searchBarOpen={searchBarOpen} setSearchBarOpen={setSearchBarOpen} />
             <HeaderSideBox />
           </div>
-          <SearchFormWrapper searchBarOpen={searchBarOpen} />
+          <SearchFormWrapper searchBarOpen={searchBarOpen}>
+            <SearchForm>
+              <SearchBar>
+                <div className='flex w-full min-w-fit flex-col items-center justify-center gap-8'>
+                  <NavigationBar />
+                  <FullSearchBar />
+                </div>
+                <SearchInputModal />
+              </SearchBar>
+            </SearchForm>
+          </SearchFormWrapper>
         </header>
         <div
           className={clsx(

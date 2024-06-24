@@ -7,6 +7,7 @@ import ReservationGuestModalButton from '@/components/reservation/reservationGue
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useSelector } from 'react-redux'
+import clsx from 'clsx'
 
 export default function ReservationForm() {
   const { Modal: DateModal, open: dateOpen, close: dateClose, isOpen: dateIsOpen } = useModal()
@@ -32,7 +33,12 @@ export default function ReservationForm() {
   return (
     <form onSubmit={e => e.preventDefault()}>
       <div className='flex w-full flex-col gap-4 '>
-        <div className='w-full rounded-md border-[1px] border-gray-300'>
+        <div
+          className={clsx(
+            'w-full rounded-md border-[1px] border-gray-300',
+            dateIsOpen || guestIsOpen ? '' : 'cursor-pointer',
+          )}
+        >
           {/* date modal */}
           <ReservationDateModalButton
             dateIsOpen={dateIsOpen}

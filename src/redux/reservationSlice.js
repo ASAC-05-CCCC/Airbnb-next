@@ -13,6 +13,10 @@ const reservationSlice = createSlice({
       babies: 0,
       pets: 0,
     },
+
+    guestsTotal: 1,
+
+    currentPrice: null,
   },
   reducers: {
     //
@@ -44,14 +48,27 @@ const reservationSlice = createSlice({
         return
       }
       state.guestCount[key] += 1
+      state.guestsTotal += 1
     },
     decreaseGuest: (state, action) => {
       const { key } = action.payload
       state.guestCount[key] === 0 ? null : (state.guestCount[key] -= 1)
+      state.guestsTotal -= 1
+    },
+
+    //
+    setCurrentPrice: (state, action) => {
+      state.currentPrice = action.payload
     },
   },
 })
 
-export const { setCheckInDate, setCheckOutDate, clearDate, increaseGuest, decreaseGuest } =
-  reservationSlice.actions
+export const {
+  setCheckInDate,
+  setCheckOutDate,
+  clearDate,
+  increaseGuest,
+  decreaseGuest,
+  setCurrentPrice,
+} = reservationSlice.actions
 export default reservationSlice.reducer
