@@ -8,8 +8,10 @@ import FilterButton from '@/components/MainCategory/FilterButton'
 import FilterComponent from '@/components/MainCategory/FilterComponent'
 import ArrowButton from '@/components/common/ArrowButton'
 import categoryData from '../../../public/categoryList.json'
+import useFetch from '@/hooks/useFetch'
 
 function Category() {
+  // const { data: categoryList, error, isLoading } = useFetch(`/`) //데이터 fetching
   const categoryList = categoryData.categoryList
 
   const [isFilterModal, setIsFilterModal] = useState(false)
