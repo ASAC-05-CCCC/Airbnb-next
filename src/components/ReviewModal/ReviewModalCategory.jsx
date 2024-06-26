@@ -35,7 +35,7 @@ const ReviewModalCategory = ({ reviewData }) => {
     }
 
     setReviewData(data)
-  }, [selectedCategory, keyword])
+  }, [selectedCategory, keyword, originalData])
 
   const formatData = formatTimestamp(ReviewData)
 

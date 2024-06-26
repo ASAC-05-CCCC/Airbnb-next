@@ -127,19 +127,64 @@ const FooterTitleIn = () => {
                     ₩ KRW
                   </a>
                   <a href='#' className='text-gray-500 hover:text-gray-700'>
-                    <Image src={FacebookImage} width={24} height={24} alt='' />
+                    <div className='h-6 w-6'>
+                      <Image
+                        src={FacebookImage}
+                        alt=''
+                        width={0}
+                        height={0}
+                        sizes='100vw'
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                    </div>
                   </a>
                   <a href='#' className='text-gray-500 hover:text-gray-700'>
-                    <Image src={TwitterImage} width={24} height={24} alt='' />
+                    <div className='h-6 w-6'>
+                      <Image
+                        src={TwitterImage}
+                        alt=''
+                        width={0}
+                        height={0}
+                        sizes='100vw'
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                    </div>
                   </a>
                   <a href='#' className='text-gray-500 hover:text-gray-700'>
-                    <Image src={InstargramImage} width={24} height={24} alt='' />
+                    <div className='h-6 w-6'>
+                      <Image
+                        src={InstargramImage}
+                        alt=''
+                        width={0}
+                        height={0}
+                        sizes='100vw'
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                    </div>
                   </a>
                   <a href='#' className='text-gray-500 hover:text-gray-700'>
-                    <Image src={Blog} width={24} height={24} alt='' />
+                    <div className='h-6 w-6'>
+                      <Image
+                        src={Blog}
+                        alt=''
+                        width={0}
+                        height={0}
+                        sizes='100vw'
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                    </div>
                   </a>
                   <a href='#' className='text-gray-500 hover:text-gray-700'>
-                    <Image src={AirbnbApp} width={24} height={24} alt='' />
+                    <div className='h-6 w-6'>
+                      <Image
+                        src={AirbnbApp}
+                        alt=''
+                        width={0}
+                        height={0}
+                        sizes='100vw'
+                        style={{ width: '100%', height: 'auto' }}
+                      />
+                    </div>
                   </a>
                 </div>
               </div>

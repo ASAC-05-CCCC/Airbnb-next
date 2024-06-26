@@ -1,12 +1,11 @@
-import React from 'react'
 import RoomTitle from '@/components/RoomView/RoomTitle.jsx'
 import RoomPictures from '@/components/RoomView/RoomPictures.jsx'
 
-const RoomView = () => {
+const RoomView = ({ roomData }) => {
   return (
     <div>
-      <RoomTitle />
-      <RoomPictures />
+      <RoomTitle roomData={roomData} />
+      <RoomPictures roomData={roomData} />
     </div>
   )
 }
