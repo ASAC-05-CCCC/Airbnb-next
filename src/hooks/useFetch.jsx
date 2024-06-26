@@ -13,7 +13,7 @@ export const getFetcher = url => {
 }
 
 const useFetch = url => {
-  const baseUrl = `${process.env.NEXT_PUBLIC_LOCAL_API_URL}${url}`
+  const baseUrl = `${process.env.NEXT_PUBLIC_API_URL}${url}`
 
   const { data, error, isLoading } = useSWR(baseUrl, getFetcher)
 
