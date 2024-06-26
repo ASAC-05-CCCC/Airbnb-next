@@ -5,44 +5,40 @@ import PlaceCardImageList from '@/components/PlaceList/PlaceCardImageList'
 
 import useFetch from '@/hooks/useFetch'
 
-import { useEffect, useMemo, useState, useRef } from 'react'
+import { useMemo } from 'react'
 
 // 전체 장소 리스트
 const NewPlaceList = ({ searchParams }) => {
-  const [params, setParams] = useState({})
   const { data, error, isLoading } = useFetch('/rooms')
-
-
-  // searchParam이 있으면 상태로 가져온다.
-  useEffect(() => {
-    if (searchParams) {
-      setParams(prev => ({ ...prev, searchParams }))
-    }
-  }, [searchParams])
 
   // searchParam에 따라서 list filter 하는 함수
   const filterList = useMemo(() => {
     // 일반적인 경우 -> Param이 아무것도 없을 때
-    let isEmpty = JSON.stringify(params) === '{}'
+    let isEmpty = JSON.stringify(searchParams) === '{}'
     if (isEmpty) {
+      console.log('searchParam 없음')
       return data
     } else {
       // category가 있을 때
+      console.log('searchParam 있음')
 
       // 검색했을 때
       const newList =
         data &&
         data.filter(prevList => {
-          // // const location = prevList.locationName === params.location
-          // const startDate = prevList.dates.startDate === params.startDate
-          // const endDate = prevList.dates.endDate === params.startDate
-          // // const guest = prevList.guest === params.guest
+          // 필터링 내용 주석 처리했습니다~
+          // const location = prevList.locationName === searchParams.location
+          // const startDate = prevList.dates.startDate === searchParams.startDate
+          // const endDate = prevList.dates.endDate === searchParams.startDate
+          // const guest = prevList.guest === searchParams.guest
           // return location || startDate || endDate
+
+          // 임시 filter 된 것 처럼 보이기
           return prevList.accommodationId < 5
         })
       return newList
     }
-  }, [data, params])
+  }, [data, searchParams])
 
   if (error) {
     return <div>error</div>
