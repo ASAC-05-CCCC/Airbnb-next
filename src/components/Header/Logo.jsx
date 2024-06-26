@@ -6,7 +6,16 @@ const Logo = () => {
     <>
       <div className='justify flex basis-1/4 justify-start'>
         <Link href='/'>
-          <Image width={102} height={32} src='/images/Airbnb_Logo.png' alt='logo' />
+          <div className='w-28'>
+            <Image
+              src='/images/Airbnb_Logo.png'
+              alt='logo'
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </div>
         </Link>
       </div>
     </>

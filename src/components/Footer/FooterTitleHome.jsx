@@ -126,19 +126,64 @@ const FooterTitleHome = () => {
                   ₩ KRW
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <Image src={FacebookImage} width={24} height={24} alt='FACEBOOK' />
+                  <div className='h-6 w-6'>
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes='100vw'
+                      style={{ width: '100%', height: 'auto' }}
+                      src={FacebookImage}
+                      alt='FACEBOOK'
+                    />
+                  </div>
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <Image src={TwitterImage} width={24} height={24} alt='TWIITER' />
+                  <div className='h-6 w-6'>
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes='100vw'
+                      style={{ width: '100%', height: 'auto' }}
+                      src={TwitterImage}
+                      alt='TWIITER'
+                    />
+                  </div>
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <Image src={InstargramImage} width={24} height={24} alt='INSTARGRAM' />
+                  <div className='h-6 w-6'>
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes='100vw'
+                      style={{ width: '100%', height: 'auto' }}
+                      src={InstargramImage}
+                      alt='INSTARGRAM'
+                    />
+                  </div>
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <Image src={Blog} width={24} height={24} alt='BLOG' />
+                  <div className='h-6 w-6'>
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes='100vw'
+                      style={{ width: '100%', height: 'auto' }}
+                      src={Blog}
+                      alt='BLOG'
+                    />
+                  </div>
                 </a>
                 <a href='#' className='text-gray-500 hover:text-gray-700'>
-                  <Image src={AirbnbApp} width={24} height={24} alt='AIRBNB' />
+                  <div className='h-6 w-6'>
+                    <Image
+                      width={0}
+                      height={0}
+                      sizes='100vw'
+                      style={{ width: '100%', height: 'auto' }}
+                      src={AirbnbApp}
+                      alt='AIRBNB'
+                    />
+                  </div>
                 </a>
               </div>
             </div>
