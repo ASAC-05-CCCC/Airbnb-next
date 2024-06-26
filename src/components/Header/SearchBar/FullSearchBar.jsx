@@ -25,7 +25,7 @@ function FullSearchBar() {
   const handleSearchSubmit = () => {
     //
     router.push(
-      `/search?location=${location}&startDate=${checkInDate}&endDate=${checkOutDate}&guest=${Object.values(
+      `/?location=${location}&startDate=${checkInDate}&endDate=${checkOutDate}&guest=${Object.values(
         guestCount,
       ).reduce((prev, current) => prev + current)}`,
     )
