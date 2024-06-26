@@ -40,7 +40,16 @@ const ReviewModal = ({
       <div className='px-auto flex h-full w-[72vw] flex-col justify-center overflow-hidden rounded-3xl bg-white text-sm'>
         <div className='flex justify-between px-5 py-8'>
           <button onClick={closeModal} className=' rounded-full hover:bg-gray-200'>
-            <Image src={XIcon} className='h-8 w-8 p-2 text-black' alt='XIcon' />
+            <div className='h-8 w-8 p-2 text-black'>
+              <Image
+                src={XIcon}
+                width={0}
+                height={0}
+                sizes='100vw'
+                style={{ width: '100%', height: 'auto' }}
+                alt='XIcon'
+              />
+            </div>
           </button>
         </div>
         <div className='flex h-full flex-grow gap-8 overflow-y-auto px-16'>
