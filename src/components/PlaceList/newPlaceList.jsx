@@ -5,27 +5,20 @@ import PlaceCardImageList from '@/components/PlaceList/PlaceCardImageList'
 
 import useFetch from '@/hooks/useFetch'
 
-import { useSearchParams } from 'next/navigation'
 import { useEffect, useMemo, useState, useRef } from 'react'
 
 // 전체 장소 리스트
-const NewPlaceList = () => {
+const NewPlaceList = ({ searchParams }) => {
   const [params, setParams] = useState({})
   const { data, error, isLoading } = useFetch('/rooms')
 
-  const searchParam = useSearchParams()
 
   // searchParam이 있으면 상태로 가져온다.
   useEffect(() => {
-    if (searchParam) {
-      searchParam.forEach((value, key) => {
-        setParams(prev => {
-          console.log(prev)
-          return { ...prev, [key]: value }
-        })
-      })
+    if (searchParams) {
+      setParams(prev => ({ ...prev, searchParams }))
     }
-  }, [searchParam])
+  }, [searchParams])
 
   // searchParam에 따라서 list filter 하는 함수
   const filterList = useMemo(() => {

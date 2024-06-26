@@ -6,7 +6,7 @@ import PlaceList from '@/components/PlaceList/PlaceList'
 import NewPlaceList from '@/components/PlaceList/newPlaceList'
 
 //searchParam을 받아서 list 업데이트
-export default function Home() {
+export default function Home({ params, searchParams }) {
   return (
     <div className='flex w-full flex-col items-center transition-all'>
       <div className='sticky top-0 z-10 flex w-full flex-col bg-white'>
@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <section className='w-full sm:px-8 lg:px-10  xl:px-20'>
         {/* <PlaceList /> */}
-        <NewPlaceList />
+        <NewPlaceList searchParams={searchParams} />
       </section>
       <Footer />
     </div>
