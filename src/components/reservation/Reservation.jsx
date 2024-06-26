@@ -3,7 +3,7 @@ import ReservationInfo from '@/components/reservation/reservationInfo'
 import ReservationPrice from '@/components/reservation/reservationPrice'
 import React from 'react'
 
-const Reservation = () => {
+const Reservation = ({ id }) => {
   return (
     <section className='w-full '>
       <div className='w-full rounded-xl border-[1px] px-6 py-7 shadow-xl shadow-gray-200'>

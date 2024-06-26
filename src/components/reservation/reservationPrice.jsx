@@ -1,14 +1,12 @@
+'use client'
+import useFetch from '@/hooks/useFetch'
 import { setCurrentPrice } from '@/redux/reservationSlice'
-import { getFetcher } from '@/utils/getFetcher'
 import { useParams } from 'next/navigation'
-import useSWR from 'swr'
 
 function ReservationPrice() {
   const param = useParams()
 
-  const fetchURL = `http://localhost:3000/apis/reservation/price/${param.id}`
-
-  const { data, error, isLoading } = useSWR(fetchURL, getFetcher)
+  const { data, error, isLoading } = useFetch(`/reservation/price/${param.id}`)
 
   if (error) {
     return <div>에러 발생</div>

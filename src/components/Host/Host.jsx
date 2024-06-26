@@ -6,11 +6,31 @@ import HostContent from '@/components/Host/HostContent.jsx'
 import HostMessageButton from '@/components/Host/HostMessageButton.jsx'
 import HostFooter from '@/components/Host/HostFooter.jsx'
 import HostProfile from '@/components/Host/HostProfile.jsx'
-import { useEffect, useState } from 'react'
-import { usePathname } from 'next/navigation'
+// import { useEffect, useMemo, useState } from 'react'
+import useFetch from '@/hooks/useFetch'
 
-const GenerateHostData = data => {
-  return {
+const Host = ({ id }) => {
+  // const [hostData, setHostData] = useState([])
+  // const [hostIntroData, setHostIntroData] = useState([])
+  // const [hostContentData, setHostContentData] = useState([])
+  // const pathname = usePathname()
+  // const id = pathname.slice(7)
+
+  const { data } = useFetch(`/host/${id}`)
+
+  // const GenerateHostData = useMemo(
+  //   data => ({
+  //     name: data.hostName,
+  //     superHost: data.guestFavorite,
+  //     review: data.reviewCount,
+  //     rating: data.rating,
+  //     career: data.hostSince,
+  //     image: data.hostImage,
+  //   }),
+  //   [],
+  // )
+
+  const GenerateHostData = data && {
     name: data.hostName,
     superHost: data.guestFavorite,
     review: data.reviewCount,
@@ -18,39 +38,26 @@ const GenerateHostData = data => {
     career: data.hostSince,
     image: data.hostImage,
   }
-}
 
-const GenerateHostIntroData = data => {
-  return data.HostIntro
-}
+  const GenerateHostIntroData = data && data.HostIntro
 
-const GenerateHostContentData = data => {
-  return data.HostContent
-}
+  const GenerateHostContentData = data && data.HostContent
 
-const Host = () => {
-  const [hostData, setHostData] = useState([])
-  const [hostIntroData, setHostIntroData] = useState([])
-  const [hostContentData, setHostContentData] = useState([])
-  const pathname = usePathname()
-  const id = pathname.slice(7)
+  // useEffect(() => {
+  //   fetch(`/apis/host/${id}`)
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       // @ts-ignore
+  //       setHostData(GenerateHostData(data))
+  //       setHostIntroData(GenerateHostIntroData(data))
+  //       setHostContentData(GenerateHostContentData(data))
+  //     })
+  //     .catch(error => console.error('Error fetching host.json:', error))
+  // }, [])
 
-  useEffect(() => {
-    fetch(`/apis/host/${id}`)
-      .then(response => response.json())
-      .then(data => {
-        // @ts-ignore
-        setHostData(GenerateHostData(data))
-        setHostIntroData(GenerateHostIntroData(data))
-        setHostContentData(GenerateHostContentData(data))
-      })
-      .catch(error => console.error('Error fetching host.json:', error))
-  }, [])
-
-  if (!hostData || hostData.length === 0) {
-    return <></>
-  }
-
+  // if (!GenerateHostData || GenerateHostData.length === 0) {
+  //   return <></>
+  // }
   return (
     <div className='w-full flex-col items-center justify-center px-10'>
       <div className='w-full flex-col'>
@@ -61,19 +68,20 @@ const Host = () => {
           <div className='w-full pb-6 pt-10'>
             <div className='flex flex-col items-center justify-start gap-8 px-20 lg:flex-row lg:gap-12 lg:px-10'>
               <div className='flex flex-col lg:gap-8 '>
-                {hostData && (
+                {GenerateHostData && (
                   <HostProfile
-                    name={hostData.name}
-                    superHost={hostData.superHost}
-                    review={hostData.review}
-                    rating={hostData.rating}
-                    career={hostData.career}
-                    image={hostData.image}
+                    name={GenerateHostData.name}
+                    superHost={GenerateHostData.superHost}
+                    review={GenerateHostData.review}
+                    rating={GenerateHostData.rating}
+                    career={GenerateHostData.career}
+                    image={GenerateHostData.image}
                   />
                 )}
                 <div className='mt-4 flex w-[341px] flex-col gap-4 lg:mt-0'>
-                  {hostIntroData.length > 0 &&
-                    hostIntroData.map(({ category, text }, index) => {
+                  {GenerateHostIntroData &&
+                    GenerateHostIntroData.length > 0 &&
+                    GenerateHostIntroData.map(({ category, text }, index) => {
                       if (index > 1) {
                         return null
                       }
@@ -84,8 +92,9 @@ const Host = () => {
                 </div>
               </div>
               <div className='flex w-[341px] flex-col gap-8 lg:w-2/3 lg:gap-8 '>
-                {hostContentData.length > 0 &&
-                  hostContentData.map(({ title, body }, index) => {
+                {GenerateHostContentData &&
+                  GenerateHostContentData.length > 0 &&
+                  GenerateHostContentData.map(({ title, body }, index) => {
                     return <HostContent title={title} body={body} key={`${title}-${index}`} />
                   })}
                 <HostMessageButton />
